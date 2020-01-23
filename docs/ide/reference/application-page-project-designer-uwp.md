@@ -6,17 +6,17 @@ f1_keywords:
 - AppPackage.Properties.Application
 helpviewer_keywords:
 - Application page [UWP project]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 01edb1871388cdc31f6c92ff25d10c876dfebc64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651949"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114398"
 ---
 # <a name="application-property-page-uwp-projects"></a>애플리케이션 속성 페이지(UWP 프로젝트)
 
@@ -28,17 +28,17 @@ ms.locfileid: "72651949"
 
 ## <a name="general-section"></a>일반 섹션
 
-**어셈블리 이름** &mdash; 어셈블리 매니페스트를 보유할 출력 파일의 이름을 지정합니다.
+**어셈블리 이름**&mdash; 어셈블리 매니페스트를 보유할 출력 파일의 이름을 지정합니다.
 
 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>을 참조하세요.
 
-**기본 네임스페이스** &mdash; 프로젝트에 추가된 파일에 대한 기본 네임스페이스를 지정합니다. 네임스페이스에 대한 자세한 내용은 [네임스페이스(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/namespaces/), [네임스페이스(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) 또는 [네임스페이스(C++)](/cpp/cpp/namespaces-cpp)를 참조하세요.
+**기본 네임스페이스**&mdash; 프로젝트에 추가된 파일에 대한 기본 네임스페이스를 지정합니다. 네임스페이스에 대한 자세한 내용은 [네임스페이스(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/namespaces/), [네임스페이스(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) 또는 [네임스페이스(C++)](/cpp/cpp/namespaces-cpp)를 참조하세요.
 
 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>을 참조하세요.
 
-**어셈블리 정보** &mdash; 이 단추를 선택하면 [어셈블리 정보 대화 상자](../../ide/reference/assembly-information-dialog-box.md)가 표시됩니다.
+**어셈블리 정보**&mdash; 이 단추를 선택하면 [어셈블리 정보 대화 상자](../../ide/reference/assembly-information-dialog-box.md)가 표시됩니다.
 
-**패키지 매니페스트** &mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 **솔루션 탐색기**에서 _Package.appxmanifest_ 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)을 참조하세요.
+**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 **솔루션 탐색기**에서 _Package.appxmanifest_ 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)을 참조하세요.
 
 ## <a name="targeting-section"></a>대상 지정 섹션
 
@@ -46,7 +46,7 @@ ms.locfileid: "72651949"
 
 Visual Studio의 플랫폼 대상 지정에 대한 자세한 내용은 [플랫폼 대상 지정](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [첫 번째 UWP 앱 만들기](/windows/uwp/get-started/your-first-app)
 - [UWP 버전 선택](/windows/uwp/updates-and-versions/choose-a-uwp-version)

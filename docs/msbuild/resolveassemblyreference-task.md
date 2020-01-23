@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5dc130c4802aa65317edb7b9dc013c7943f3cc30
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970824"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595217"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 작업
 두 번째 및 `n`번째 순서 종속성을 비롯하여 지정한 어셈블리에 종속되는 모든 어셈블리를 확인합니다.
@@ -70,7 +70,7 @@ ms.locfileid: "62970824"
 |`Silent`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`일 경우 메시지가 기록되지 않습니다. 기본값은 `false`입니다.|
 |`StateFile`|선택적 `String` 매개 변수입니다.<br /><br /> 이 작업에 대한 중간 빌드 상태를 저장할 위치를 나타내는 파일 이름을 지정합니다.|
 |`SuggestedRedirects`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 출력 매개 변수입니다.<br /><br /> `AutoUnify` 매개 변수의 값과 관계없이 충돌하는 모든 고유 어셈블리 ID에 대해 하나의 항목을 포함합니다. 여기에는 애플리케이션 구성 파일에 적합한 bindingRedirect 항목이 없는 것으로 나타난 모든 culture 및 PKT가 포함됩니다.<br /><br /> 각 항목에는 다음 정보가 들어 있습니다.<br /><br /> -   `Include` 특성: 버전 필드 값이 0.0.0.0인 어셈블리 제품군의 전체 이름을 포함합니다.<br />-   `MaxVersion` 항목 메타데이터: 최대 버전 번호가 포함됩니다.|
-|`TargetedRuntimeVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 2.0.57027 또는 v2.0.57027과 같이 런타임 버전을 대상으로 지정합니다.|
+|`TargetedRuntimeVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 2\.0.57027 또는 v2.0.57027과 같이 런타임 버전을 대상으로 지정합니다.|
 |`TargetFrameworkDirectories`|선택적 `String[]` 매개 변수입니다.<br /><br /> 대상 프레임워크 디렉터리의 경로를 지정합니다. 이 매개 변수는 결과 항목에 대한 CopyLocal 상태를 결정하는 데 필요합니다.<br /><br /> 이 매개 변수를 지정하지 않는 경우, 결과 항목의 소스 항목에 `true`라는 `Private` 메타데이터 값이 명시적으로 포함되지 않는 한 `true`라는 CopyLocal 값이 있는 결과 항목은 존재하지 않게 됩니다.|
 |`TargetFrameworkMoniker`|선택적 `String` 매개 변수입니다.<br /><br /> 있을 경우 TargetFrameworkMoniker가 모니터링합니다. 로깅에 사용됩니다.|
 |`TargetFrameworkMonikerDisplayName`|선택적 `String` 매개 변수입니다.<br /><br /> 있을 경우 모니터링하는 TargetFrameworkMoniker의 표시 이름입니다. 로깅에 사용됩니다.|
@@ -101,9 +101,9 @@ ms.locfileid: "62970824"
 
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

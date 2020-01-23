@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f005ea0fce0ccf33902b6ebfd6822640782ef20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292060"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917588"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "74292060"
 
 - **[웹앱 만들기](https://www.visualstudio.com/features/modern-web-tooling-vs):** 현대적인 웹 애플리케이션을 만들고 배포하는 데 필요한 도구입니다.
 
-     [자습서 수행](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [문서 찾아보기](https://docs.asp.net/) &#124;                                   [동영상 시청](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
+     [자습서 수행](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [문서 찾아보기](https://docs.asp.net/) &#124;                                   [동영상 시청](/aspnet/core/?view=aspnetcore-3.0)
 
-- **[HTML/Javascript(Apache Cordova)로 플랫폼 간 모바일 앱 만들기](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova는 HTML/CSS/Javascript를 기반으로 하는 오픈 소스 플랫폼 간 환경입니다.  Javascript 코드는 특정 플랫폼을 대상으로 하는 래퍼에서 실행되며 디바이스의 모든 하드웨어 기능에 액세스할 수 있게 해줍니다. Apple 스토어, Android 스토어 및 Windows 스토어용 앱을 개발할 수 있습니다.
+- **[HTML/Javascript(Apache Cordova)로 플랫폼 간 모바일 앱 만들기](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova는 HTML/CSS/Javascript를 기반으로 하는 오픈 소스 플랫폼 간 환경입니다.  Javascript 코드는 특정 플랫폼을 대상으로 하는 래퍼에서 실행되며 디바이스의 모든 하드웨어 기능에 액세스할 수 있게 해줍니다. Apple 스토어, Android 스토어 및 Windows 스토어용 앱을 개발할 수 있습니다.
 
-     [샘플 로드](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [자습서 수행](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [문서 찾아보기](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [동영상 시청](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [샘플 로드](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [자습서 수행](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [문서 찾아보기](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [동영상 시청](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[C# 또는 Visual Basic(Xamarin)으로 플랫폼 간 모바일 앱 만들기](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio 및 Xamarin용 도구를 사용하여 Android, iOS 및 유니버설 Windows 플랫폼에서 실행되는 모바일 앱을 공유 코드베이스를 활용하여 만들기 시작할 수 있습니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "74292060"
 
 - **[Visual Studio Team Services 및 Team Foundation Server 둘러보기](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Visual Studio Team Services 및 Team Foundation Server에 대해 알아봅니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>단원 내용
 
 |||
 |-|-|

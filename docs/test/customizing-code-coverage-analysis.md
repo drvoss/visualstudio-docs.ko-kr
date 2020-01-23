@@ -2,17 +2,17 @@
 title: 코드 검사 분석 사용자 지정
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665071"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918643"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -51,7 +51,7 @@ ms.locfileid: "72665071"
 
 ::: moniker range="vs-2017"
 
-사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트** > **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.
+사용자 지정 설정을 해제하거나 설정하려면 **테스트** > **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.
 
 ![Visual Studio 2017에서 사용자 지정 설정 파일이 있는 테스트 설정 메뉴](../test/media/codecoverage-settingsfile.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "72665071"
 
 ### <a name="regular-expressions"></a>정규식
 
-Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 모든 일치 항목은 대소문자를 구분하지 않습니다. 일부 사례:
+Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 모든 일치 항목은 대소문자를 구분하지 않습니다. 몇 가지 예는 다음과 같습니다.
 
 - **.\*** 은(는) 모든 문자의 문자열과 일치합니다.
 
@@ -197,7 +197,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--
 About include/exclude lists:
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.
-Each element in the list is a regular expression (ECMAScript syntax). See https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio.
+Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio.
 An item must first match at least one entry in the include list to be included.
 Included items must then not match any entries in the exclude list to remain included.
 -->
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [실행 설정 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

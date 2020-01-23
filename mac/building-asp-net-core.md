@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717275"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398274"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 ASP.NET Core 애플리케이션 빌드
 
@@ -25,7 +25,7 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 > * ASP.NET Core 호스팅, 구성 및 미들웨어 모델 살펴보기
 > * ASP.NET Core 웹앱 디버깅
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - [Mac용 Visual Studio](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -73,9 +73,9 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
     ![](media/netcore-image8.png)
 
-7. 런타임 시 프로젝트, 그 패키지 및 애플리케이션의 관리를 지원하는 다양한 구성 파일도 있습니다. 예를 들어 기본 애플리케이션 [구성](/aspnet/core/fundamentals/configuration)은 **appsettings.json**에 저장됩니다. 그러나 **Development** 환경에 대해 **appsettings.Development.json** 파일을 제공하는 등의 방식으로 환경을 기준으로 이 설정의 일부/전체를 재정의할 수 있습니다.
+7. 런타임 시 프로젝트, 그 패키지 및 애플리케이션의 관리를 지원하는 다양한 구성 파일도 있습니다. 예를 들어 기본 애플리케이션 [구성](/aspnet/core/fundamentals/configuration)은 **appsettings.json**에 저장됩니다. appsettings.json 파일 아래에 **appsettings.Development.json** 파일이 중첩됩니다. 여기서 환경별로 이러한 설정의 일부/전체를 재정의할 수 있습니다. Mac용 Visual Studio는 Windows용 Visual Studio와 동일한 논리를 사용하여 이러한 방식으로 파일을 중첩하므로 더 자주 액세스해야 하는 파일이 맨 앞에 있습니다. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>작업 3: 애플리케이션이 호스팅되는 방법 이해
 

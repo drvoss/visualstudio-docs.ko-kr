@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645886"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591049"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성
 
@@ -106,7 +106,7 @@ ms.locfileid: "72645886"
 
 1. 이 범주의 모든 템플릿을 새 폴더에 넣습니다.
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택합니다.
 
    **HelloWorld** 범주가 **새 프로젝트** 대화 상자의 **설치됨** > **Visual C#** 아래에 나타납니다.
 
@@ -146,7 +146,7 @@ ms.locfileid: "72645886"
 
 1. *.vstemplate* 파일을 저장한 다음, 닫습니다.
 
-1. 템플릿에 있는 파일을 선택하여여 선택 사항을 마우스 오른쪽 단추를 클릭하고, **보내기** > **압축(ZIP) 폴더**를 선택합니다.
+1. 템플릿에 있는 파일을 선택하여 선택 사항을 마우스 오른쪽 단추로 클릭하고, **보내기** > **압축(ZIP) 폴더**를 선택합니다.
 
    파일이 *.zip* 파일로 압축됩니다.
 
@@ -156,7 +156,7 @@ ms.locfileid: "72645886"
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조(확장성)](../extensibility/visual-studio-template-schema-reference.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591751"
 ---
 # <a name="step-3-set-your-form-properties"></a>3단계: 양식 속성 설정
 
@@ -56,7 +56,7 @@ ms.locfileid: "71118960"
    - 도구 모음에서 **디버깅 시작** 단추를 선택하면 다음과 같이 표시됩니다.
 
       ![디버깅 도구 모음 시작 단추](../ide/media/express_icondebug.png)<br>
-     ***디버깅 도구 모음*** *시작 단추*
+     ***디버깅 시작*** *도구 모음 단추*
 
      이전과 마찬가지로 IDE에 의해 앱이 빌드되고 실행되며 창이 나타납니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "71118960"
 
 * 이전 자습서 단계로 돌아가려면 [2단계: 그림 뷰어 앱을 실행합니다](../ide/step-2-run-your-program.md).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313970"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589983"
 ---
 # <a name="step-6-name-your-button-controls"></a>6단계: 단추 컨트롤 이름 지정
 
@@ -46,7 +46,7 @@ ms.locfileid: "72313970"
    이 탭에서는 다음 스크린샷에 표시된 것처럼 양식 이면의 코드 파일을 표시합니다.
 
     ![Visual C&#35; 코드가 사용된 Form1.cs 탭](../ide/media/express_showbuttoncode.png)<br>
-‘C# 코드’가 사용된 ***Form1.cs*** 탭 
+*C# 코드가 사용된* ***Form1.cs*** 탭
 
     > [!NOTE]
     > Form1.cs 또는 Form1.vb 탭에 **showButton**이 **ShowButton**으로 대신 표시될 수 있습니다.
@@ -103,7 +103,7 @@ ms.locfileid: "72313970"
 
 * 이전 자습서 단계로 돌아가려면 [5단계: 양식에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

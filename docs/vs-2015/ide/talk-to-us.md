@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851058"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917699"
 ---
 # <a name="talk-to-us"></a>의견 보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [microsoft와 의견 보내기](https://docs.microsoft.com/visualstudio/ide/feedback-options)를 참조 하세요.
+Visual Studio에 대 한 최신 설명서는 [microsoft와 의견 보내기](/visualstudio/ide/feedback-options)를 참조 하세요.
 
 설명서를 개선할 수 있도록 여러분의 아이디어를 보내 주세요. 개인적으로 회신을 드릴 수는 없지만 여러분의 의견을 담당자에게 전해 드리겠습니다.
 

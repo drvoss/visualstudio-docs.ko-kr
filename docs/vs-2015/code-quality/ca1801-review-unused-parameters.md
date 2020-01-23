@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671524"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918179"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: 사용되지 않은 매개 변수를 검토하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [CA1801: 사용 하지 않는 매개 변수 검토](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)를 참조 하세요.
+Visual Studio에 대 한 최신 설명서는 [CA1801: 사용 하지 않는 매개 변수 검토](/visualstudio/code-quality/ca1801-review-unused-parameters)를 참조 하세요.
 
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|범주|Microsoft 사용|
+|범주|Microsoft.Usage|
 |변경 수준|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우입니다.<br /><br /> 중단-본문 내에서 매개 변수를 사용 하도록 멤버를 변경 하는 경우<br /><br /> 중단-매개 변수를 제거 하 고 어셈블리 외부에 표시 되는 경우입니다.|
 
 ## <a name="cause"></a>원인
@@ -42,13 +42,13 @@ Visual Studio에 대 한 최신 설명서는 [CA1801: 사용 하지 않는 매�
 
 - 이벤트 처리기로 사용 되는 메서드입니다.
 
-- @No__t_0 (Visual Basic의 `MustOverride`) 한정자를 사용 하 여 선언 된 메서드입니다.
+- `abstract` (Visual Basic의`MustOverride`) 한정자를 사용 하 여 선언 된 메서드입니다.
 
-- @No__t_0 (Visual Basic의 `Overridable`) 한정자를 사용 하 여 선언 된 메서드입니다.
+- `virtual` (Visual Basic의`Overridable`) 한정자를 사용 하 여 선언 된 메서드입니다.
 
-- @No__t_0 (Visual Basic의 `Overrides`) 한정자를 사용 하 여 선언 된 메서드입니다.
+- `override` (Visual Basic의`Overrides`) 한정자를 사용 하 여 선언 된 메서드입니다.
 
-- @No__t_0 (Visual Basic `Declare` 문) 한정자를 사용 하 여 선언 된 메서드입니다.
+- `extern` (Visual Basic`Declare` 문) 한정자를 사용 하 여 선언 된 메서드입니다.
 
 ## <a name="rule-description"></a>규칙 설명
  메서드 본문에서 사용 되지 않는 비가상 메서드에서 매개 변수를 검토 하 여 액세스 실패와 관련 하 여 정확성을 보장 하지 않도록 합니다. 사용 하지 않는 매개 변수는 유지 관리 및 성능 비용을 초래 합니다.
@@ -61,7 +61,7 @@ Visual Studio에 대 한 최신 설명서는 [CA1801: 사용 하지 않는 매�
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이전에 제공 된 코드에 대 한 경고를 수정 하 여 주요 변경 내용을 적용할 수 있는 것은 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 두 개의 메서드를 보여 줍니다. 하나는 규칙을 위반 하 고 다른 메서드는 규칙을 충족 합니다.
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]

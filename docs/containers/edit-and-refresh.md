@@ -9,20 +9,22 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71126156"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916527"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
 
-Visual Studio는 Docker 컨테이너에서 로컬로 애플리케이션을 개발하고 유효성을 검사하는 일관된 방법을 제공합니다. 코드를 변경할 때마다 컨테이너를 다시 시작할 필요가 없습니다.
+Visual Studio는 애플리케이션을 Docker 컨테이너에서 개발하고 로컬로 유효성을 검사하는 일관된 방법을 제공합니다. Docker가 설치된 로컬 Windows 데스크톱에서 실행되는 Linux 또는 Windows 컨테이너에서 앱을 실행하고 디버그할 수 있으며, 코드를 변경할 때마다 컨테이너를 다시 시작하지 않아도 됩니다.
 
-이 문서에서는 Visual Studio를 사용하여 로컬 Docker 컨테이너에서 ASP.NET Core 웹앱을 시작하고 변경한 다음, 브라우저를 새로 고쳐 변경 내용을 확인하는 방법을 설명합니다. 또한 컨테이너화된 ASP.NET Core 웹앱과 .NET Framework 콘솔 앱의 디버그를 위해 중단점을 설정하는 방법을 설명합니다.
+이 문서에서는 Visual Studio를 사용하여 로컬 Docker 컨테이너에서 앱을 시작하고 변경한 다음, 브라우저를 새로 고쳐 변경 내용을 확인하는 방법을 설명합니다. 또한 이 문서에서는 컨테이너화된 앱의 디버깅을 위한 중단점 설정 방법도 보여 줍니다. 지원되는 프로젝트 형식에는 .NET Framework 및 .NET Core 웹 및 콘솔 앱이 포함됩니다. 이 문서에서는 ASP.NET Core 웹앱 및 .NET Framework 콘솔 앱을 사용합니다.
 
-## <a name="prerequisites"></a>전제 조건
+지원되는 형식의 프로젝트가 이미 있는 경우 Visual Studio가 Dockerfile을 만들고 프로젝트를 컨테이너에서 실행되도록 구성할 수 있습니다. [Visual Studio의 컨테이너 도구](overview.md)를 참조하세요.
+
+## <a name="prerequisites"></a>사전 요구 사항
 
 로컬 Docker 컨테이너에서 앱을 디버그하려면 다음 도구를 설치해야 합니다.
 
@@ -38,11 +40,13 @@ Visual Studio는 Docker 컨테이너에서 로컬로 애플리케이션을 개�
 
 ::: moniker-end
 
-로컬에서 Docker 컨테이너를 실행하려면 로컬 Docker 클라이언트가 있어야 합니다. Hyper-V를 사용하지 않도록 설정해야 하는 [Docker 도구 상자](https://www.docker.com/products/docker-toolbox)를 사용할 수 있습니다. Hyper-V를 사용하고 Windows 10이 필요한 [Windows용 Docker](https://www.docker.com/get-docker)를 사용할 수도 있습니다. 
+로컬에서 Docker 컨테이너를 실행하려면 로컬 Docker 클라이언트가 있어야 합니다. Hyper-V를 사용하지 않도록 설정해야 하는 [Docker 도구 상자](https://www.docker.com/products/docker-toolbox)를 사용할 수 있습니다. Hyper-V를 사용하고 Windows 10이 필요한 [Windows용 Docker](https://www.docker.com/get-docker)를 사용할 수도 있습니다.
 
 Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 수 있습니다. 두 가지 예제를 살펴보겠습니다. 먼저 .NET Core 웹앱을 살펴본 다음, .NET Framework 콘솔 앱을 살펴봅시다.
 
 ## <a name="create-a-web-app"></a>웹앱 만들기
+
+프로젝트가 있고 [개요](overview.md)에 설명된 대로 Docker 지원을 추가한 경우 이 섹션을 건너뜁니다.
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -55,19 +59,43 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 
 변경 작업을 빠르게 반복하기 위해 컨테이너에서 애플리케이션을 시작할 수 있습니다. 그런 다음, IIS Express에서와같이 계속 변경하면서 변경 내용을 확인합니다.
 
+1. Docker가 사용 중인 컨테이너 유형(Linux 또는 Windows)을 사용하도록 설정되어 있는지 확인합니다. 작업 표시줄에서 Docker 아이콘을 마우스 오른쪽 단추로 클릭하고 **Linux 컨테이너로 전환** 또는 **Windows 컨테이너로 전환**을 적절히 선택합니다.
+
+1. (.NET Core 3 이상에만 해당) 이 섹션에 설명된 대로 코드를 편집하고 실행 중인 사이트를 새로 고치는 기능은 .NET Core > = 3.0의 기본 템플릿에서 사용할 수 없습니다. 이 기능을 사용하도록 설정하려면 NuGet 패키지 [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)를 추가해야 합니다. *Startup.cs*에서 `ConfigureServices` 메서드의 코드에 `IMvcBuilder.AddRazorRuntimeCompilation` 확장 메서드에 대한 호출을 추가합니다. DEBUG 모드에서만 이 기능을 사용할 수 있으므로 다음과 같이 코딩하세요.
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   자세한 내용은 [ASP.NET Core의 Razor 파일 컴파일](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)을 참조하세요.
+
 1. **솔루션 구성**을 **디버그**로 설정합니다. **Ctrl**+**F5**를 눌러 Docker 이미지를 빌드하고 로컬에서 실행합니다.
 
     컨테이너 이미지가 빌드되고 Docker 컨테이너에서 실행되면 Visual Studio가 기본 브라우저에서 웹앱을 시작합니다.
 
-2. ‘인덱스’ 페이지로 이동합니다.  이 페이지를 변경하겠습니다.
-3. Visual Studio로 돌아가서 *Index.cshtml*을 엽니다.
-4. 파일의 끝에 다음 HTML 콘텐츠를 추가하고 변경 내용을 저장합니다.
+1. ‘인덱스’ 페이지로 이동합니다.  이 페이지를 변경하겠습니다.
+1. Visual Studio로 돌아가서 *Index.cshtml*을 엽니다.
+1. 파일의 끝에 다음 HTML 콘텐츠를 추가하고 변경 내용을 저장합니다.
 
     ```html
     <h1>Hello from a Docker container!</h1>
     ```
 
-5. 출력 창에서 .NET 빌드가 완료되고 다음 줄이 표시되면, 브라우저로 다시 전환하고 페이지를 새로 고칩니다.
+1. 출력 창에서 .NET 빌드가 완료되고 다음 줄이 표시되면, 브라우저로 다시 전환하고 페이지를 새로 고칩니다.
 
    ```output
    Now listening on: http://*:80
@@ -125,9 +153,13 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 
 [Visual Studio Docker 개발 문제 해결](troubleshooting-docker-errors.md) 방법을 알아봅니다.
 
+## <a name="next-steps"></a>다음 단계
+
+[Visual Studio에서 컨테이너화된 앱을 빌드하는 방법](container-build.md)을 읽어 자세한 내용을 확인하세요.
+
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Visual Studio, Windows 및 Azure와 함께 Docker에 대해 자세히 알아보기
 
 * [Visual Studio를 사용한 컨테이너 개발](/visualstudio/containers)에 대해 자세히 알아봅니다.
-* Docker 컨테이너를 빌드하고 배포하려면 [Azure Pipelines용 Docker 통합](https://aka.ms/dockertoolsforvsts)을 참조하세요.
-* Windows Server 및 Nano Server 문서의 인덱스는 [Windows 컨테이너 정보](https://aka.ms/containers)를 참조하세요.
+* Docker 컨테이너를 빌드하고 배포하려면 [Azure Pipelines용 Docker 통합](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)을 참조하세요.
+* Windows Server 및 Nano Server 문서의 인덱스는 [Windows 컨테이너 정보](/virtualization/windowscontainers/)를 참조하세요.
 * [Azure Container Service](https://azure.microsoft.com/services/kubernetes-service/)에 대해 알아보고 [Azure Kubernetes Service 설명서](/azure/aks)를 검토합니다.

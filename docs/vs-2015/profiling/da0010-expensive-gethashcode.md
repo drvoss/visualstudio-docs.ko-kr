@@ -14,17 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0a2947f0bd6758de62a4a11d78390d38a503271
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158658"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919038"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode의 부담이 큽니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 최신 설명서를 참조 하세요. [DA0010: GetHashCode의 부담이 큽니다](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode)합니다.  
+Visual Studio에 대 한 최신 설명서는 [DA0010: 값비싼 GetHashCode](/visualstudio/profiling/da0010-expensive-gethashcode)를 참조 하세요.  
 
 |||  
 |-|-|  
@@ -38,7 +38,7 @@ Visual Studio에서 최신 설명서를 참조 하세요. [DA0010: GetHashCode�
  해당 형식의 GetHashCode 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지하거나 메서드가 메모리를 할당합니다.  
   
 ## <a name="rule-description"></a>규칙 설명  
- 해싱은 큰 컬렉션에서 특정 항목을 신속하게 찾기 위한 기술입니다. 해시 테이블 매우 클 수 있으며 속도가 빠른 액세스를 지원할 필요가, 점에서 해시 테이블 매우 효율적 이어야 합니다. 이 요구 사항의 시사점은 .NET Framework의 GetHashCode 메서드는 메모리를 할당하지 않아야 한다는 것입니다. 메모리 할당은 가비지 수집기의 부하를 증가시키고 할당 요청으로 인해 가비지 수집을 실행하는 것이 필요할 경우 잠재적 지연에 메서드를 노출합니다.  
+ 해싱은 큰 컬렉션에서 특정 항목을 신속하게 찾기 위한 기술입니다. 해시 테이블은 매우 클 수 있으며 높은 수준의 액세스를 지원 해야 하므로 해시 테이블은 매우 효율적 이어야 합니다. 이 요구 사항의 시사점은 .NET Framework의 GetHashCode 메서드는 메모리를 할당하지 않아야 한다는 것입니다. 메모리 할당은 가비지 수집기의 부하를 증가시키고 할당 요청으로 인해 가비지 수집을 실행하는 것이 필요할 경우 잠재적 지연에 메서드를 노출합니다.  
   
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  메서드의 복잡성을 줄이세요.

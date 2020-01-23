@@ -6,23 +6,23 @@ f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747608"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114250"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 
 도구 상자 또는 붙여넣기 또는 이동 작업에서 요소를 다른 페이지로 끌 수 있습니다. 지정한 관계를 사용 하 여 이동 된 요소를 대상 요소에 연결할 수 있습니다.
 
-요소 병합 지시문 (EMD)은 하나의 모델 요소가 다른 모델 요소에 *병합* 될 때 발생 하는 결과를 지정 합니다. 이는 다음과 같은 경우에 발생 합니다.
+요소 병합 지시문 (EMD)은 하나의 모델 요소가 다른 모델 요소에 *병합* 될 때 발생 하는 결과를 지정 합니다. 이런 상황은 다음과 같은 경우에 발생합니다.
 
 - 사용자가 도구 상자에서 다이어그램 또는 모양으로 끌어 옵니다.
 
@@ -71,7 +71,7 @@ Merge 지시문에 사용자 지정 코드를 추가할 수 있습니다.
 > [!NOTE]
 > 사용자 지정 병합 코드를 작성 하는 경우이 EMD를 사용 하 여 수행 된 병합에만 영향을 줍니다. 동일한 형식의 개체를 병합 하는 다른 EMDs가 있거나 EMDS를 사용 하지 않고 이러한 개체를 만드는 다른 사용자 지정 코드가 있는 경우 사용자 지정 병합 코드의 영향을 받지 않습니다.
 >
-> 사용자 지정 코드에서 새 요소나 새 관계를 항상 처리 하는지 확인 하려면 포함 관계 및 요소의 도메인 클래스에 대 한 `DeleteRule`에 대 한 `AddRule`를 정의 하는 것이 좋습니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+> 사용자 지정 코드에서 새 요소나 새 관계를 항상 처리 하는지 확인 하려면 포함 관계 및 요소의 도메인 클래스에 대 한 `DeleteRule`에 대 한 `AddRule`를 정의 하는 것이 좋습니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>예: 사용자 지정 코드 없이 EMD 정의
 
@@ -87,7 +87,7 @@ Merge 지시문에 사용자 지정 코드를 추가할 수 있습니다.
 
 2. 사용자가 `ExampleElement` 셰이프에 요소를 병합할 수 있도록 `ExampleElement` 도메인 클래스에 새 EMD를 만듭니다.
 
-   1. **DSL 탐색기**에서 **도메인 클래스**를 확장 합니다. @No__t_0를 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 병합 지시문 추가**를 클릭 합니다.
+   1. **DSL 탐색기**에서 **도메인 클래스**를 확장 합니다. `ExampleElement`를 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 병합 지시문 추가**를 클릭 합니다.
 
    2. 새 EMD의 세부 정보를 볼 수 있도록 **DSL 세부 정보** 창이 열려 있는지 확인 합니다. (메뉴: **보기**, **다른 창**, **DSL 세부 정보**)
 
@@ -109,7 +109,7 @@ Merge 지시문에 사용자 지정 코드를 추가할 수 있습니다.
 
       경로 탐색 도구를 사용 하 여 각 경로를 만들 수 있습니다.
 
-      1. **경로에서 링크를 만들어 병합 처리**에서 **\<add 경로 >** 를 클릭 합니다.
+      1. **경로에서 링크를 만들어 병합 처리**아래에서 **\<경로 > 추가**를 클릭 합니다.
 
       2. 목록 항목의 오른쪽에 있는 드롭다운 화살표를 클릭 합니다. 트리 뷰가 나타납니다.
 
@@ -151,7 +151,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 1. **최소 언어** 솔루션 템플릿을 사용 하 여 DSL을 만듭니다. DSL 정의 다이어그램을 엽니다.
 
-2. DSL 탐색기에서 **도메인 클래스**, `ExampleModel`, **요소 병합 지시문**을 차례로 확장 합니다. 이름이 `ExampleElement` 인 요소 병합 지시문을 선택 합니다.
+2. DSL 탐색기에서 **도메인 클래스**, `ExampleModel`, **요소 병합 지시문**을 차례로 확장 합니다. 이름이 `ExampleElement`인 요소 병합 지시문을 선택 합니다.
 
      이 EMD는 사용자가 도구 상자에서 끌어와 같이 모델에 새 `ExampleElement` 개체를 만들 수 있는 방법을 제어 합니다.
 
@@ -161,7 +161,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
      "ElementMergeSample. ExampleElement에 CanMergeExampleElement에 대 한 정의가 포함 되어 있지 않습니다."와 비슷한 빌드 오류가 보고 됩니다.
 
-     @No__t_0 메서드를 구현 해야 합니다.
+     `CanMergeExampleElement`메서드를 구현 해야 합니다.
 
 5. **Dsl** 프로젝트에서 새 코드 파일을 만듭니다. 해당 콘텐츠를 다음 코드로 바꾸고 네임 스페이스를 프로젝트의 네임 스페이스로 변경 합니다.
 
@@ -190,7 +190,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
     }
     ```
 
-    이 간단한 예제에서는 부모 모델에 병합할 수 있는 요소의 수를 제한 합니다. 더 흥미로운 조건을 위해 메서드에서는 수신 개체의 속성 및 링크를 검사할 수 있습니다. 또한 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>에 전달 되는 병합 요소의 속성을 검사할 수 있습니다. @No__t_0에 대 한 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요. 모델을 읽는 코드를 작성 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
+    이 간단한 예제에서는 부모 모델에 병합할 수 있는 요소의 수를 제한 합니다. 더 흥미로운 조건을 위해 메서드에서는 수신 개체의 속성 및 링크를 검사할 수 있습니다. 또한 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>에 전달 되는 병합 요소의 속성을 검사할 수 있습니다. `ElementGroupPrototypes`에 대 한 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요. 모델을 읽는 코드를 작성 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
 6. DSL 테스트:
 
@@ -212,9 +212,9 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 1. Set **사용자 지정 병합을 사용 하** 고 필요한 코드를 제공 합니다. 코드는 생성 된 병합 코드를 대체 합니다. 병합이 수행 하는 작업을 완전히 다시 정의 하려면이 옵션을 사용 합니다.
 
-2. @No__t_0 메서드를 재정의 하 고 선택적으로 `MergeDisconnect` 메서드를 재정의 합니다. 이렇게 하려면 도메인 클래스의 **이중 파생 클래스 생성** 속성을 설정 해야 합니다. 코드는 기본 클래스에서 생성 된 병합 코드를 호출할 수 있습니다. 병합을 수행한 후 추가 작업을 수행 하려는 경우이 옵션을 사용 합니다.
+2. `MergeRelate` 메서드를 재정의 하 고 선택적으로 `MergeDisconnect` 메서드를 재정의 합니다. 이렇게 하려면 도메인 클래스의 **이중 파생 클래스 생성** 속성을 설정 해야 합니다. 코드는 기본 클래스에서 생성 된 병합 코드를 호출할 수 있습니다. 병합을 수행한 후 추가 작업을 수행 하려는 경우이 옵션을 사용 합니다.
 
-   이러한 방법은이 EMD를 사용 하 여 수행 되는 병합에만 영향을 줍니다. 병합 된 요소를 만들 수 있는 모든 방법에 영향을 주려면 포함 관계 및 병합 된 도메인 클래스의 `DeleteRule`에 대 한 `AddRule`를 정의 하는 것이 좋습니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+   이러한 방법은이 EMD를 사용 하 여 수행 되는 병합에만 영향을 줍니다. 병합 된 요소를 만들 수 있는 모든 방법에 영향을 주려면 포함 관계 및 병합 된 도메인 클래스의 `DeleteRule`에 대 한 `AddRule`를 정의 하는 것이 좋습니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
 ### <a name="to-override-mergerelate"></a>MergeRelate를 재정의 하려면
 
@@ -228,9 +228,9 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 4. 솔루션을 다시 빌드합니다.
 
-5. **Dsl\generated Files\DomainClasses.cs**의 콘텐츠를 검사 합니다. @No__t_0 메서드를 검색 하 고 해당 내용을 검사 합니다. 이렇게 하면 고유한 버전을 작성 하는 데 도움이 됩니다.
+5. **Dsl\generated Files\DomainClasses.cs**의 콘텐츠를 검사 합니다. `MergeRelate` 메서드를 검색 하 고 해당 내용을 검사 합니다. 이렇게 하면 고유한 버전을 작성 하는 데 도움이 됩니다.
 
-6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 `MergeRelate` 메서드를 재정의 합니다. 기본 메서드를 호출 해야 합니다. 예를 들면,
+6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 `MergeRelate` 메서드를 재정의 합니다. 기본 메서드를 호출 해야 합니다. 예를 들면 다음과 같습니다.:
 
     ```csharp
     partial class ExampleModel
@@ -258,9 +258,9 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 ### <a name="to-write-custom-merge-code"></a>사용자 지정 병합 코드를 작성 하려면
 
-1. **Dsl\generated Code\DomainClasses.cs**에서 `MergeRelate` 라는 메서드를 검사 합니다. 이러한 메서드는 새 요소와 기존 모델 간에 링크를 만듭니다.
+1. **Dsl\generated Code\DomainClasses.cs**에서 `MergeRelate`라는 메서드를 검사 합니다. 이러한 메서드는 새 요소와 기존 모델 간에 링크를 만듭니다.
 
-    또한 `MergeDisconnect` 라는 메서드를 검사 합니다. 이러한 메서드는 모델을 삭제할 때 모델에서 요소의 연결을 해제 합니다.
+    또한 `MergeDisconnect`라는 메서드를 검사 합니다. 이러한 메서드는 모델을 삭제할 때 모델에서 요소의 연결을 해제 합니다.
 
 2. **DSL 탐색기**에서 사용자 지정 하려는 요소 병합 지시문을 선택 하거나 만듭니다. **DSL 정보** 창에서 설정 **사용자 지정 병합을 사용**합니다.
 
@@ -272,7 +272,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 4. 별도의 코드 파일에서 partial 클래스 정의에 메서드를 작성 합니다. 앞서 검사 한 예제에서는 필요한 항목을 제안 해야 합니다.
 
-   사용자 지정 병합 코드는 개체 및 관계를 직접 만드는 코드에는 영향을 주지 않으며 다른 EMDs에는 영향을 주지 않습니다. 요소가 생성 되는 방법에 관계 없이 추가 변경 내용이 구현 되었는지 확인 하려면 `AddRule` 및 `DeleteRule`를 대신 작성 하는 것이 좋습니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+   사용자 지정 병합 코드는 개체 및 관계를 직접 만드는 코드에는 영향을 주지 않으며 다른 EMDs에는 영향을 주지 않습니다. 요소가 생성 되는 방법에 관계 없이 추가 변경 내용이 구현 되었는지 확인 하려면 `AddRule` 및 `DeleteRule`를 대신 작성 하는 것이 좋습니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
 ## <a name="redirecting-a-merge-operation"></a>병합 작업 리디렉션
 
@@ -304,7 +304,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
     새 경로는 다음과 유사 합니다.
 
-    **ComponentHasPorts/! 구성 요소**
+    **ComponentHasPorts.Component/!Component**
 
 9. 솔루션을 저장 한 다음 **솔루션 탐색기** 도구 모음에서 맨 오른쪽 단추를 클릭 하 여 템플릿을 변환 합니다.
 

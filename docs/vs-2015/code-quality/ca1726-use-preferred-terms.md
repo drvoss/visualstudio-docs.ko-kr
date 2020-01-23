@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671572"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918231"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: 기본 설정 용어를 사용하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [CA1726: 사용 약관 사용](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms)을 참조 하세요.
+Visual Studio에 대 한 최신 설명서는 [CA1726: 사용 약관 사용](/visualstudio/code-quality/ca1726-use-preferred-terms)을 참조 하세요.
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|범주|Microsoft. 이름 지정|
+|범주|Microsoft.Naming|
 |변경 수준|중단-어셈블리에서 발생 한 경우<br /><br /> 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인
@@ -49,7 +49,7 @@ Visual Studio에 대 한 최신 설명서는 [CA1726: 사용 약관 사용](http
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` 또는 `Flags`|대체 용어가 없습니다. 사용하지 마십시오.|
+|`Flag` 또는 `Flags`|대체 용어가 없습니다. 사용 안 함.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

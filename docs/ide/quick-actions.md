@@ -2,20 +2,20 @@
 title: 빠른 작업, 전구 및 스크루드라이버
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666762"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596959"
 ---
 # <a name="quick-actions"></a>빠른 작업
 
@@ -42,7 +42,7 @@ ms.locfileid: "72666762"
 - 코드 생성(예: [지역 변수 도입](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
 
 전구![전구 아이콘](media/light-bulb-icon.png) 또는 스크루드라이버![스크루드라이버 아이콘](media/screwdriver-icon.png) 아이콘을 사용하거나 **Ctrl**+**을 눌러 빠른 작업을 적용 할 수 있습니다.** 동작을 사용할 수 있는 코드 줄에 커서가 있는 경우입니다. 오류를 나타내는 빨간 물결무늬가 있는 경우 오류 전구![오류 전구 아이콘](media/error-light-bulb-icon.png)가 표시되고, Visual Studio에는 해당 오류에 사용할 수 있는 수정 사항이 있습니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72666762"
 
 ## <a name="icons"></a>아이콘
 
-빠른 작업을 사용할 수 있을 때 나타나는 아이콘은 사용 가능한 해결 방법 또는 리팩터링 형식을 나타냅니다. *스크루드라이버*![스크루드라이버 아이콘](media/screwdriver-icon.png) 아이콘은 코드를 변경하는 데 사용할 수 있는 작업이 있음을 나타내지만 반드시 사용해야 하는 것은 아닙니다. *노란색 전구*![전구 아이콘](media/light-bulb-icon.png) 아이콘은 코드 개선을 위해 *해야 하는* 작업이 있음을 나타냅니다. *오류 전구*![오류 전구 아이콘](media/error-light-bulb-icon.png) 아이콘은 코드에서 오류를 수정하는 데 사용할 수 있는 작업이 있음을 나타냅니다.
+빠른 작업을 사용할 수 있을 때 나타나는 아이콘은 사용 가능한 해결 방법 또는 리팩터링 형식을 나타냅니다. *스크루드라이버* ![스크루드라이버 아이콘](media/screwdriver-icon.png) 아이콘은 코드를 변경하는 데 사용할 수 있는 작업이 있음을 나타내지만 반드시 사용해야 하는 것은 아닙니다. *노란색 전구* ![전구 아이콘](media/light-bulb-icon.png) 아이콘은 코드 개선을 위해 *해야 하는* 작업이 있음을 나타냅니다. *오류 전구* ![오류 전구 아이콘](media/error-light-bulb-icon.png) 아이콘은 코드에서 오류를 수정하는 데 사용할 수 있는 작업이 있음을 나타냅니다.
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>전구 또는 스크루드라이버를 표시하려면
 
@@ -68,7 +68,7 @@ ms.locfileid: "72666762"
 
 ![확장된 전구](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 코드 생성](../ide/code-generation-in-visual-studio.md)
 - [일반적인 빠른 작업](../ide/common-quick-actions.md)

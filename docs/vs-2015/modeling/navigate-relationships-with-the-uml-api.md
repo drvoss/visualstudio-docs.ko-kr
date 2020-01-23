@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74a8234dfc38ef5ef41cd77b2ce10eaf54018622
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850083"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918252"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API를 사용하여 관계 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>관계 열거
- 여러 값을 반환 하는 UML 모델의 모든 속성은 IEnumerable < > 인터페이스를 따릅니다. 즉, [Linq 쿼리 식](https://docs.microsoft.com/dotnet/csharp/linq/index) 과 **system.xml 네임 스페이스** 에 정의 된 확장 메서드를 사용할 수 있습니다.
+ 여러 값을 반환 하는 UML 모델의 모든 속성은 IEnumerable < > 인터페이스를 따릅니다. 즉, [Linq 쿼리 식](/dotnet/csharp/linq/index) 과 **system.xml 네임 스페이스** 에 정의 된 확장 메서드를 사용할 수 있습니다.
 
  예를 들면 다음과 같습니다.:
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Visual Studio 구독을 MPN 파트너에 대한 최종 사용자에게 할당하는 방법입니다.
-ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
+ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605457"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492909"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)를 통해 제공된 Visual Studio 구독 관리
 역량을 구하거나 MPN에서 Action Pack을 구매하는 파트너는 Visual Studio 구독을 사용할 자격이 있습니다. 이러한 구독은 사용자별로 라이선스가 발급되며 파트너 회사에 근무하는 특정 지명 사용자에게 할당된 경우만 유효합니다.
@@ -53,7 +53,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 
 ## <a name="resources-and-references"></a>리소스 및 참조
 - Microsoft 파트너 네트워크 [Visual Studio 구독](https://partner.microsoft.com/membership/msdn-subscriptions)에 대한 세부 정보
-- Microsoft 파트너 네트워크 [소프트웨어 및 온라인 서비스 혜택에 대한 프로그램 관리자 가이드](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
+- Microsoft 파트너 네트워크 [소프트웨어 및 온라인 서비스 혜택에 대한 프로그램 관리자 가이드](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits)
   - 6페이지 - Action Pack에 대한 연락처 역할 및 Visual Studio 구독 할당
   > [!NOTE]
   > Visual Studio 구독에는 기술 담당자 역할이 필요합니다.
@@ -61,3 +61,5 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 
 ## <a name="next-steps"></a>다음 단계
 구독자 및 프로그램 관리자는 Microsoft 파트너 네트워크 지원 팀과 직접 작업하여 구독에 액세스하는 구독자의 문제를 해결해야 합니다. 도움이 필요한 [파트너 지원](https://partner.microsoft.com/support) 페이지를 참조하세요. (MPN 로그인 자격 증명이 필요합니다.)
+
+https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.;_ylu=X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV=2/RE=1577405628/RO=10/RU=https%3a%2f%2fassetsprod.microsoft.com%2fmpn%2fProgram-Administrator-Guide-to-Software-and-Online-Services-Benefits/RK=2/RS=xsA5OL.9t6QqJlvFYZ3OPnZkC_k-

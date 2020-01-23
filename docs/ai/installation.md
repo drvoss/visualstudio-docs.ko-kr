@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777476"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915806"
 ---
 # <a name="installation"></a>설치
 
@@ -24,7 +24,7 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 이 확장 프로그램은 Visual Studio 2015 및 Visual Studio 2017, Community Edition 이상에서 작동합니다.
 
-[Visual Studio Marketplace](https://aka.ms/vstoolsforai) 또는 Visual Studio 내에서 도구를 다운로드할 수 있습니다.
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) 또는 Visual Studio 내에서 도구를 다운로드할 수 있습니다.
 
 1. **도구** > **확장 및 업데이트**를 선택합니다.
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > CNTK는 현재 macOS를 지원하지 않습니다.
 
-CNTK Python 패키지를 설치하려면 [CNTK를 설치하는 방법](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)을 참조하세요.
+CNTK Python 패키지를 설치하려면 [CNTK를 설치하는 방법](/cognitive-toolkit/Setup-CNTK-on-your-machine)을 참조하세요.
 
 ### <a name="tensorflow"></a>TensorFlow
 

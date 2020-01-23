@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8fe9fb5086b93861c7ca12a208affe7aa979df2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748454"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114430"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 스토리지 및 XML Serialization 사용자 지정
 
@@ -101,7 +101,7 @@ DSL 탐색기의 **Xml Serialization 동작** 에서 설정을 조정 하 여 se
 
 모니커는 모델 및 다이어그램 파일의 서로 다른 부분 간의 상호 참조를 나타내는 데 사용 됩니다. 또한 `.diagram` 파일에서 모델 파일의 노드를 참조 하는 데 사용 됩니다. 모니커에는 다음과 같은 두 가지 형태가 있습니다.
 
-- *Id 모니커* 따옴표 대상 요소의 GUID입니다. 예를 들면,
+- *Id 모니커* 따옴표 대상 요소의 GUID입니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -124,21 +124,21 @@ DSL 탐색기의 **Xml Serialization 동작** 에서 설정을 조정 하 여 se
 
 1. 클래스 및 해당 기본 클래스의 모든 도메인 속성에 대해 **모니커 키** 가 `false` 되는지 확인 합니다.
 
-    1. DSL 탐색기에서 **Xml 직렬화 Behavior\Class data \\ \<the 도메인 클래스 > \Element 데이터**를 확장 합니다.
+    1. DSL 탐색기에서 **Xml 직렬화 Behavior\Class data\\을 확장 하 여 도메인 클래스 > \Element 데이터 \<** 합니다.
 
     2. 모든 도메인 속성에 대해 **모니커 키** 가 `false` 인지 확인 합니다.
 
     3. 도메인 클래스에 기본 클래스가 있는 경우 해당 클래스에서 절차를 반복 합니다.
 
-2. 도메인 클래스에 대 한 **직렬화 Id**  =  `true`를 설정 합니다.
+2. 도메인 클래스에 대 한 **직렬화 Id** = `true`를 설정 합니다.
 
      이 속성은 **Xml Serialization 동작**에서 찾을 수 있습니다.
 
 ### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>정규화 된 키 모니커에서 참조할 도메인 클래스를 설정 하려면
 
-- 기존 도메인 클래스의 도메인 속성에 대 한 **모니커 키를** 설정 합니다. 속성의 형식은 `string` 이어야 합니다.
+- 기존 도메인 클래스의 도메인 속성에 대 한 **모니커 키를** 설정 합니다. 속성의 형식은 `string`이어야 합니다.
 
-    1. DSL 탐색기에서 **Xml 직렬화 Behavior\Class data \\ \<the 도메인 클래스 > \Element Data**를 확장 한 다음 도메인 속성을 선택 합니다.
+    1. DSL 탐색기에서 **Xml 직렬화 Behavior\Class data\\을 확장 하 고 도메인 클래스 > \Element Data \<** 한 다음 도메인 속성을 선택 합니다.
 
     2. 속성 창에서 `true`으로 **모니커 키** 를 설정 합니다.
 
@@ -158,7 +158,7 @@ DSL 탐색기의 **Xml Serialization 동작** 에서 설정을 조정 하 여 se
 
 이러한 상황을 방지 하는 데 도움이 되는 몇 가지 방법이 있습니다.
 
-- Set은 키 도메인 속성에 대 한 **요소 이름**  =  `true`입니다. DSL 정의 다이어그램에서 도메인 속성을 선택 하 고 속성 창 값을 설정 합니다.
+- Set은 키 도메인 속성에 대 한 **요소 이름** = `true`입니다. DSL 정의 다이어그램에서 도메인 속성을 선택 하 고 속성 창 값을 설정 합니다.
 
      사용자가 클래스의 새 인스턴스를 만들 때이 값을 사용 하면 도메인 속성에 다른 값이 자동으로 할당 됩니다. 기본 동작은 클래스 이름 끝에 번호를 추가 합니다. 이렇게 해도 사용자가 이름을 중복으로 변경할 수 있지만 모델을 저장 하기 전에 사용자가 값을 설정 하지 않는 경우에 유용 합니다.
 
@@ -230,7 +230,7 @@ GUID는 고유 하기 때문에 부모의 모니커가 접두사로 붙지 않�
     </familyTreeModel>
     ```
 
-- **표시**  = **요소** 는 특성 값이 아닌 요소로 저장 되는 도메인 속성을 설정 합니다.
+- **표시** = **요소** 는 특성 값이 아닌 요소로 저장 되는 도메인 속성을 설정 합니다.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -274,11 +274,11 @@ DSL 탐색기에서 Xml Serialization 동작 노드에는 각 도메인 클래�
 |도메인 클래스|이 클래스 데이터 노드가 적용 되는 도메인 클래스입니다. 읽기 전용입니다.|
 |요소 이름|이 클래스의 요소에 대 한 Xml 노드 이름입니다. 기본값은 도메인 클래스 이름의 소문자 버전입니다.|
 |모니커 특성 이름|참조를 포함 하기 위해 모니커 요소에 사용 되는 특성의 이름입니다. 비어 있는 경우 키 속성 또는 id의 이름이 사용 됩니다.<br /><br /> 이 예제에서는 "name": `<personMoniker name="/Mike Nash"/>`|
-|모니커 요소 이름|이 클래스의 요소를 참조 하는 모니커에 사용 되는 xml 요소의 이름입니다.<br /><br /> 기본값은 소문자 버전의 클래스 이름에 "모니커"가 붙은 소문자 버전입니다. 예를 들어 `personMoniker`과 같은 형식입니다.|
-|모니커 유형 이름|이 클래스의 요소에 대 한 모니커에 대해 생성 된 xsd 형식의 이름입니다. XSD는 **Dsl\generated 코드 \\ \*Schema .xsd에 있습니다.**|
+|모니커 요소 이름|이 클래스의 요소를 참조 하는 모니커에 사용 되는 xml 요소의 이름입니다.<br /><br /> 기본값은 소문자 버전의 클래스 이름에 "모니커"가 붙은 소문자 버전입니다. 예: `personMoniker`.|
+|모니커 유형 이름|이 클래스의 요소에 대 한 모니커에 대해 생성 된 xsd 형식의 이름입니다. XSD는 **Dsl\generated 코드\\\*Schema .xsd에 있습니다.**|
 |직렬화 Id|True 이면 요소 GUID가 파일에 포함 됩니다. 이는 **모니커 키** 로 표시 된 속성이 없고 DSL이이 클래스에 대 한 참조 관계를 정의 하는 경우에 true 여야 합니다.|
 |형식 이름|지정 된 도메인 클래스에서 xsd에 생성 된 xml 형식의 이름입니다.|
-|노트|이 요소와 연결 된 비공식 메모입니다.|
+|참고|이 요소와 연결 된 비공식 메모입니다.|
 
 ### <a name="xml-property-data"></a>Xml 속성 데이터
 
@@ -290,9 +290,9 @@ Xml 속성 노드는 클래스 노드 아래에 있습니다.
 |도메인 속성|Xml 직렬화 구성 데이터가 적용 되는 속성입니다. 읽기 전용입니다.|
 |모니커 키|True 이면 속성이이 도메인 클래스의 인스턴스를 참조 하는 모니커를 만들기 위한 키로 사용 됩니다.|
 |모니커 한정자|True 이면 속성을 사용 하 여 모니커에 한정자를 만듭니다. False 이면이 도메인 클래스에 대해 SerializeId가 true가 아닌 경우 포함 트리의 부모 요소 모니커에 의해 모니커가 한정 됩니다.|
-|텍스트로|특성이 인 경우 속성은 xml 특성으로 serialize 됩니다. if 요소는 요소로 serialize 됩니다. 무시 하면 serialize 되지 않습니다.|
+|표현|특성이 인 경우 속성은 xml 특성으로 serialize 됩니다. if 요소는 요소로 serialize 됩니다. 무시 하면 serialize 되지 않습니다.|
 |Xml 이름|속성을 나타내는 xml 특성 또는 요소에 사용 되는 이름입니다. 기본적으로 도메인 속성 이름의 소문자 버전입니다.|
-|노트|이 요소와 연결 된 비공식 메모입니다.|
+|참고|이 요소와 연결 된 비공식 메모입니다.|
 
 ### <a name="xml-role-data"></a>Xml 역할 데이터
 

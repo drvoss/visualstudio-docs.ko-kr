@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845295"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918914"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ DslPackage 프로젝트에서 *Mydsl*`ClipboardCommandSet.ProcessOnMenuCopyComma
 DslPackage 프로젝트에서 *Mydsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`를 재정의 합니다.
 
  **복사 및 붙여넣기를 통해 모양 레이아웃을 유지 합니다.**
-사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)의 예제에 설명 되어 있습니다.
+사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 
 
  이 결과를 얻으려면 복사한 ElementGroupPrototype에 모양과 연결선을 추가합니다. 재정의 시 가장 편리한 메서드는 ElementOperations.CreateElementGroupPrototype()입니다. 이렇게 하려면 Dsl 프로젝트에 다음 코드를 추가합니다.
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **선택한 위치 (예: 현재 커서 위치)에 모양을 붙여넣습니다.**
-사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)의 예제에 설명 되어 있습니다.
+사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다.
 
  이 결과를 얻으려면 `ClipboardCommandSet.ProcessOnMenuPasteCommand()`의 위치별 버전을 사용하도록 `ElementOperations.Merge()`를 재정의합니다. 이렇게 하려면 DslPackage 프로젝트에 다음 코드를 추가합니다.
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>참고 항목
- [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md) [샘플: VMSDK 회로 다이어그램 샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md)
+ 

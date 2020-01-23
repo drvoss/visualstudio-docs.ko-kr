@@ -2,16 +2,16 @@
 title: Visual Studio에서 DPI 인식 사용 안 함
 description: HDPI 모니터에 대한 Windows Forms 디자이너의 제한 사항 및 Visual Studio를 DPI를 인식하지 않는 프로세스로 실행하는 방법에 대해 설명합니다.
 ms.date: 04/05/2019
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589567"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio에서 DPI 인식 사용 안 함
 
@@ -68,7 +68,7 @@ Visual Studio가 DPI를 인식하지 않는 프로세스로 실행되면 디자�
 > [!NOTE]
 > Visual Studio Professional 또는 Enterprise Edition을 사용하는 경우 항목에서 **Community**를 **Professional** 또는 **Enterprise**로 바꿉니다. 또한 필요에 따라 드라이브 문자를 바꿉니다.
 
-**유형**: REG_SZ
+**형식**: REG_SZ
 
 **값**: DPIUNAWARE
 
@@ -95,6 +95,6 @@ Visual Studio에서 DPI 배율 문제에 대한 알림이 표시되지 않도록
 
 DPI 인식 전환이 Visual Studio에서 예상대로 작동하지 않는 경우 레지스트리 편집기에서 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** 하위 키에 `dpiAwareness` 값이 있는지 확인합니다. 값이 있는 경우 삭제합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows Forms의 자동 크기 조정](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)

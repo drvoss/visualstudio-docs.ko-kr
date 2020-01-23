@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316495"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269059"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>방법: Visual Studio 2017 및 Visual Studio 2015과 호환 되는 확장 만들기
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>방법: Visual Studio 2019/2017 및 Visual Studio 2015과 호환 되는 확장 만들기
 
-이 문서에서는 Visual Studio 2015와 Visual Studio 2017 사이에서 확장성 프로젝트를 라운드트립 하는 방법을 설명 합니다. 이 업그레이드를 완료 한 후에는 프로젝트를 Visual Studio 2015 및 Visual Studio 2017에서 열고, 빌드하고, 설치 하 고, 실행할 수 있습니다. 참조로 Visual Studio 2015 및 Visual Studio 2017 사이에서 라운드트립할 수 있는 일부 확장은 [VS SDK 확장성 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)에서 찾을 수 있습니다.
+이 문서에서는 Visual Studio 2015와 Visual studio 2019 또는 Visual Studio 2017 간에 확장성 프로젝트를 라운드트립 하는 방법을 설명 합니다. 이 업그레이드를 완료 한 후에는 프로젝트를 Visual Studio 2015 및 Visual Studio 2019 또는 2017 둘 다에서 열고 빌드하고 설치 하 고 실행할 수 있습니다. 참조로, Visual Studio 2015 및 Visual Studio 2019 또는 2017 사이에서 라운드트립할 수 있는 일부 확장은 [VS SDK 확장성 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)에서 찾을 수 있습니다.
 
-Visual Studio 2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visual Studio 2015 및 Visual Studio 2017 둘 다에서 실행 하려는 경우에는 [확장 마이그레이션 문서](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)를 참조 하세요.
+Visual Studio 2019/2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visual Studio 2015 및 Visual Studio 2019/2017 둘 다에서 실행 하려는 경우에는 [확장 마이그레이션 문서](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)를 참조 하세요.
 
 > [!NOTE]
 > 버전 간 Visual Studio의 변경으로 인해 한 버전에서 작동 하는 일부 항목은 다른 버전에서 작동 하지 않습니다. 액세스 하려는 기능을 두 버전 모두에서 사용할 수 있는지 또는 확장에서 예기치 않은 결과가 발생 하는지 확인 합니다.
@@ -29,10 +29,10 @@ Visual Studio 2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visual St
 1. 올바른 NuGet 패키지를 가져옵니다.
 2. 확장 매니페스트 업데이트:
     * 설치 대상
-    * 필수 조건
+    * 전제 조건
 3. 업데이트 .Csproj:
-    * `<MinimumVisualStudioVersion>`를 업데이트 합니다.
-    * `<VsixType>` 속성을 추가 합니다.
+    * `<MinimumVisualStudioVersion>`를 업데이트합니다.
+    * `<VsixType>` 속성 추가
     * 디버깅 속성 `($DevEnvDir)` 3 번 추가 합니다.
     * 빌드 도구 및 대상 가져오기에 대 한 조건을 추가 합니다.
 
@@ -43,11 +43,11 @@ Visual Studio 2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visual St
 이 문서에서는 컴퓨터에 다음이 설치 되어 있다고 가정 합니다.
 
 * VS SDK가 설치 된 Visual Studio 2015
-* 확장성 워크 로드가 설치 된 Visual Studio 2017
+* 확장성 워크 로드가 설치 된 Visual Studio 2019 또는 2017
 
 ## <a name="recommended-approach"></a>권장 방법
 
-Visual Studio 2017 대신 Visual Studio 2015을 사용 하 여 업그레이드를 시작 하는 것이 좋습니다. Visual Studio 2015에서 개발 하는 주요 혜택은 Visual Studio 2015에서 사용할 수 없는 어셈블리를 참조 하지 않도록 하는 것입니다. Visual Studio 2017에서 개발을 수행 하는 경우 Visual Studio 2017에만 존재 하는 어셈블리에 대 한 종속성이 발생할 수 있습니다.
+Visual Studio 2019 또는 2017 대신 Visual Studio 2015을 사용 하 여 업그레이드를 시작 하는 것이 좋습니다. Visual Studio 2015에서 개발 하는 주요 혜택은 Visual Studio 2015에서 사용할 수 없는 어셈블리를 참조 하지 않도록 하는 것입니다. Visual Studio 2019 또는 2017에서 개발 하는 경우 Visual Studio 2019 또는 2017에만 존재 하는 어셈블리에 대 한 종속성이 발생할 수 있습니다.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Project. json에 대 한 참조가 없는지 확인 합니다.
 
@@ -67,12 +67,12 @@ Visual Studio 2017 대신 Visual Studio 2015을 사용 하 여 업그레이드�
 
 적절 하 게 빌드 및 디버그할 수 있도록 하는 빌드 도구를 추가 해야 합니다. Microsoft는이 VisualStudio 작업에 대 한 어셈블리를 만들었습니다.
 
-Visual Studio 2015 및 2017에서 VSIXv3를 빌드 및 배포 하려면 다음 NuGet 패키지가 필요 합니다.
+Visual Studio 2015 및 2019/2017에서 VSIXv3를 빌드 및 배포 하려면 다음 NuGet 패키지가 필요 합니다.
 
-버전 | 빌드된 도구
+Version | 빌드된 도구
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2019 또는 2017 | Microsoft.VSSDK.BuildTool
 
 이를 수행하려면:
 
@@ -109,10 +109,10 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 </Prerequisites>
 ```
 
-* 파일을 저장하고 닫습니다.
+* 파일을 저장한 후 닫습니다.
 
 > [!NOTE]
-> 모든 버전의 Visual Studio 2017와 호환 되는지 확인 하려면 필수 구성 요소 버전을 수동으로 편집 해야 할 수도 있습니다. 이는 디자이너가 현재 버전의 Visual Studio (예: 15.0.26208.0)로 최소 버전을 삽입 하기 때문입니다. 그러나 다른 사용자가 이전 버전을 가질 수 있으므로이를 15.0으로 수동으로 편집 하는 것이 좋습니다.
+> 모든 버전의 Visual Studio 2019 또는 2017과 호환 되도록 필수 구성 요소 버전을 수동으로 편집 해야 할 수도 있습니다. 이는 디자이너가 현재 버전의 Visual Studio (예: 15.0.26208.0)로 최소 버전을 삽입 하기 때문입니다. 그러나 다른 사용자가 이전 버전을 가질 수 있으므로이를 15.0으로 수동으로 편집 하는 것이 좋습니다.
 
 이 시점에서 매니페스트 파일은 다음과 같습니다.
 
@@ -165,7 +165,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * Microsoft... n e t. n e t. n e t. n e t 참조가 있는 `<import>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' != '14.0' And`을 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들면 다음과 같습니다.:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * VisualStudio 14.0를 포함 하는 `<import>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' == '14.0' And`을 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들면 다음과 같습니다.:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * Microsoft... n e t. n e t. n e t. n e t 참조가 있는 `<Error>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' != '14.0' And` 삽입 하 여이 작업을 수행 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들면 다음과 같습니다.:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,15 +189,16 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * VisualStudio 14.0를 포함 하는 `<Error>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' == '14.0' And`을 삽입 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들면 다음과 같습니다.:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* .Csproj 파일을 저장 하 고 닫습니다.
+* .Csproj 파일을 저장 하 고 닫습니다. 
+  * 솔루션에 둘 이상의 프로젝트를 사용 하는 경우 프로젝트 상황에 맞는 메뉴에서 "시작 프로젝트로 설정"을 사용 하 여이 프로젝트를 시작 프로젝트로 설정 합니다. 이렇게 하면 프로젝트를 언로드한 후 Visual Studio에서이 프로젝트를 다시 열립니다.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015 및 Visual Studio 2017에서 확장 설치 테스트
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Visual Studio 2015 및 Visual Studio 2019 또는 2017에서 확장 설치 테스트
 
 이 시점에서 프로젝트는 Visual Studio 2015 및 Visual Studio 2017 모두에 설치할 수 있는 VSIXv3 빌드 준비를 해야 합니다.
 
@@ -205,7 +206,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 * 프로젝트를 빌드하고 VSIX가 올바르게 빌드되는 출력을 확인 합니다.
 * 프로젝트 디렉터리로 이동 합니다.
 * *\Bin\debug* 폴더를 엽니다.
-* VSIX 파일을 두 번 클릭 하 고 Visual Studio 2015 및 Visual Studio 2017에 확장을 설치 합니다.
+* VSIX 파일을 두 번 클릭 하 고 Visual Studio 2015 및 Visual Studio 2019/2017에 확장을 설치 합니다.
 * **설치** 된 섹션의 **도구** > **확장 및 업데이트** 에서 확장을 볼 수 있는지 확인 합니다.
 * 확장을 실행/사용 하 여 작동 하는지 확인 합니다.
 

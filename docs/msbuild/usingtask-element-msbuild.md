@@ -13,17 +13,17 @@ helpviewer_keywords:
 - UsingTask element [MSBuild]
 - <UsingTask> element [MSBuild]
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962911"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565268"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 [Task](../msbuild/task-element-msbuild.md) 요소에서 참조하는 작업을 작업의 구현이 포함된 어셈블리에 매핑합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "71962911"
 ```
 
 > [!NOTE]
-> 속성 및 항목과 달리 `TaskName`에 적용되는 *첫 번째* `UsingTask` 요소가 사용되어 기존 작업 *이전*에 재정의해야 하는 `UsingTask` 작업을 재정의합니다.
+> 속성 및 항목과 달리 `TaskName`에 적용되는 *첫 번째* `UsingTask` 요소가 사용됩니다. 작업을 재정의하려면 기존 작업 *이전*에 새 `UsingTask`를 정의해야 합니다.
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
@@ -76,7 +76,7 @@ ms.locfileid: "71962911"
 
  MSBuild 4.0에서는 작업 사용을 *.overridetask* 파일에서 로드할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 `AssemblyName` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.
 
 ```xml
@@ -92,7 +92,7 @@ ms.locfileid: "71962911"
 </UsingTask>
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 `AssemblyFile` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.
 
 ```xml
@@ -100,7 +100,7 @@ ms.locfileid: "71962911"
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

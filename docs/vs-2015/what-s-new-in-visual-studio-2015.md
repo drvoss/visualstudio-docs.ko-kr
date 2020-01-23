@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851497"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919250"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
 - **C# / Xamarin**. [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) 을 사용하여 Visual Studio에서 C#으로 Windows, iOS 및 Android용 네이티브 앱을 빌드합니다.
 
-     [Xamarin 개발자 가이드](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) 의 [디버깅](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) (iOS) 및 [디바이스에서 디버그](https://docs.microsoft.com/xamarin/) 에서는 디버깅 환경에 대해 설명합니다.
+     [Xamarin 개발자 가이드](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) 의 [디버깅](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) (iOS) 및 [디바이스에서 디버그](/xamarin/) 에서는 디버깅 환경에 대해 설명합니다.
 
 - **C++ / Android**. [플랫폼 간 모바일 개발용 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 템플릿을 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) (영문)와 같은 타사 도구와 함께 사용하여 Windows 및 Android용 네이티브 앱을 만듭니다.
 

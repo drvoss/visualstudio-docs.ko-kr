@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 72c5968fccb55a265639ff05c600bd5f97a9f90a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852098"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919053"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ DSL 정의 확장을 사용 하면 DSL (도메인별 언어)에 대 한 확장 �
 
   확장 된 DSL의 사용자는 추가 기능의 인스턴스를 포함 하는 모델을 만들고 저장할 수 있으며, 이러한 모델은 적절 한 확장을 설치한 다른 사용자가 읽을 수 있습니다. 확장을 설치 하지 않은 사용자는 추가 기능을 사용할 수 없지만 추가 기능을 잃지 않고도 모델을 업데이트 하 고 저장할 수 있습니다.
 
-  예제 코드 및이 기능에 대 한 자세한 내용은 [Visual Studio 시각화 및 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 웹 사이트를 참조 하세요.
+  예제 코드 및이 기능에 대 한 자세한 내용은 [Visual Studio 시각화 및 모델링 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) 웹 사이트를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
- [Visual Studio 시각화 및 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Visual Studio 시각화 및 모델링 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

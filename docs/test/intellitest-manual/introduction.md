@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653165"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591602"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
 
@@ -77,6 +77,9 @@ public partial class HelloWorldTest {
 6. "Hello\0\0"
 7. "Hello\0World!"
 8. "Hello World!"
+
+> [!NOTE]
+> 빌드 문제가 발생할 경우 Microsoft.VisualStudio.TestPlatform.TestFramework 및 Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions 참조를 Microsoft.VisualStudio.QualityTools.UnitTestFramework 참조로 바꿔보세요.
 
 [IntelliTest를 사용하여 단위 테스트 생성](../../test/generate-unit-tests-for-your-code-with-intellitest.md)을 읽고 생성된 테스트가 어디에 저장되는지 이해합니다. 생성된 테스트 코드에는 다음 코드와 같은 테스트가 포함되어야 합니다.
 

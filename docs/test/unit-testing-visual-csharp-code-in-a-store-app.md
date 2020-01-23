@@ -2,17 +2,17 @@
 title: Visual C# 코드 유닛 테스트
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659839"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590867"
 ---
 # <a name="unit-test-c-code"></a>C# 코드 단위 테스트
 
@@ -52,7 +52,7 @@ ms.locfileid: "72659839"
 
 ::: moniker range="vs-2017"
 
-2. **테스트** 메뉴에서 **실행**>**모든 테스트**를 선택합니다.
+2. **테스트** 메뉴에서 **실행** > **모든 테스트**를 선택합니다.
 
 ::: moniker-end
 
@@ -268,6 +268,6 @@ ms.locfileid: "72659839"
 > [!TIP]
 > **테스트 탐색기**에 표시하지 않으려는 도우미 메서드를 테스트 클래스에 추가하는 경우, 이 메서드에 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 특성을 추가하지 마세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 테스트 탐색기를 사용한 테스트 기반 개발](quick-start-test-driven-development-with-test-explorer.md)

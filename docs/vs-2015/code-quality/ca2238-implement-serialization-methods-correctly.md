@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666678"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918758"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: serialization 메서드를 올바르게 구현하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를 올바르게 구현](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)을 참조 하세요.
+Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를 올바르게 구현](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)을 참조 하세요.
 
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|범주|Microsoft 사용|
+|범주|Microsoft.Usage|
 |변경 수준|중단-메서드가 어셈블리 외부에 표시 되는 경우입니다.<br /><br /> 중단 되지 않습니다. 메서드가 어셈블리 외부에 표시 되지 않는 경우입니다.|
 
 ## <a name="cause"></a>원인
@@ -48,7 +48,7 @@ Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Serialization 이벤트 처리기는 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 형식의 단일 매개 변수를 사용 하 고 `void`을 반환 하며 `private`로 표시 됩니다.
+  Serialization 이벤트 처리기는 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>형식의 단일 매개 변수를 사용 하 고 `void`를 반환 하며 `private` 표시 유형을 갖습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 serialization 이벤트 처리기의 서명, 반환 형식 또는 표시 유형을 수정 합니다.
@@ -56,7 +56,7 @@ Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 올바르게 선언 된 serialization 이벤트 처리기를 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/cs/FxCop.Usage.SerializationEventHandlers.cs#1)]

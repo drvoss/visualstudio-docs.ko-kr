@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748374"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114514"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 다음 절차에서는 셰이프 또는 아이콘 데코레이터의 클릭을 가로채는 방법을 보여 줍니다. 클릭, 두 번 클릭, 끌기 및 기타 제스처를 가로채 고 요소가 응답 하도록 만들 수 있습니다.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>셰이프 클릭을 차단 하려면
- Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. @No__t_1로 시작 하는 이름이 있는 다른 메서드 중 하나 또는 `OnDoubleClick()`을 재정의 합니다. 예를 들면,
+ Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. `On...`로 시작 하는 이름이 있는 다른 메서드 중 하나 또는 `OnDoubleClick()`을 재정의 합니다. 예를 들면 다음과 같습니다.:
 
 ```csharp
 public partial class MyShape // change
@@ -34,10 +34,10 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> 포함 하는 모양이 나 다이어그램에 이벤트를 전달 하지 않으려면 `e.Handled`을 `true`로 설정 합니다.
+> 포함 하는 모양이 나 다이어그램에 이벤트를 전달 하지 않으려면 `e.Handled`를 `true`로 설정 합니다.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>데코레이터에서 클릭을 차단 하려면
- Image 데코레이터는 OnDoubleClick 메서드가 있는 ImageField 클래스의 인스턴스에서 수행 됩니다. ImageField 하위 클래스를 작성 하는 경우 클릭을 가로챌 수 있습니다. InitializeShapeFields 메서드에는 필드가 설정 되어 있습니다. 따라서 일반 ImageField 대신 하위 클래스를 인스턴스화하기 위해 해당 메서드를 변경 해야 합니다. InitializeShapeFields 메서드는 shape 클래스의 생성 된 코드에 있습니다. 다음 절차에 설명 된 대로 `Generates Double Derived` 속성을 설정한 경우에는 shape 클래스를 재정의할 수 있습니다.
+ Image 데코레이터는 OnDoubleClick 메서드가 있는 ImageField 클래스의 인스턴스에서 수행 됩니다. ImageField 하위 클래스를 작성 하는 경우 클릭을 가로챌 수 있습니다. InitializeShapeFields 메서드에는 필드가 설정 되어 있습니다. 따라서 일반 ImageField 대신 하위 클래스를 인스턴스화하기 위해 해당 메서드를 변경 해야 합니다. InitializeShapeFields 메서드는 shape 클래스의 생성 된 코드에 있습니다. 다음 절차에 설명 된 대로 `Generates Double Derived` 속성을 설정 하는 경우 shape 클래스를 재정의할 수 있습니다.
 
  InitializeShapeFields는 인스턴스 메서드 이지만 각 클래스에 대해 한 번만 호출 됩니다. 따라서 각 클래스의 각 필드에 대해 ClickableImageField의 인스턴스를 하나만 존재 하 고 다이어그램의 각 셰이프에 대해 하나의 인스턴스는 존재 하지 않습니다. 사용자가 인스턴스를 두 번 클릭 하면 예제의 코드가 보여 주는 것 처럼 적중 된 인스턴스를 식별 해야 합니다.
 
@@ -47,7 +47,7 @@ public partial class MyShape // change
 
 2. 아이콘 데코레이터가 있는 셰이프를 선택 하거나 만들고 도메인 클래스에 매핑합니다.
 
-3. @No__t_0 폴더의 파일과는 다른 코드 파일에서 ImageField의 새 하위 클래스를 만듭니다.
+3. `GeneratedCode` 폴더의 파일과는 다른 코드 파일에서 ImageField의 새 하위 클래스를 만듭니다.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -133,7 +133,7 @@ public partial class MyShape // change
 
 - 일련의 마우스 이벤트 처리기는 생성 될 때 각 구획 인스턴스에 연결 됩니다.
 
-- @No__t_0 이벤트는 현재 항목을 저장 합니다.
+- `ClassShape.MouseDown` 이벤트는 현재 항목을 저장 합니다.
 
 - 마우스를 현재 항목 밖으로 이동 하면 마우스를 설정 하 고 마우스를 놓았을 때까지 커서를 설정 하는 MouseAction 인스턴스가 생성 됩니다.
 

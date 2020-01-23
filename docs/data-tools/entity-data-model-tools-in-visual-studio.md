@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586668"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916730"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio의 Entity Framework Tools
 
@@ -43,7 +43,7 @@ Entity Framework 도구는 Visual Studio 설치 관리자에서 **데이터 저�
 
 도구는 *.edmx* 파일을 생성 하거나 수정 합니다. 이 *.edmx* 파일에는 개념적 모델, 저장소 모델 및 두 모델 간의 매핑을 설명 하는 정보가 포함 되어 있습니다. 자세한 내용은 [EDMX](/ef/ef6/)를 참조 하세요.
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) 는 엔터티 데이터 모델를 사용 하는 응용 프로그램을 빌드하는 데 도움이 됩니다. Power tools는 개념적 모델을 생성 하 고, 기존 모델의 유효성을 검사 하 고, 개념적 모델을 기반으로 하는 개체 클래스가 포함 된 소스 코드 파일을 생성 하 고, 모델이 생성 하는 뷰를 포함 하는 소스 코드 파일을 생성할 수 있습니다. 자세한 내용은 [미리 생성 된 매핑 뷰](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views)를 참조 하세요.
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) 는 엔터티 데이터 모델를 사용 하는 응용 프로그램을 빌드하는 데 도움이 됩니다. Power tools는 개념적 모델을 생성 하 고, 기존 모델의 유효성을 검사 하 고, 개념적 모델을 기반으로 하는 개체 클래스가 포함 된 소스 코드 파일을 생성 하 고, 모델이 생성 하는 뷰를 포함 하는 소스 코드 파일을 생성할 수 있습니다. 자세한 내용은 [미리 생성 된 매핑 뷰](/ef/ef6/fundamentals/performance/pre-generated-views)를 참조 하세요.
 
 ## <a name="related-topics"></a>관련 항목
 

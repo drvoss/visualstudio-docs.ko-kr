@@ -2,17 +2,17 @@
 title: DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747402"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111358"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 있는 불완전 한 DSL 정의를 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 요소를 지정할 수 있습니다.
@@ -31,13 +31,13 @@ Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 �
 
      가져오기에서 사용할 수 있는 관계를 정의 하려면 두 개의 도메인 클래스를 만들고 두 개의 도메인 간에 관계를 만듭니다.
 
-     @No__t_1 도메인 클래스의 **상속 한정자** 를 설정 하는 것이 좋습니다.
+     `Abstract`도메인 클래스의 **상속 한정자** 를 설정 하는 것이 좋습니다.
 
 3. DSL 탐색기에서 정의 하는 요소 (예: 연결 작성기)를 추가할 수 있습니다.
 
 4. 유효성 검사 제약 조건과 같이 추가 코드가 필요한 사용자 지정 항목을 추가할 수 있습니다.
 
-5. **모든 템플릿 변환**을 클릭 합니다.
+5. 클릭 **모든 템플릿 변환**합니다.
 
 6. 프로젝트를 빌드합니다.
 
@@ -53,7 +53,7 @@ Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 �
 
 3. 가져온 클래스를 기본 클래스로 사용할 수 있습니다. 가져오기 DSL에서 도메인 클래스를 만들고, 속성 창에서 **기본 클래스** 를 가져온 클래스로 설정 합니다.
 
-4. 모든 템플릿 변환을 클릭 합니다.
+4. 모든 템플릿 변환을 클릭합니다.
 
 5. Dsl 프로젝트에 DSL 라이브러리 프로젝트에 의해 빌드된 어셈블리 (DLL)에 대 한 참조를 추가 합니다.
 

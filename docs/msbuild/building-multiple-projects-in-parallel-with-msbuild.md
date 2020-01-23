@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593397"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917805"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild를 사용하여 병렬로 여러 프로젝트 빌드
 다중 프로젝트를 빌드하기 위해 MSBuild를 사용하여 병렬로 실행하면 더 빠를 수 있습니다. 빌드를 병렬로 실행하려면 다중 코어 또는 다중 프로세서 컴퓨터에서 다음 설정을 사용합니다.
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel 작업 매개 변수
-`BuildInParallel`은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업에 대한 선택적 Boolean 매개 변수입니다. `BuildInParallel`을 `true`(기본값은 `false`)로 설정하면 가능한 많은 프로젝트를 동시에 빌드하기 위해 여러 작업자 프로세스가 생성됩니다. 이러한 방식이 제대로 작동하려면 `-maxcpucount` 스위치를 1보다 큰 값으로 설정해야 하며 시스템에는 최소한 듀얼 코어나 두 개 이상의 프로세서가 있어야 합니다.
+`BuildInParallel`은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업에 대한 선택적 Boolean 매개 변수입니다. `BuildInParallel`을 `true`(기본값은 `true`)로 설정하면 가능한 많은 프로젝트를 동시에 빌드하기 위해 여러 작업자 프로세스가 생성됩니다. 이러한 방식이 제대로 작동하려면 `-maxcpucount` 스위치를 1보다 큰 값으로 설정해야 하며 시스템에는 최소한 듀얼 코어나 두 개 이상의 프로세서가 있어야 합니다.
 
 다음은 `BuildInParallel` 매개 변수를 설정하는 방법에 대한 *microsoft.common.targets*의 예제입니다.
 

@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1efc8ea7f40c3098e681cc80ac90789b629630a9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297892"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918291"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 
  게임 또는 몰입형 그래픽 앱을 빌드하려는 경우 Visual Studio Tools for Unity를 설치하여 iOS, Android, Windows 및 기타 플랫폼에서 실행되는 앱을 위한 인기 있는 플랫폼 간 게임/그래픽 엔진 및 개발 환경인 Unity와 함께 Visual Studio의 모든 강력한 생산성 기능을 이용하세요.
 
- **이 문서의 내용:**
+ **이 문서의 내용**
 
 - [Android, iOS 및 Windows용 앱 빌드(.NET Framework)](#NET)
 
@@ -39,7 +39,7 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 - [Visual Studio Tools for Unity를 사용하여 Android, iOS 및 Windows용 플랫폼 간 게임 빌드](#Unity)
 
 ## <a name="NET"></a> Android, iOS 및 Windows용 앱 빌드(.NET Framework)
- ![디바이스가](../cross-platform/media/homedevices.png "HomeDevices")
+ ![디바이스](../cross-platform/media/homedevices.png "HomeDevices")
 
  Xamarin을 사용하면 동일한 솔루션 및 공유 코드는 물론 UI에서도 Android, iOS 및 Windows를 대상으로 지정할 수 있습니다.
 
@@ -49,7 +49,7 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 |[Visual Studio의 Xamarin에 대해 알아보기](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Visual Studio 및 Xamarin](../cross-platform/visual-studio-and-xamarin.md)(MSDN 라이브러리)|
 |[ALM(Application Lifecycle Management) 및 Xamarin 앱](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md)(MSDN 라이브러리)|
-|[Visual Studio의 유니버설 Windows 앱에 대해 알아보기](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Visual Studio의 유니버설 Windows 앱에 대해 알아보기](https://www.visualstudio.com/vs/universal-windows-platform/)(VisualStudio.com)|
 |[Swift와 C# 간의 유사점에 대해 알아보기](https://aka.ms/scposter) (download.microsoft.com)|
 |[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
@@ -76,7 +76,7 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 
 |**자세한 정보**|
 |--------------------|
-|코드를 공유할 때 공유 프로젝트나 이식 가능한 클래스 라이브러리 프로젝트 중 하나를 사용할지 아니면 둘 다를 사용할지 선택<br /><br /> [플랫폼 간 코드 공유](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework 블로그)<br /><br /> [Sharing Code Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing)(코드 공유 옵션)(Xamarin)<br /><br /> [.NET Framework를 사용한 코드 공유 옵션](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
+|코드를 공유할 때 공유 프로젝트나 이식 가능한 클래스 라이브러리 프로젝트 중 하나를 사용할지 아니면 둘 다를 사용할지 선택<br /><br /> [플랫폼 간 코드 공유](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (.NET Framework 블로그)<br /><br /> [Sharing Code Options](/xamarin/cross-platform/app-fundamentals/code-sharing)(코드 공유 옵션)(Xamarin)<br /><br /> [.NET Framework를 사용한 코드 공유 옵션](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a> Windows 10 디바이스를 대상으로 지정
  ![Windows 디바이스](../cross-platform/media/windowsdevices.png "Windows 장치")
@@ -95,7 +95,7 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 |[UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Android, iOS 및 Windows용 앱 빌드(HTML/JavaScript)
- ![디바이스가](../cross-platform/media/homedevices.png "HomeDevices")
+ ![디바이스](../cross-platform/media/homedevices.png "HomeDevices")
 
  HTML과 JavaScript에 대해 잘 알고 있는 웹 개발자는 Visual Studio Tools For Apache Cordova를 사용하여 Windows, Android 및 iOS를 대상으로 지정할 수 있습니다. 이러한 앱은 세 플랫폼을 모두 대상으로 지정할 수 있으며 가장 익숙한 기술과  프로세스를 사용하여 빌드할 수 있습니다.
 
@@ -116,7 +116,7 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 |**자세한 정보**|
 |--------------------|
 |[Visual Studio 설치](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Visual Studio Tools for Apache Cordova 시작](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Visual Studio Tools for Apache Cordova 시작](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
 |[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a> Android 및 Windows용 앱 빌드(C++)
@@ -143,11 +143,11 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 |**자세한 정보**|
 |--------------------|
 |[Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[플랫폼 간 모바일 개발용 Visual C++ 설치](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
+|[플랫폼 간 모바일 개발용 Visual C++ 설치](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN 라이브러리)|
 |[여러 플랫폼을 대상으로 한 C++ 사용에 대해 알아보기](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[필요한 것을 설치한 다음 Android용 Native-Activity 애플리케이션 만들기](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
 |[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
-|[Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
+|[Learn more about sharing C++ code with Android and Windows apps](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)(Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기)(VisualStudio.com)|
 |[플랫폼 간 모바일 개발 예제](https://msdn.microsoft.com/library/dn707596.aspx)(MSDN 라이브러리)|
 |[개발자 코드 샘플](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B)(code.msdn)|
 
@@ -172,5 +172,5 @@ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 �
 ## <a name="see-also"></a>참고 항목
 
 - [Add Office 365 API’s to a Visual Studio project](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)(Visual Studio 프로젝트에 Office 365 API 추가)
-- [Azure Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Azure 모바일 서비스](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c9d7e90e0c4eb48a19c36ad86d8f438080b38d62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588904"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847297"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -140,5 +140,5 @@ Lab Management에 대한 자세한 내용은 다음을 참조하세요.
 ## <a name="see-also"></a>참조
 
 * [테스트 에이전트 설치 및 구성](../../test/lab-management/install-configure-test-agents.md)
-* [Visual Studio Lab Management Guide](https://aka.ms/vsarsolutions)(Visual Studio Lab Management 가이드)
+* [Visual Studio Lab Management Guide](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)(Visual Studio Lab Management 가이드)
 * [Microsoft DevOps 블로그](https://devblogs.microsoft.com/devops/)

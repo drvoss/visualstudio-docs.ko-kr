@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 246ffa914ba21b9b2813abca1bae063162576486
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852136"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918483"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio 수명 주기 정책 예외
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio에는 여러 Microsoft 플랫폼에 대한 개발을 가능하게 
 |[Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange 웹 서비스|  
 |[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
-|이러한 구성 요소에 대한 업데이트는 NuGet을 통해 배포되며 표준 Microsoft 수명 주기 정책을 따르지 않습니다.  자세한 내용은 [http://docs.nuget.org/](https://docs.microsoft.com/nuget/)를 참조하세요.|Microsoft .NET Framework 4.5용 JSON 웹 토큰 처리기<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> 웹 최적화 프레임워크<br /><br /> WebGrease|  
+|이러한 구성 요소에 대한 업데이트는 NuGet을 통해 배포되며 표준 Microsoft 수명 주기 정책을 따르지 않습니다.  자세한 내용은 [http://docs.nuget.org/](/nuget/)를 참조하세요.|Microsoft .NET Framework 4.5용 JSON 웹 토큰 처리기<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> 웹 최적화 프레임워크<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[온라인 서비스 정책](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  

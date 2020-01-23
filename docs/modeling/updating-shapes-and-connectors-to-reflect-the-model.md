@@ -2,17 +2,17 @@
 title: 모양 및 연결선을 업데이트하여 모델 반영
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663788"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115029"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>모양 및 연결선을 업데이트하여 모델 반영
 
@@ -37,7 +37,7 @@ DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-사용자가 아니라 프로그램 제어 에서만 속성 변수를 만들려는 경우 DSL 정의 다이어그램에서 **채우기 색** 과 같은 새 도메인 속성을 선택 합니다. 그런 다음 속성 창에서 `false`를 검색 가능으로 설정 하거나 **UI Readonly** 를 `true` **로 설정 합니다** .
+사용자가 아니라 프로그램 제어 에서만 속성 변수를 만들려는 경우 DSL 정의 다이어그램에서 **채우기 색** 과 같은 새 도메인 속성을 선택 합니다. 그런 다음 속성 창에서 `false`를 검색 가능으로 설정 하거나 **UI Readonly** 를 `true`**로 설정 합니다** .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>색, 스타일 또는 위치가 모델 요소 속성에 따라 달라 지도록 변경 규칙 정의
  셰이프가 모델의 다른 부분에 종속 되는 모양을 업데이트 하는 규칙을 정의할 수 있습니다. 예를 들어 모델 요소의 속성에 따라 셰이프의 색을 업데이트 하는 모델 요소에 대 한 변경 규칙을 정의할 수 있습니다. 변경 규칙에 대 한 자세한 내용은 [규칙 변경 내용을 모델 내에서 전파](../modeling/rules-propagate-changes-within-the-model.md)를 참조 하세요.
@@ -84,7 +84,7 @@ DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured 된 셰이프 속성을 사용 하 여 초기화
 
-셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 다이어그램 클래스의 부분 정의에 재정의 `OnChildConfigured()` 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs**에 있습니다. 예를 들면,
+셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 다이어그램 클래스의 부분 정의에 재정의 `OnChildConfigured()` 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs**에 있습니다. 예를 들면 다음과 같습니다.:
 
 ```csharp
 partial class MyLanguageDiagram

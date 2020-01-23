@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f84051e4450926136064b9af7f3c09e2e91a2f9
-ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188579"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915894"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio의 Azure Machine Learning 갤러리에서 AI 프로젝트 만들기
 
@@ -23,7 +23,7 @@ Azure Machine Learning은 Visual Studio Tools for AI와 통합됩니다. Azure �
 [Visual Studio Tools for AI](installation.md)가 설치되면 Azure Machine Learning 샘플 갤러리에서 미리 만들어진 방법을 사용하여 새 Python 프로젝트를 쉽게 만들 수 있습니다.
 
 > [!NOTE]
-> Azure Machine Learning Workbench가 설치되어 있어야 합니다. 설치하려면 [Azure Machine Learning 설치 빠른 시작](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)을 참조하세요.
+> Azure Machine Learning Workbench가 설치되어 있어야 합니다. 설치하려면 [Azure Machine Learning 설치 빠른 시작](/azure/machine-learning/preview/quickstart-installation)을 참조하세요.
 
 1. Visual Studio를 실행합니다. **AI 도구** 메뉴를 열고 **클러스터 선택**을 선택하여 **서버 탐색기**를 엽니다.
 

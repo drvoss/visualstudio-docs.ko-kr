@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 611df946b97f97832b7debfac3d11c5b7972cdae
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562571"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776100"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
 이 자습서의 6단계에서는 빼기 문제를 추가하고 다음 작업을 수행하는 방법을 알아봅니다.
@@ -32,9 +32,7 @@ ms.locfileid: "72562571"
 - 시간이 다 되면 자동으로 올바른 답을 채우도록 타이머의 <xref:System.Windows.Forms.Timer.Tick> 이벤트 처리기를 업데이트합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다.
-> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
-> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
 
 ## <a name="to-add-a-subtraction-problem"></a>빼기 문제를 추가하려면
 
@@ -62,12 +60,12 @@ ms.locfileid: "72562571"
      이 자습서의 앞부분에서 “randomizer”로 이름을 지정한 Random 클래스의 `Next()` 메서드를 여러 가지 방법으로 호출할 수 있습니다. 여러 가지 방법으로 호출할 수 있는 메서드를 오버로드된 메서드라고 하며, IntelliSense를 사용하여 이를 탐색해 볼 수 있습니다. `Next()` 메서드에 대한 IntelliSense 창의 도구 설명을 다시 살펴봅니다.
 
      ![IntelliSense 창 도구 설명](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** 창 도구 설명 
+***IntelliSense*** *창 도구 설명*
 
      도구 설명에 **(+2개 오버로드)** 가 표시되며, 이는 `Next()` 메서드를 두 가지 다른 방법으로 호출할 수 있음을 나타냅니다. 오버로드에는 저마다 다른 개수와 형식의 인수가 포함되어 있으므로 작동 방식도 서로 조금씩 다릅니다. 예를 들어 메서드는 단일 정수 인수를 사용하고 메서드 오버로드 중 하나는 정수 하나와 문자열 하나를 사용할 수 있습니다. 수행하려는 작업을 기반으로 올바른 오버로드를 선택합니다. `StartTheQuiz()` 메서드에 코드를 추가할 때 `randomizer.Next(`를 입력하는 즉시 IntelliSense 창에 추가 정보가 나타납니다. 오버로드를 순환하려면 다음 그림과 같이 **위쪽 화살표** 키와 **아래쪽 화살표** 키를 선택합니다.
 
      ![IntelliSense의 Next&#40;&#41; 메서드 오버로드](../ide/media/express_nextoverload.png)<br/>
-***IntelliSense***의 ***Next()*** 메서드 오버로드  
+***IntelliSense***의 ***Next()*** *메서드* *오버로드*
 
      이 경우 최소값 및 최대값을 지정할 수 있도록 마지막 오버로드를 선택하는 것이 좋습니다.
 
@@ -88,7 +86,7 @@ ms.locfileid: "72562571"
      다음 그림과 같이 프로그램에 빼기 문제가 포함되었습니다.
 
      ![뺄셈 문제가 있는 수학 퀴즈](../ide/media/express_addsubtract.png)<br/>
-뺄셈 문제가 있는 ***수학 퀴즈*** 
+*뺄셈 문제가 있는* ***수학 퀴즈***
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 

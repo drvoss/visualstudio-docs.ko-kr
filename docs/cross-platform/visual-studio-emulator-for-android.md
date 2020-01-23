@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777714"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916469"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 
@@ -25,10 +25,10 @@ Android용 Visual Studio 에뮬레이터는 Android 디바이스를 에뮬레이
 > 대부분의 시나리오에서 Android용 Visual Studio 에뮬레이터 대신 Google Android 에뮬레이터를 사용하는 것이 좋습니다.
 > - Visual Studio 2015 이후에는 Android용 Visual Studio 에뮬레이터가 지원되지 않습니다.
 > - Android 6.0 이상인 에뮬레이터 이미지는 Android용 Visual Studio 에뮬레이터에서 사용할 수 없습니다.
-> - Google Android 에뮬레이터는 이제 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v)를 지원합니다.
+> - Google Android 에뮬레이터는 이제 [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v)를 지원합니다.
 > - Apache Cordova용 Visual Studio Tools는 Google Android 에뮬레이터와 함께 작동합니다. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator)(이 문서에서 설명된 대로 더 이상 Hyper-v를 사용 중지할 필요가 없음)을 참조하세요.
 >
-> Google Android Emulator를 구성하고 사용하는 방법에 대한 자세한 내용은 [Android Emulator 설정](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)을 참조하세요.
+> Google Android Emulator를 구성하고 사용하는 방법에 대한 자세한 내용은 [Android Emulator 설정](/xamarin/android/get-started/installation/android-emulator/)을 참조하세요.
 
  Android용 Visual Studio 에뮬레이터는 실제 디바이스와 비슷한 성능을 제공하도록 설계되었습니다. 하지만 앱을 게시하기 전에 물리적 디바이스에서 앱을 테스트하는 것이 좋습니다.
 
@@ -104,5 +104,5 @@ Android용 Visual Studio 에뮬레이터는 Android 디바이스를 에뮬레이
 
 - Visual Studio 또는 에뮬레이터 관리자에서 웃는 얼굴 보내기 도구를 사용하여 문제를 보고합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
  [Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Android용 Visual Studio 에뮬레이터 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb9ba985867895b5ba19f8049e20fd31ccef191
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590022"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃
 
@@ -33,7 +33,7 @@ ms.locfileid: "71118808"
 1. 단추, 확인란, 레이블 등과 같은 컨트롤을 폼에 추가할 수 있습니다. **도구 상자**에서 TableLayoutPanel 컨트롤을 두 번 클릭합니다. 또는 컨트롤을 도구 상자에서 폼으로 끌어 놓을 수 있습니다. 이렇게 하면 다음 스크린샷과 같이 IDE가 TableLayoutPanel 컨트롤을 양식에 추가합니다.
 
      ![TableLayoutPanel 컨트롤](../ide/media/express_formtablelayout.png)<br>
-***TableLayoutPanel*** *컨트롤*
+***TableLayoutPanel*** *롤*
 
     > [!NOTE]
     > TableLayoutPanel을 추가한 후 제목이 **TableLayoutPanel Tasks**인 창이 폼 안에 표시되면 폼 안쪽 아무 곳이나 선택하여 폼을 닫습니다. 이 창에 대해서는 이 자습서의 뒷부분에서 자세히 설명합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "71118808"
 1. TableLayoutPanel을 선택하여 이 컨트롤이 선택된 상태가 되도록 합니다. 다음 스크린샷과 같이 **속성** 창의 맨 위에 있는 드롭다운 목록에서 선택된 컨트롤을 확인할 수 있습니다.
 
      ![TableLayoutPanel 컨트롤이 표시된 속성 창](../ide/media/express_controlspropwin.png)<br>
-***TableLayoutPanel*** *컨트롤*이 표시된 ***속성*** 창 
+***TableLayoutPanel*** *컨트롤*이 표시된 ***속성*** *창*
 
 1. **속성** 창의 도구 모음에서 **사전순** 단추를 선택합니다. 이렇게 하면 **속성** 창의 속성 목록이 사전순으로 정렬되므로 이 자습서에서 속성을 더 쉽게 찾을 수 있습니다.
 
@@ -55,9 +55,9 @@ ms.locfileid: "71118808"
    이제 TableLayoutPanel이 선택되어 있으므로 **Dock** 속성을 찾아서 **None**으로 설정해야 하는 **Dock**를 선택합니다. 값 옆에 드롭다운 화살표가 나타납니다. 이 화살표를 선택하고 다음 스크린샷과 같이 **채우기** 단추(가운데 있는 큰 단추)를 선택합니다.
 
      ![Fill이 선택된 속성 창](../ide/media/express_docktable.png)<br>
-***Fill****이 선택된 ***속성*** *창**
+***Fill***이 *선택된* ***속성*** *창*
 
-     Visual Studio에서 *도킹*은 창이 IDE의 다른 창이나 영역에 연결되는 경우를 말합니다. 예를 들어 **속성** 창은 도킹 해제, 즉 &mdash;Visual Studio 내에서 연결되지 않은 상태로 자유롭게 움직이거나&mdash; **솔루션 탐색기**에 대해 도킹될 수 있습니다.
+     Visual Studio에서 *도킹*은 창이 IDE의 다른 창이나 영역에 연결되는 경우를 말합니다. 예를 들어 **속성** 창은 도킹 해제, 즉 &mdash;Visual Studio 내에서 연결되지 않은 상태로 자유롭게 움직이거나&mdash;**솔루션 탐색기**에 대해 도킹될 수 있습니다.
 
 1. TableLayoutPanel **Dock** 속성을 **Fill**로 설정합니다. 그러면 패널이 전체 양식으로 채워집니다. 폼의 크기를 다시 조정하면 TableLayoutPanel은 도킹된 상태를 유지한 채 폼의 크기에 맞게 자동으로 크기가 조정됩니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "71118808"
 1. 삼각형을 선택하여 다음 스크린샷과 같이 컨트롤의 작업 목록을 표시합니다.
 
      ![TableLayoutPanel 작업](../ide/media/express_tablepanel.png)<br>
-***TableLayoutPanel*** *작업*
+***TableLayoutPanel*** *업*
 
 1. **행 및 열 편집** 작업을 선택하여 **열 및 행 스타일** 창을 표시합니다. **열1**을 선택한 다음, **백분율** 단추가 선택되어 있는지 확인하고 **백분율** 상자에 **15**를 입력하여 크기를 15%로 설정합니다. 이 컨트롤이 이 자습서의 뒷부분에서 사용할 <xref:System.Windows.Forms.NumericUpDown> 컨트롤입니다. **Column2**를 선택하고 크기를 85%로 설정합니다. 창이 닫히므로 아직 **확인** 단추는 선택하지 않습니다. 실수로 창을 닫은 경우 작업 목록을 사용하여 다시 열 수 있습니다.
 
@@ -86,7 +86,7 @@ ms.locfileid: "71118808"
 1. **확인** 단추를 선택합니다. 이제 TableLayoutPanel에는 큰 위쪽 행, 작은 아래쪽 행, 작은 왼쪽 열, 큰 오른쪽 열이 있습니다. 양식에서 **tableLayoutPanel1**을 선택하고 해당 열과 행 테두리를 끌어 TableLayoutPanel의 행과 열의 크기를 조정할 수 있습니다.
 
      ![크기가 조정된 TableLayoutPanel이 있는 Form1](../ide/media/vs_formafterlayoutpanel.png)<br>
-크기가 조정된 ***TableLayoutPanel***이 있는 ***Form1***(그림 뷰어) 
+크기가 조정된 ***TableLayoutPanel***이 있는 ***Form1*** *(그림 뷰어)*
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -94,7 +94,7 @@ ms.locfileid: "71118808"
 
 * 이전 자습서 단계로 돌아가려면 [3단계: 폼 속성 설정](../ide/step-3-set-your-form-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

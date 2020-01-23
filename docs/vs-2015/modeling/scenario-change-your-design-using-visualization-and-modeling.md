@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0954a38a2667331c537487a706d1d2d13a07f6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 70cc3c81c426ec55d0afb36360155786ec97d937
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850904"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918976"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,7 +363,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 
-- [버전 제어 사용](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [버전 제어 사용](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [애플리케이션 빌드](/azure/devops/pipelines/index)
 

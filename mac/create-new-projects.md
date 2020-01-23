@@ -5,25 +5,25 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693058"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678899"
 ---
-# <a name="creating-a-new-project"></a>새 프로젝트 만들기
+# <a name="create-a-new-project"></a>새 프로젝트 만들기
 
 ## <a name="opening-the-project-creation-dialog"></a>프로젝트 만들기 대화 상자 열기
 
-Mac용 Visual Studio에서 새 프로젝트를 만드는 여러 방법이 있습니다. 처음 Mac용 Visual Studio을 열면 시작 화면이 표시됩니다. 여기에서 **새로 만들기**를 선택하면 프로젝트 만들기 화면으로 이동합니다.
+Mac용 Visual Studio에서 새 프로젝트를 만드는 여러 방법이 있습니다. Mac용 Visual Studio를 처음 열면 시작 창이 표시됩니다. 여기에서 **새로 만들기**를 선택하면 프로젝트 만들기 화면으로 이동합니다.
 
 > [!TIP]
-> 또한 시작 화면에서 최근 프로젝트 및 솔루션을 열고 검색할 수도 있습니다. 메뉴 모음으로 이동하여 **파일 > 최근 솔루션**을 선택하여 최근 프로젝트를 열 수도 있습니다.
+> 또한 시작 창에서 최근 프로젝트 및 솔루션을 열고 검색할 수도 있습니다. 메뉴 모음으로 이동하여 **파일 > 최근 솔루션**을 선택하여 최근 프로젝트를 열 수도 있습니다.
 
-![시작 화면(새 프로젝트 만들기)](media/first-run-project.png)
+![새 프로젝트 만들기가 표시된 시작 창](media/first-run-project.png)
 
-솔루션이 로드된 상태로 Mac용 Visual Studio가 이미 열려 있는 경우 메뉴 모음으로 이동한 후 **파일> 새 솔루션**을 선택하여 새 솔루션을 만들 수 있습니다. 이러한 방식으로 새 솔루션 만들면 이미 로드된 솔루션은 닫힙니다.
+솔루션이 로드된 상태로 Mac용 Visual Studio가 이미 열려 있는 경우 메뉴 모음으로 이동한 후 **파일> 새 솔루션**을 선택하여 새 솔루션을 만들 수 있습니다. 이러한 방식으로 새 솔루션을 만들면 이미 로드된 솔루션은 닫힙니다.
 
 ## <a name="creating-a-new-project-from-a-template"></a>템플릿으로 새 프로젝트 만들기
 
@@ -51,6 +51,6 @@ Solution Pad에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추
 
 기존 프로젝트를 추가하도록 선택하면 컴퓨터에서 기존 프로젝트를 찾아 솔루션에 추가할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [솔루션 및 프로젝트 만들기(Windows의 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

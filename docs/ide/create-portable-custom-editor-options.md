@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919125"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589788"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -25,7 +25,7 @@ Visual Studio를 포함하여 다양한 코드 편집기와 IDE에서 EditorConf
 Visual Studio에서 프로젝트에 EditorConfig 파일을 추가하면, 새 코드 줄에는 EditorConfig 설정에 따라 서식이 지정됩니다. 기존 코드의 서식은 다음 명령 중 하나를 실행해야만 변경됩니다.
 
  - [코드 정리](../ide/code-styles-and-code-cleanup.md)(**Ctrl**+**K**, **Ctrl**+**E**) - 들여쓰기 스타일 등의 공백 설정과 `using` 지시문 정렬 방법 등의 선택한 코드 스타일 설정을 적용합니다.
- - **편집** > **고급** > **문서 서식**(또는 기본 프로필의 **Ctrl**+**K**, **Ctrl**+**D** - 들여쓰기 스타일 등의 공백 설정만 적용합니다.
+ - **편집** > **고급** > **문서 서식**(또는 기본 프로필의 **Ctrl**+**K**, **Ctrl**+**D**) - 들여쓰기 스타일 등의 공백 설정만 적용합니다.
 
  ::: moniker-end
 
@@ -42,7 +42,7 @@ Visual Studio에서 프로젝트에 EditorConfig 파일을 추가하면, 새 코
 ::: moniker-end
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 EditorConfig](/visualstudio/mac/editorconfig)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 EditorConfig](/visualstudio/mac/editorconfig)를 참조하세요.
 
 ## <a name="code-consistency"></a>코드 일관성
 
@@ -135,7 +135,7 @@ EditorConfig 파일을 편집한 후 새 설정을 적용하려면 코드 파일
 
 ![EditorConfig 언어 서비스 확장을 사용한 IntelliSense](media/editorconfig-intellisense.png)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 *.editorconfig* 파일을 프로젝트에 추가하기 전과 후의 C# 코드 조각 들여쓰기 상태를 보여줍니다. Visual Studio 텍스트 편집기에 대한 **옵션** 대화 상자의 **탭** 설정은 **Tab** 키를 누를 때 공백 문자를 생성하도록 설정되어 있습니다.
 
@@ -178,7 +178,7 @@ dir .editorconfig /s
 
 리포지토리의 루트 또는 프로젝트가 상주하는 디렉터리의 *.editorconfig* 파일에서 ```root=true``` 속성을 설정하여 EditorConfig 규칙의 범위를 제어할 수 있습니다. Visual Studio는 열린 파일의 디렉터리와 모든 부모 디렉터리에서 *.editorconfig*라는 파일을 찾습니다. 루트 파일 경로에 도달하거나 ```root=true```인 *.editorconfig* 파일이 발견되면 검색이 종료됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [.NET 코드 스타일 규칙](../ide/editorconfig-code-style-settings-reference.md)
 - [언어 서비스를 위한 EditorConfig 지원](../extensibility/supporting-editorconfig.md)

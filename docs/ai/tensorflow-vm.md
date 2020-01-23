@@ -10,20 +10,20 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427572"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915834"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>클라우드에서 TensorFlow 모델 학습
 
-이 자습서에서는 Azure [심층 학습](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) 가상 머신에서 [MNIST 데이터 세트](http://yann.lecun.com/exdb/mnist/)를 사용하여 TensorFlow 모델을 학습합니다.
+이 자습서에서는 Azure [심층 학습](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) 가상 머신에서 [MNIST 데이터 세트](http://yann.lecun.com/exdb/mnist/)를 사용하여 TensorFlow 모델을 학습합니다.
 
 MNIST 데이터베이스에는 60,000개의 학습 예제 집합과 직접 작성한 10,000개의 테스트 예제 집합이 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 시작하기 전에 다음을 설치하고 구성했는지 확인합니다.
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Azure 딥 러닝 가상 머신 설치
@@ -31,7 +31,7 @@ MNIST 데이터베이스에는 60,000개의 학습 예제 집합과 직접 작�
 > [!NOTE]
 > **OS 유형**을 Linux로 설정하세요.
 
-딥 러닝 가상 머신을 설정하기 위한 지침은 [여기](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)에 있습니다.
+딥 러닝 가상 머신을 설정하기 위한 지침은 [여기](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)에 있습니다.
 
 ### <a name="remove-comment-in-parens"></a>괄호 안에 있는 주석 제거
 

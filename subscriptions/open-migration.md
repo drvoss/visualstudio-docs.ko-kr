@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: 파트너가 고객의 Visual Studio 구독을 관리하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000906"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850553"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>고객을 대신하여 구독을 관리하는 파트너
 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구독을 관리하려면 따라야 할 몇 가지 단계가 있습니다. 프로세스는 다음과 같습니다.
@@ -41,7 +41,7 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Visual Studio 구독 관리 포털을 직접 방문하는 새 파트너
-이 시나리오는 이미 새 Open License 주문을 작성했지만 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 등록하지 않고 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 직접 이동하는 새 파트너에게 적용됩니다.  다음 단계를 수행하세요.
+이 시나리오는 이미 새 Open License 주문을 작성했지만 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 등록하지 않고 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 직접 이동하는 새 파트너에게 적용됩니다.  아래 단계를 수행합니다.
 - [https://manage.visualstudio.com](https://manage.visualstudio.com )을 방문합니다.
 - 인식된 사용자가 아니라는 오류를 받습니다.
 - **OLP 파트너** 등록 옵션을 선택하고, 주문에 사용되는 인증 번호, 라이선스 번호, 고객 전자 메일 주소를 입력하고, 확인란을 선택하고, **제출**을 클릭합니다.
@@ -50,7 +50,7 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 > 고객은 파트너가 Open License에 추가되었음을 알리는 알림 이메일을 받게 됩니다. 파트너의 액세스 권한을 제거하도록 선택할 수 있습니다.
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
+- [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [볼륨 라이선스 조건](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

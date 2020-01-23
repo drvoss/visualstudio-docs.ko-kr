@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958227"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678989"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -59,7 +59,7 @@ Django 앱은 일반적으로 표준 파일 집합으로 시작합니다. Visual
 | **tests.py** | 단위 테스트의 기본 구조를 포함하는 Python 파일입니다. |
 | **views.py** | 보기는 일반적으로 웹 페이지로 간주되는 항목으로, HTTP 요청을 만들고 HTTP 응답을 반환합니다. 일반적으로 보기는 웹 브라우저에서 표시하는 방법을 알고 있는 HTML로 렌더링되지만 중간 양식처럼 보기가 반드시 표시되어야 하는 것은 아닙니다. 보기는 HTML을 렌더링하여 브라우저로 보내는 Python 함수에 의해 정의됩니다. *views.py* 파일은 보기를 만들 기본 위치이며, 처음에는 `from django.shortcuts import render` 문만 포함되어 있습니다. |
 
-"HelloDjangoApp"이라는 이름을 사용하면 *app.py*의 내용이 다음과 같이 표시됩니다.
+"HelloDjangoApp"이라는 이름을 사용하면 *apps.py*의 내용이 다음과 같이 표시됩니다.
 
 ```python
 from django.apps import AppConfig
@@ -123,7 +123,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 대답: URL 패턴을 정의하는 정규식에서 ^는 “줄의 시작”을 의미하고 $는 “줄의 끝”을 의미합니다. 이때 URL은 사이트 루트(`https://www.domain.com/` 다음에 오는 부분)에 상대적입니다. 정규식 `^$`는 결과적으로 “공백”을 의미하므로 전체 URL `https://www.domain.com/`(사이트 루트에 아무것도 추가되지 않음)과 일치합니다. `^home$` 패턴은 `https://www.domain.com/home/`과 정확히 일치합니다. Django는 패턴 일치에서 후행 /를 사용하지 않습니다.
 
-`^home`과 마찬가지로 정규식에서 후행 $를 사용하지 않으면 URL 패턴이 “home”으로 시작하는 ‘모든’ URL(예: “home”, “homework”, “homestead” 및 “home192837”)과 일치합니다.
+`^home`과 마찬가지로 정규식에서 후행 $를 사용하지 않으면 URL 패턴이 “home”으로 시작하는 ‘모든’ URL(예: “home”, “homework”, “homestead” 및 “home192837”)과 일치합니다. 
 
 다른 정규식으로 실험하려면 [pythex.org](https://www.pythex.org)에서 [regex101.com](https://regex101.com)과 같은 온라인 도구를 사용해 보세요.
 

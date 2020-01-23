@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295551"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915977"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>방법: 확장성 프로젝트를 Visual Studio 2015로 마이그레이션
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "74295551"
   
 2. 업그레이드가 완료 되 면 외부 프로그램의 경로를 devenv.exe의 새 버전으로 변경 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다. **디버그** 탭에서 **시작 외부 프로그램** 으로 텍스트 상자를 찾고 Devenv.exe 경로를 Visual Studio 2015 경로로 변경 합니다 .이는 다음과 같습니다.  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
 3. VisualStudio에 대 한 참조를 추가 합니다. 14.0에 대 한 참조를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **추가/참조**를 선택 합니다. **확장** 탭을 선택 하 고 VisualStudio를 확인 합니다. **14.0**.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "74295551"
   
 2. VS SDK 참조 어셈블리를 선택 하 여 프로젝트에서 제거 하 고 마우스 오른쪽 단추를 클릭 한 다음 **제거**합니다.  
   
-3. VS SDK 참조 어셈블리의 NuGet 버전을 추가 합니다.  **솔루션 탐색기 참조** 노드에 있지만 **NuGet 패키지 관리 ...** 를 엽니다. 대화 상자에서 추가합니다.  이 대화 상자에 대 한 자세한 내용을 보려면 [대화 상자를 사용 하 여 NuGet 패키지 관리](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요. VS SDK 참조 어셈블리는 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)에 의해 [nuget.org](https://www.nuget.org/) 에 게시 됩니다.  
+3. VS SDK 참조 어셈블리의 NuGet 버전을 추가 합니다.  **솔루션 탐색기 참조** 노드에 있지만 **NuGet 패키지 관리 ...** 를 엽니다. 대화 상자에서 추가합니다.  이 대화 상자에 대 한 자세한 내용을 보려면 [대화 상자를 사용 하 여 NuGet 패키지 관리](/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요. VS SDK 참조 어셈블리는 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)에 의해 [nuget.org](https://www.nuget.org/) 에 게시 됩니다.  
   
 4. **Nuget.org** 를 **패키지 원본**으로 사용 하 여 원하는 참조 어셈블리 (예: VisualStudio. 14.0)와 일치 하는 nuget 패키지 이름을 검색 하 고 프로젝트에 설치 합니다.  NuGet은 초기 어셈블리의 종속성을 충족 하기 위해 여러 참조 어셈블리를 추가할 수 있습니다.  
   

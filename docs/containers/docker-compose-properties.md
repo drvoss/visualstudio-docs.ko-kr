@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072732"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916925"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -35,7 +35,7 @@ ms.locfileid: "74072732"
 
 | 속성 이름 | 위치 | 설명 | 기본값  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|모든 명령에 대해 docker-compose.exe로 보낼 세미콜론으로 구분된 목록에 추가 작성 파일을 지정합니다. dcproj(docker-compose project) 파일에서 상대 경로가 허용됩니다.|-|
+|AdditionalComposeFilePaths|dcproj|모든 명령에 대해 docker-compose.exe로 보낼 세미콜론으로 구분된 목록에 추가 작성 파일을 지정합니다. dcproj(docker-compose project) 파일에서 상대 경로가 허용됩니다.|-|
 |DockerComposeBaseFilePath|dcproj|*.yml* 확장명을 사용하지 않고 docker-compose 파일의 파일 이름 중 첫 번째 부분을 지정합니다. 예: <br>1.  DockerComposeBaseFilePath = null/undefined: 기본 파일 경로 *docker-compose*를 사용하면 파일 이름이 *docker-compose.yml* 및 *docker-compose.override.yml*이 됩니다.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: 파일 이름은 *mydockercompose.yml* 및 *mydockercompose.override.yml*이 됩니다.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: 파일이 한 수준 올라갑니다. |docker-compose|
 |DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--parallel --pull`과 같습니다. |
 |DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--timeout 500`과 같습니다.|-|  
@@ -47,7 +47,7 @@ ms.locfileid: "74072732"
 |DockerServiceUrl| dcproj | 브라우저를 시작할 때 사용할 URL입니다.  유효한 대체 토큰은 “{ServiceIPAddress}”, “{ServicePort}”, “{Scheme}”입니다.  예: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
 |DockerTargetOS| dcproj | Docker 이미지를 빌드할 때 사용되는 대상 OS입니다.|-|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `DockerComposeBaseFilePath`를 상대 경로로 설정하여 Docker Compose 파일의 위치를 변경하는 경우 솔루션 폴더를 참조하도록 빌드 컨텍스트가 변경되었는지도 확인해야 합니다. 예를 들어 Docker Compose 파일이 *DockerComposeFiles*라는 폴더인 경우 Docker Compose 파일은 솔루션 폴더를 기준으로 한 상대 위치에 따라 빌드 컨텍스트를 “..” 또는 “../..”으로 설정해야 합니다.
 
@@ -114,7 +114,7 @@ services:
 
 MSBuild 속성에 대한 일반적인 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [컨테이너 도구 빌드 속성](container-msbuild-properties.md)
 

@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652996"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851438"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing를 구성 및 사용하는 방법
 
@@ -79,7 +79,7 @@ Microsoft.VisualStudio.QualityTools.UnitTestFramework를 참조하는 이전 MST
 
 ## <a name="start-pause-and-stop"></a>시작, 일시 중지 및 중지
 
-Live Unit Testing을 사용하도록 설정하려면 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작**을 선택합니다. Live Unit Testing을 사용하면 **Live Unit Testing** 메뉴에서 사용할 수 있는 옵션이 단일 항목에서 **시작**, **일시 중지**, **중지** 및 **정리 다시 설정**으로 변경됩니다.
+Live Unit Testing을 사용하도록 설정하려면 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작**을 선택합니다. Live Unit Testing을 사용하면 **Live Unit Testing** 메뉴에서 사용할 수 있는 옵션이 단일 항목에서 **시작**, **일시 중지** 및 **중지**로 변경됩니다.
 
 - **일시 중지**는 Live Unit Testing을 일시적으로 중단합니다.
 
@@ -87,10 +87,8 @@ Live Unit Testing을 사용하도록 설정하려면 최상위 Visual Studio 메
 
 - **중지**는 Live Unit Testing를 완전히 중지합니다. Live Unit Testing은 수집된 모든 데이터를 삭제합니다.
 
-- **정리 다시 설정**은 Live Unit Testing을 중지하고 영구 데이터를 삭제하며 Live Unit Testing을 다시 시작합니다.
-
 > [!NOTE]
-> 단위 테스트 프로젝트를 포함하지 않는 솔루션에서 Live Unit Testing을 시작하려면 **일시 중지**, **중지**, **정리 다시 설정** 옵션이 **Live Unit Testing** 메뉴에 나타나지만 Live Unit Testing은 시작되지 않습니다. **출력** 창에는 "이 솔루션에서 참조하는 지원되는 테스트 어댑터가 없습니다."로 시작되는 메시지가 표시됩니다.
+> 단위 테스트 프로젝트를 포함하지 않는 솔루션에서 Live Unit Testing을 시작하면 **Live Unit Testing** 메뉴에 **일시 중지** 및 **중지** 옵션이 나타나지만 Live Unit Testing은 시작되지 않습니다. **출력** 창에는 "이 솔루션에서 참조하는 지원되는 테스트 어댑터가 없습니다."로 시작되는 메시지가 표시됩니다.
 
 언제든지 Live Unit Testing을 일시적으로 또는 완전히 중지할 수 있습니다. 예를 들어, 리팩터링하는 중에 이렇게 하려면 테스트가 한 동안 중단된다는 점을 고려하세요.
 
@@ -156,7 +154,7 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 솔루션에 10개 이상의 프로젝트가 있는 경우 다음을 수행할 때 Visual Studio에서 다음과 같은 대화 상자를 표시합니다.
 
 - Live Unit Testing를 시작하며 지속되는 데이터가 없음
-- **테스트** > **Live Unit Testing** > **정리 다시 설정**을 선택함
+- **도구** > **옵션** > **Live Unit Testing** > **영구 데이터 삭제** 선택
 
 ![대규모 프로젝트에 대한 Live Unit Testing 대화 상자](media/lut-large-project.png)
 
@@ -197,9 +195,9 @@ Live Unit Testing에서 개별 메서드를 제외하려면 다음 특성을 사
 - NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
 - MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Live Unit Testing 블로그](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Live Unit Testing 블로그](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
 - [Live Unit Testing FAQ](live-unit-testing-faq.md)
 - [Channel 9 비디오: Visual Studio의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

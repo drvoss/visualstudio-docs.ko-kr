@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850688"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916793"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 있습니다. 사용할 수 있는 확장 유형으로는 메뉴 명령 추가, 끌어서 두 번 클릭 제스처에 대 한 처리기 추가, 특정 유형의 값 또는 관계가 변경 될 때 트리거되는 규칙 등이 있습니다. 확장을 VSIX (Visual Studio Integration Extension)로 패키지 하 고 다른 사용자에 게 배포할 수 있습니다.
-
- 예제 코드 및이 기능에 대 한 자세한 내용은 Visual Studio [시각화 및 모델링 SDK (VMSDK) 웹 사이트](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)를 참조 하십시오.
 
 ## <a name="setting-up-the-solution"></a>솔루션 설정
  확장의 코드와 프로젝트를 내보내는 VSIX 프로젝트를 포함 하는 프로젝트를 설정 합니다. 솔루션은 동일한 VSIX에 통합 된 다른 프로젝트를 포함할 수 있습니다.

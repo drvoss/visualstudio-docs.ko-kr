@@ -6,16 +6,16 @@ manager: lank
 ms.date: 01/06/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75866156"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114327"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
-오픈 소스 취약성을 찾아 해결하고, 빌드에 포함된 모든 오픈 소스 구성 요소에 대한 포괄적인 인벤토리 및 라이선스 보고서를 생성합니다. 
+오픈 소스 취약성을 찾아 해결하고, 빌드에 포함된 모든 오픈 소스 구성 요소에 대한 포괄적인 인벤토리 및 라이선스 보고서를 생성합니다. Visual Studio Enterprise 구독자에게는 6개월 동안 무제한 검사 혜택이 제공됩니다.
 
 ## <a name="activation-steps"></a>활성화 단계
 

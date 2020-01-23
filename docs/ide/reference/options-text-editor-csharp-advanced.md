@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596231"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124506"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
@@ -87,7 +87,7 @@ ms.locfileid: "75596231"
    using System.Linq;
    ```
 
-- 참조 어셈블리의 형식에 대한 using 제안
+- .NET Framework 어셈블리의 형식에 대한 using 제안
 - NuGet 패키지의 형식에 대한 using 제안
 
    이러한 옵션을 선택한 경우 [빠른 작업](../quick-actions.md)을 사용하여 NuGet 패키지를 설치하고 참조되지 않은 형식에 대한 `using` 지시문을 추가할 수 있습니다.

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491675"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281700"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 
@@ -47,7 +47,7 @@ ms.locfileid: "74491675"
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Action Pack을 구매하는 파트너에 대한 구독
 
-역량이 있는 파트너는 Action Pack을 구매할 자격이 안 됩니다. 파트너당 하나의 Action Pack만 구매할 수 있습니다.
+역량이 있는 파트너는 Action Pack을 구매할 수 있습니다. 파트너당 하나의 Action Pack만 구매할 수 있습니다.
 
 Action Pack을 통해 파트너는 **3개의 Visual Studio Professional(MPN) 구독**을 획득할 수 있습니다. Visual Studio Professional(MPN)은 시장에 상업적으로 사용가능한 해당 항목이 없는 사용자 지정 제품입니다. 다음은 포함된 항목입니다.
 

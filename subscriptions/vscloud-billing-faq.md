@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491266"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851418"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
@@ -37,7 +37,7 @@ A: 적절한 권한이 있는지 확인하는 가장 쉬운 방법은 Visual Stu
 현재 사용자의 로그인에 연결된 Azure 구독 목록에서 Azure 구독(청구 계정)을 선택해야 합니다.
 Azure 구독 이름은 청구 계정 유형("종량제", "기업 계약" 등)을 기본값으로 하기 때문에 Azure 구독이 기업 계약의 일부인 경우 명확합니다.
 
-다른 방법은 [Azure Enterprise Portal](https://ea.azure.com)을 방문하려 하는 것입니다.  성공적으로 도달할 수 있으면 이미 엔터프라이즈 관리자 또는 계정 소유자 역할을 하고 있는 것입니다. 계정 소유자만 기업 계약에서 새 Azure 청구 계정을 설정할 수 있습니다. Azure Enterprise Portal에 액세스할 수 없는 경우 조직 내에서 문의하여 엔터프라이즈 관리자가 누구인지 알아내고 그 사람에게 Azure Enterprise Portal 내에서 계정 소유자로서 사용자를 추가하도록 요청합니다.  이 관리자를 찾을 수 없는 경우 [지원 티켓을 제출](https://aka.ms/AzureEntSupport)하여 연락처 정보를 요청할 수 있습니다.  지원 티켓에 대해 조직 이름 및 기업 계약 등록 번호가 필요합니다.
+다른 방법은 [Azure Enterprise Portal](https://ea.azure.com)을 방문하려 하는 것입니다.  성공적으로 도달할 수 있으면 이미 엔터프라이즈 관리자 또는 계정 소유자 역할을 하고 있는 것입니다. 계정 소유자만 기업 계약에서 새 Azure 청구 계정을 설정할 수 있습니다. Azure Enterprise Portal에 액세스할 수 없는 경우 조직 내에서 문의하여 엔터프라이즈 관리자가 누구인지 알아내고 그 사람에게 Azure Enterprise Portal 내에서 계정 소유자로서 사용자를 추가하도록 요청합니다.  이 관리자를 찾을 수 없는 경우 [지원 티켓을 제출](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c)하여 연락처 정보를 요청할 수 있습니다.  지원 티켓에 대해 조직 이름 및 기업 계약 등록 번호가 필요합니다.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q: Visual Studio 클라우드 구독을 구입하려면 기업계약에서 Azure 현금 약정 금액 자금을 사용할 수 있나요?
 A: 아니요, 이러한 선불 자금은 Visual Studio 클라우드 구독 구매에 적격하지 않습니다. Visual Studio 클라우드 구독을 구매하기 위해 EA에 대해 만들어진 Azure 구독을 선택하는 경우 요금은 다음 "초과분" 청구서에 표시됩니다. 일반적으로 이는 매달 발생하지만 일부 EA 고객에 대한 기록 규정으로 인해 초과분 청구서는 몇 개월 동안 발급되지 않을 수 있습니다. 얼마나 많은 추가 구매(Azure 현금 약정 금액에 적격하지 않은 구매)가 초과분 청구서를 트리거할지 알아야 하는 경우 EA에 대한 라이선스 전문가에게 상담하십시오.

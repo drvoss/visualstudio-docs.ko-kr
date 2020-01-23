@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 3e6ecfc1c08f30eb0232f230d955967d95bc32ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
+ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566971"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76022340"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능
 
-이 문서에서는 MSBuild16.0의 업데이트된 기능 및 속성에 대해 설명합니다. 자세한 릴리스 정보(초안만 해당)는 [MSBuild 16.0](https://gist.github.com/rainersigwald/009627466f03964d0028e16fda633d9c)을 참조하세요.
+이 문서에서는 MSBuild16.0의 업데이트된 기능 및 속성에 대해 설명합니다. 자세한 릴리스 정보는 [ MSBuild 16.0](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831)을 참조하세요.
 
 ## <a name="changed-path"></a>변경된 경로
 

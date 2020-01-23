@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 55ec2cf2f2a6ebf4186f81f6f3dd61766acd7958
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852408"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918887"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의 
 |상태를 나타내는 셰이프 변경에 대 한 아이콘입니다.|DSL 세부 정보 창에서 데코레이터 매핑의 표시 여부를 설정 합니다. 동일한 위치에서 여러 이미지 데코레이터를 찾습니다. [모델을 반영 하도록 모양 및 연결선 업데이트를](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)참조 하세요.<br /><br /> 또는 `ImageField.GetDisplayImage()`를 재정의 합니다. 예제를 참조 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>합니다.|
 |모든 셰이프에 배경 이미지 설정|InitializeInstanceResources ()를 재정의 하 여 고정 된 ImageField을 추가 합니다. [다이어그램에서 프레젠테이션 사용자 지정](../modeling/customizing-presentation-on-the-diagram.md)을 참조 하세요.|
 |모든 깊이에 도형 중첩|재귀 포함 트리를 설정 합니다. 셰이프를 포함 하는 Boundsrules로를 정의 합니다. [다이어그램에서 프레젠테이션 사용자 지정](../modeling/customizing-presentation-on-the-diagram.md)을 참조 하세요.|
-|요소 경계의 고정 지점에서 커넥터를 연결 합니다.|다이어그램에서 작은 포트로 표시 되는 포함 된 터미널 요소를 정의 합니다. Boundsrules로를 사용 하 여 현재 위치의 포트를 수정 합니다. [시각화 및 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)에서 회로 다이어그램 샘플을 참조 하세요.|
+|요소 경계의 고정 지점에서 커넥터를 연결 합니다.|다이어그램에서 작은 포트로 표시 되는 포함 된 터미널 요소를 정의 합니다. Boundsrules로를 사용 하 여 현재 위치의 포트를 수정 합니다.|
 |텍스트 필드 다른 값에서 파생 된 값을 표시 합니다.|텍스트 데코레이터를 계산 된 저장소 도메인 속성 또는 사용자 지정 저장소 도메인 속성에 매핑합니다. 자세한 내용은 [사용자 지정 저장소 속성 및 계산](../modeling/calculated-and-custom-storage-properties.md)합니다.|
 |모델 요소 간 또는 모양 사이에 변경 내용 전파|[도메인 특정 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.|
 |저장소 외부의 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장과 같은 리소스에 변경 내용을 전파 합니다.|[이벤트 처리기가 모델 외부에서 변경 내용을 전파 하는](../modeling/event-handlers-propagate-changes-outside-the-model.md)방법을 참조 하세요.|

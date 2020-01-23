@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e039e862040036f3d96729c3bdf48caafe092136
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "71126054"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75400873"
 ---
 # <a name="container-tools-launch-settings"></a>컨테이너 도구 시작 설정
 
@@ -49,27 +49,43 @@ ASP.NET Core 프로젝트의 *Properties* 폴더에서, 개발 머신에서 웹�
 commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인합니다. 다음 표에서는 이 섹션에서 설정할 수 있는 속성을 보여 줍니다.
 
 ::: moniker range="vs-2017"
-|설정 이름|예|설명|
+
+|설정 이름|버전|예제|설명|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|“launchBrowser”: true|프로젝트를 시작한 후에 브라우저를 시작할지 여부를 나타냅니다.|
 |launchUrl|Visual Studio 2017|“launchUrl”: “\<scheme>://\<serviceHost>:\<servicePort>”|이 URL은 브라우저를 시작할 때 사용됩니다.  이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.<br>   \<scheme> - SSL 사용 여부에 따라 “http” 또는 “https”로 바뀝니다.<br>   \<serviceHost> - 일반적으로 “localhost”로 바뀝니다. 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.<br>   \<servicePort> - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.  하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 SSL 사용 여부에 따라 “443” 또는 “80”으로 바뀝니다.|
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-|설정 이름|예|설명|
-|------------|-------|-------|---------------|
-|commandLineArgs|“commandLineArgs”: “--mysetting myvalue”|이 명령줄 인수는 컨테이너에서 프로젝트를 시작할 때 사용됩니다.|
-|environmentVariables|“environmentVariables”: {<br>    “ASPNETCORE_URLS”: “https://+:443; http://+:80,<br>    “ASPNETCORE_HTTPS_PORT”: “44381”<br>}|이 환경 변수 값은 컨테이너에서 시작되는 프로세스에 전달됩니다.|
-|httpPort|“httpPort”: 24051|호스트의 이 포트는 컨테이너를 시작할 때 컨테이너의 포트 80에 매핑됩니다.  값을 지정하지 않으면 iisSettings 값에서 가져옵니다.|
-|launchBrowser|“launchBrowser”: true|프로젝트를 시작한 후에 브라우저를 시작할지 여부를 나타냅니다.|
-|launchUrl|“launchUrl”: “\<scheme>://\<serviceHost>:\<servicePort>”|이 URL은 브라우저를 시작할 때 사용됩니다.  이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.<br>   \<scheme> - SSL 사용 여부에 따라 “http” 또는 “https”로 바뀝니다.<br>   \<serviceHost> - 일반적으로 “localhost”로 바뀝니다. 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.<br>   \<servicePort> - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.  하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 SSL 사용 여부에 따라 “443” 또는 “80”으로 바뀝니다.|
-|sslPort|“sslPort”: 44381|호스트의 이 포트는 컨테이너를 시작할 때 컨테이너의 포트 443에 매핑됩니다.  값을 지정하지 않으면 iisSettings 값에서 가져옵니다.|
-|useSSL|“useSSL”: true|프로젝트를 시작할 때 SSL을 사용할지 여부를 나타냅니다.  useSSL을 지정하지 않으면, sslPort가 0보다 클 때 SSL이 사용됩니다.
+
+| 설정 이름         | 예제                                               | 설명                                                                                                             |
+| -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| commandLineArgs      | “commandLineArgs”: “--mysetting myvalue”              | 이 명령줄 인수는 컨테이너에서 프로젝트를 시작할 때 사용됩니다.                                     |
+| environmentVariables | “environmentVariables”: {                             | 이 환경 변수 값은 컨테이너에서 시작되는 프로세스에 전달됩니다.                       |
+|                      | “ASPNETCORE_URLS”: “https://+:443; http://+:80,       |                                                                                                                         |
+|                      | “ASPNETCORE_HTTPS_PORT”: “44381”                      |                                                                                                                         |
+|                      | }                                                     |                                                                                                                         |
+| httpPort             | “httpPort”: 24051                                     | 호스트의 이 포트는 컨테이너를 시작할 때 컨테이너의 포트 80에 매핑됩니다.                                |
+|                      |                                                       | 값을 지정하지 않으면 iisSettings 값에서 가져옵니다.                                                          |
+| launchBrowser        | “launchBrowser”: true                                 | 프로젝트를 시작한 후에 브라우저를 시작할지 여부를 나타냅니다.                                       |
+| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | 이 URL은 브라우저를 시작할 때 사용됩니다. 이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.                          |
+|                      |                                                       | - <scheme> - SSL 사용 여부에 따라 "http" 또는 "https"로 바뀝니다.                                   |
+|                      |                                                       | - <serviceHost> - 일반적으로 "localhost"로 바뀝니다.                                                                    |
+|                      |                                                       | 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.           |
+|                      |                                                       | - <servicePort> - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.                   |
+|                      |                                                       | 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는         |
+|                      |                                                       | SSL 사용 여부에 따라 "443" 또는 "80"으로 바뀝니다.                                                                                       |
+| sslPort              | “sslPort”: 44381                                      | 호스트의 이 포트는 컨테이너를 시작할 때 컨테이너의 포트 443에 매핑됩니다.                               |
+|                      |                                                       | 값을 지정하지 않으면 iisSettings 값에서 가져옵니다.                                                          |
+| useSSL               | “useSSL”: true                                        | 프로젝트를 시작할 때 SSL을 사용할지 여부를 나타냅니다. useSSL을 지정하지 않으면, sslPort가 0보다 클 때 SSL이 사용됩니다. |
+
 ::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
 [컨테이너 도구 빌드 속성](container-msbuild-properties.md)을 설정하여 프로젝트를 구성합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Docker Compose 빌드 속성](docker-compose-properties.md)

@@ -12,23 +12,23 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588866"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846899"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS를 사용하여 빌드할 도구 설치 및 구성
 
-Visual Studio를 **C++를 사용한 플랫폼 간 모바일 개발** 도구와 함께 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있습니다. 그러나 라이선스 제한으로 인해 Mac에서는 코드를 원격으로 빌드하고 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 디바이스 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.
+Visual Studio를 **C++를 사용한 플랫폼 간 모바일 개발** 도구와 함께 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있습니다. 그러나 라이선스 제한으로 인해 Mac에서는 코드를 원격으로 빌드하고 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://www.npmjs.com/package/vcremote)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 디바이스 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.
 
 > [!NOTE]
 > Mac이 아닌 클라우드에 호스트된 Mac 서비스를 사용하는 방법에 대한 자세한 내용은 [Configure Visual Studio to connect to your cloud hosted Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)(클라우드에 호스트된 Mac에 연결하도록 Visual Studio 구성)을 참조하세요. 지침은 Visual Studio Tools for Apache Cordova를 사용한 빌드에 해당합니다. 지침을 사용하여 C++로 빌드하려면 `vcremote`를 `remotebuild`로 대체합니다.
 
 iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Mac에서 iOS 개발용 원격 에이전트를 신속하게 구성 및 업데이트하는 방법은 이 문서를 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 원격 에이전트를 설치 및 사용하여 iOS용 코드를 개발하려면 다음 필수 조건이 있어야 합니다.
 
@@ -68,7 +68,7 @@ iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Ma
 
 ## <a name="Install"></a> iOS용 원격 에이전트 설치
 
-C++를 사용한 모바일 개발 워크로드를 설치하면 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.
+C++를 사용한 모바일 개발 워크로드를 설치하면 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://www.npmjs.com/package/vcremote)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.
 
 원격 에이전트를 설치하기 전에 [필수 조건](#prerequisites)을 충족하고 [C++를 사용한 플랫폼 간 모바일 개발](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)의 설치 단계를 완료했는지 확인합니다.
 
@@ -278,6 +278,6 @@ iOS 디바이스에서 디버깅이 작동하지 않는 경우 iOS 디바이스�
     
 그런 다음 `ideviceinstaller`가 디바이스와 통신할 수 있는지 다시 확인합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [C++를 사용한 플랫폼 간 모바일 개발 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

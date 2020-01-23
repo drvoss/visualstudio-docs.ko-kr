@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061161"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845666"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -305,17 +305,17 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 1. Visual Studio 2012에 대한 Git 지원은 Git용 Visual Studio Tools 확장에서 사용 가능하며 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)에서 제공됩니다.
 
-1. Azure 웹 사이트에 배포하려면 [.NET 2.1용 Azure SDK - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855)이 필요합니다. 이후 버전에서는 Visual Studio 2010을 지원하지 않습니다.
+1. Azure 웹 사이트에 배포하려면 [.NET 2.1용 Azure SDK - Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids)이 필요합니다. 이후 버전에서는 Visual Studio 2010을 지원하지 않습니다.
 
-1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) 이상이 필요합니다.
+1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) 이상이 필요합니다.
 
-1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
 
 1. Visual Studio 2013에서 Django 템플릿 편집기에는 몇 가지 알려진 문제가 있으며 Update 2를 설치하여 해결할 수 있습니다.
 
-1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
 
-1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
 
 1. Windows 8 이상이 필요합니다.
 ::: moniker-end

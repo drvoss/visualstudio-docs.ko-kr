@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188730"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846937"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio에서 컨테이너와 이미지를 보고 진단하는 방법
 
 **컨테이너** 창을 사용하여 앱을 호스트하는 컨테이너 내에서 수행되는 작업을 살펴볼 수 있습니다. 명령 프롬프트에서 Docker 명령을 실행하여 컨테이너에서 수행되는 작업을 살펴보고 진단하는 데 익숙한 경우, 이 창에서 제공하는 보다 편리한 방법으로 Visual Studio IDE 내에서 컨테이너를 모니터링할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019 버전 16.4 미리 보기 2](https://visualstudio.microsoft.com/downloads) 이상 또는 이전 버전의 Visual Studio 2019를 사용하는 경우 [컨테이너 창 확장](https://aka.ms/vscontainerspreview)을 설치합니다.
+- [Visual Studio 2019 버전 16.4 미리 보기 2](https://visualstudio.microsoft.com/downloads) 이상 또는 이전 버전의 Visual Studio 2019를 사용하는 경우 [컨테이너 창 확장](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions)을 설치합니다.
 
 ## <a name="view-information-about-your-containers"></a>컨테이너에 대한 정보 보기
 
@@ -108,7 +108,7 @@ Windows 컨테이너의 경우 Windows 명령 프롬프트가 열립니다. Linu
 
 [컨테이너 도구 개요](overview.md)를 참조하여 Visual Studio에서 사용할 수 있는 컨테이너 도구에 대해 자세히 알아봅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Visual Studio의 컨테이너 개발](/visualstudio/containers)
 

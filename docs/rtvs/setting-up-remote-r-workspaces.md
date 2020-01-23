@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888541"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850060"
 ---
 # <a name="set-up-remote-workspaces"></a>원격 작업 영역 설정
 
@@ -143,7 +143,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
      두 항목의 기능은 똑같지만 Microsoft R Open은 [Intel Math Kernel Library](https://software.intel.com/intel-mkl)의 허가로 추가적인 하드웨어 가속화된 선형 대수 라이브러리를 활용합니다.
 
-2. [R Services 설치 관리자](https://aka.ms/rtvs-services)를 실행하고 메시지가 표시되면 다시 부팅합니다. 설치 관리자에서 다음을 수행합니다.
+2. [R Services 설치 관리자](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md)를 실행하고 메시지가 표시되면 다시 부팅합니다. 설치 관리자에서 다음을 수행합니다.
 
     - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\\* 에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
     - `RHostBrokerService` 및 `RUserProfileService`를 설치하고 자동으로 시작되도록 구성합니다.

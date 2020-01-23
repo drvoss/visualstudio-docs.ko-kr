@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 5a3a05e50cfa17432bb2f31274c9b62c6b843687
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538935"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917956"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac 사용자용 설정, 설치 및 확인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "74538935"
   
 2. [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)에서 Xcode 다운로드하여 설치합니다.  
   
-3. [Xamarin.iOS 설치 및 구성](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
+3. [Xamarin.iOS 설치 및 구성](/xamarin/ios/get-started/installation/mac) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
   
 4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [XMA를 사용하여 Mac에 연결](/xamarin/ios/get-started/installation/windows/connecting-to-mac)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
   
@@ -112,7 +112,7 @@ ms.locfileid: "74538935"
   
    - "설치된 Android SDK가 너무 오래되었습니다."라는 오류가 표시되면 이 메시지에서 **Android SDK 열기**를 클릭하고 사용 가능한 최신 SDK 버전을 선택합니다. SDK를 업데이트하려면 Visual Studio를 관리자로 실행하고 있어야 합니다.  
   
-3. Visual Studio에서 Mac에 설치된 에뮬레이터로 연결할 수 있는지 확인합니다.  이의 결과로 Visual Studio 내에서 디버깅용으로 선택할 수 있는 에뮬레이터 목록에 Xamarin Player가 표시됩니다.  이 작업을 수행하려면 [Xamarin Android Player에 Visual Studio 연결](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (영문)(xamarin.com)의 지침을 따르세요.  
+3. Visual Studio에서 Mac에 설치된 에뮬레이터로 연결할 수 있는지 확인합니다.  이의 결과로 Visual Studio 내에서 디버깅용으로 선택할 수 있는 에뮬레이터 목록에 Xamarin Player가 표시됩니다.  이 작업을 수행하려면 [Xamarin Android Player에 Visual Studio 연결](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (영문)(xamarin.com)의 지침을 따르세요.  
   
    **Android**  
   

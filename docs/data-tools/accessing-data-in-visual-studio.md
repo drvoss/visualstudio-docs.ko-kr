@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587097"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916715"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 
@@ -108,7 +108,7 @@ ADO.NET에서 데이터베이스를 사용할 수 있도록 하려면 사용자 
 
 ## <a name="native-c"></a>네이티브 C++
 
-C++SQL Server에 연결 하는 응용 프로그램은 대부분의 경우 [SQL Server 용 Microsoft® ODBC 드라이버 13.1](https://www.microsoft.com/download/details.aspx?id=53339) 를 사용 해야 합니다. 서버가 연결 된 경우 OLE DB 필요 하며 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)를 사용 합니다. [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) 또는 OLE DB 드라이버를 직접 사용 하 여 다른 데이터베이스에 액세스할 수 있습니다. ODBC는 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템은 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다. OLE DB은 계속 지원 되지만 새 응용 프로그램에는 권장 되지 않는 레거시 COM 데이터 액세스 기술입니다. 자세한 내용은 [시각적 개체 C++의 데이터 액세스 ](/cpp/data/data-access-in-cpp)를 참조 하세요.
+C++SQL Server에 연결 하는 응용 프로그램은 대부분의 경우 [SQL Server 용 Microsoft® ODBC 드라이버 13.1](https://www.microsoft.com/download/details.aspx?id=53339) 를 사용 해야 합니다. 서버가 연결 된 경우 OLE DB 필요 하며 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)를 사용 합니다. [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) 또는 OLE DB 드라이버를 직접 사용 하 여 다른 데이터베이스에 액세스할 수 있습니다. ODBC는 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템은 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다. OLE DB은 계속 지원 되지만 새 응용 프로그램에는 권장 되지 않는 레거시 COM 데이터 액세스 기술입니다. 자세한 내용은 [시각적 개체 C++의 데이터 액세스 ](/cpp/data/data-access-in-cpp)를 참조 하세요.
 
 C++rest 서비스를 사용 하는 프로그램은 [ C++ rest SDK](https://github.com/Microsoft/cpprestsdk)를 사용할 수 있습니다.
 

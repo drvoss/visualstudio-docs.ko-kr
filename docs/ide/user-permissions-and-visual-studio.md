@@ -1,23 +1,23 @@
 ---
 title: 관리자 권한으로 실행
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647343"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718638"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 
@@ -26,11 +26,11 @@ ms.locfileid: "72647343"
 > [!WARNING]
 > 신뢰할 수 있는 사람이나 신뢰할 수 있는 위치에서 제공되지 않는 Visual Studio 솔루션은 컴파일하거나 실행하거나 디버깅하지 마십시오.
 
-Visual Studio IDE에서 일반 사용자로 거의 모든 작업을 수행할 수 있습니다. 다음 작업을 완료하려면 관리자 권한이 필요합니다.
+일반 사용자로 Visual Studio IDE에서 거의 모든 작업을 수행할 수 있습니다. 다음 작업을 완료하려면 관리자 권한이 필요합니다.
 
-|영역|작업|추가 정보|
+|Area|작업|추가 정보|
 |----------|----------| - |
-|설치|Visual Studio를 설치합니다.|[Visual Studio 설치](../install/install-visual-studio.md)|
+|설치|Visual Studio 설치 또는 수정|[Visual Studio 설치](../install/install-visual-studio.md), [Visual Studio 수정](../install/modify-visual-studio.md)|
 ||로컬 도움말 콘텐츠를 설치, 업데이트 또는 제거합니다.|[로컬 도움말 콘텐츠 설치 및 관리](../help-viewer/install-manage-local-content.md)|
 |도구 상자|**도구 상자**에 클래식 COM 컨트롤을 추가합니다.|[도구 상자](../ide/reference/toolbox.md)|
 |빌드|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/build/understanding-custom-build-steps-and-build-events)|
@@ -73,7 +73,7 @@ Visual Studio IDE에서 일반 사용자로 거의 모든 작업을 수행할 �
 
 또한 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행하도록 할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Visual Studio 설치](../install/install-visual-studio.md)

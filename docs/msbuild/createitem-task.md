@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385910"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590074"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
 항목 컬렉션을 입력 항목으로 채웁니다. 이를 통해 한 목록의 항목을 다른 목록으로 복사할 수 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "63385910"
 |`Include`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수<br /><br /> 출력 항목 컬렉션에 포함할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다.|
 |`PreserveExistingMetadata`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `True`인 경우 추가 메타데이터만 적용합니다(아직 존재하지 않을 경우).|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
@@ -76,6 +76,6 @@ ms.locfileid: "63385910"
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*file1.resx*(`MyMetadata="Hello"`)<br /><br /> *file2.resx*(`MyMetadata="Hello"`)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

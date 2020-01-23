@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659889"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846924"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -91,13 +91,16 @@ public void Withdraw(double amount)
 
    ::: moniker range="vs-2017"
    ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > **단위 테스트 만들기** 메뉴 명령은 .NET Framework(하지만.NET Core 아님)를 대상으로 하는 관리 코드에서만 사용할 수 있습니다.
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > **단위 테스트 만들기** 메뉴 명령은 관리 코드에만 사용할 수 있습니다.
+   ::: moniker-end
 
 2. **확인**을 클릭하여 단위 테스트를 만드는 기본값을 그대로 사용하거나, 단위 테스트 프로젝트와 단위 테스트를 만들고 이름을 지정하는 데 사용되는 값을 변경합니다. 단위 테스트 메서드에 기본적으로 추가되는 코드를 선택할 수 있습니다.
 
@@ -120,7 +123,7 @@ public void Withdraw(double amount)
 
 **솔루션에 단위 테스트 프로젝트를 추가하려면**
 
-1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새로 만들기** **프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**  >  **새** **프로젝트**를 선택합니다.
 
 ::: moniker range="vs-2017"
 

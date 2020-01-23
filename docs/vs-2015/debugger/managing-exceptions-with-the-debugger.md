@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301101"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918953"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>디버거를 사용한 예외 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ ms.locfileid: "74301101"
   
 3. 특정 예외에 대해서나(예외를 선택하고 마우스 오른쪽 단추를 클릭한 후 **사용자 코드에서 처리되지 않은 경우 계속**선택/선택 취소) 전체 예외 범주(예: 모든 공용 언어 런타임 예외)에 대해 이 설정을 변경할 수 있습니다.  
   
-   예를 들어 ASP.NET 웹 애플리케이션은 예외를 HTTP 500 상태 코드([ASP.NET API의 예외 처리](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling))로 변환하여 예외를 처리하며, 이에 따라 예외의 소스를 확인하는 데 도움이 되지 않을 수도 있습니다. 아래 예제에서는 사용자 코드가 `String.Format()` 을 발생시키는 <xref:System.FormatException>을 호출합니다. 다음과 같이 실행이 중단됩니다.  
+   예를 들어 ASP.NET 웹 애플리케이션은 예외를 HTTP 500 상태 코드([ASP.NET API의 예외 처리](/aspnet/web-api/overview/error-handling/exception-handling))로 변환하여 예외를 처리하며, 이에 따라 예외의 소스를 확인하는 데 도움이 되지 않을 수도 있습니다. 아래 예제에서는 사용자 코드가 `String.Format()` 을 발생시키는 <xref:System.FormatException>을 호출합니다. 다음과 같이 실행이 중단됩니다.  
   
    ![사용자&#45;unhanlded 예외 발생 시 중단](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   

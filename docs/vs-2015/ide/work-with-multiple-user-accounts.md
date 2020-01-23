@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296781"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917779"
 ---
 # <a name="work-with-multiple-user-accounts"></a>여러 사용자 계정으로 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "74296781"
 
  ![ASP.NET에 대 한 인증 대화 상자 변경](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- ASP.NET에서 사용되는 다양한 종류의 인증에 대한 자세한 내용은 [Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 를 참조하세요(인증에 대한 정보는 Visual Studio 2015에도 적용됨).
+ ASP.NET에서 사용되는 다양한 종류의 인증에 대한 자세한 내용은 [Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) 를 참조하세요(인증에 대한 정보는 Visual Studio 2015에도 적용됨).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Visual Studio Team Services 계정 액세스
  기본 메뉴에서 **팀 > Team Foundation Server에 연결**을 선택하여 **팀 탐색기** 창을 표시합니다. **팀 프로젝트 선택**을 클릭한 후 **Team Foundation Server 선택**아래의 목록 상자를 보면 Visual Studio Team Services 계정의 URL이 나타나야 합니다. URL을 선택하면 자격 증명을 다시 입력하지 않고도 로그인됩니다.

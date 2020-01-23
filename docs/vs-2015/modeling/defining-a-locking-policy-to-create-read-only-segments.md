@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849563"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918850"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "75849563"
 > [!NOTE]
 > 리플렉션을 사용 하 여 잠금 정책을 우회할 수 있습니다. 타사 개발자를 위한 명확한 경계를 제공 하지만 강력한 보안을 제공 하지는 않습니다.
 
- 추가 정보 및 샘플은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [시각화 및 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 웹 사이트에서 사용할 수 있습니다.
+ 자세한 내용은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [시각화 및 모델링 SDK](https://www.microsoft.com/download/details.aspx?id=48148) 웹 사이트에서 확인할 수 있습니다.
 
 ## <a name="setting-and-getting-locks"></a>잠금 설정 및 가져오기
  저장소, 파티션 또는 개별 요소에 대해 잠금을 설정할 수 있습니다. 예를 들어 다음 문은 모델 요소가 삭제 되는 것을 방지 하 고 해당 속성이 변경 되지 않도록 합니다.

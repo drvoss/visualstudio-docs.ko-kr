@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850476"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918874"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>프로필을 정의하여 UML 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ ms.locfileid: "75850476"
 7. 이전 섹션에서 설명한 대로 확장 프로젝트를 빌드하거나 모든 파일을 압축하여 Visual Studio 확장을 빌드합니다.
 
 ## <a name="Schema"></a>프로필의 구조
- UML 프로필에 대 한 XSD 파일은 다음 샘플: [스테레오 타입 및 프로필 Xsd 설정](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)에서 찾을 수 있습니다. 프로필 파일 편집에 도움이 되도록 `.xsd` 파일을 다음 위치에 설치합니다.
+
+ 프로필 파일 편집에 도움이 되도록 `.xsd` 파일을 다음 위치에 설치합니다.
 
  **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**
 
@@ -365,4 +366,5 @@ ms.locfileid: "75850476"
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.
 
 ## <a name="see-also"></a>참고 항목
- [Uml 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md) [uml 모델에 대 한](../modeling/standard-stereotypes-for-uml-models.md) 프로필 및 스테레오 타입 표준 스테레오 타입 [을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [샘플: 스테레오 타입 별 색 UML 요소](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [샘플: 스테레오 타입 설정, 프로필 XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Uml 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md) [uml 모델에 대 한](../modeling/standard-stereotypes-for-uml-models.md) [프로필 및 스테레오 타입 표준 스테레오 타입을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)
+ 

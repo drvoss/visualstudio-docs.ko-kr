@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590425"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919019"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -25,6 +25,8 @@ ms.locfileid: "75590425"
 > Visual Studio의 MSTest 어댑터는 호환성 지원을 위해 레거시 모드(*mstest.exe*를 포함하는 실행 테스트에 해당)로도 작동합니다. 레거시 모드에서는 TestCaseFilter 기능을 활용할 수 없습니다. *testsettings* 파일이 지정되거나, **forcelegacymode**가 *runsettings* 파일에서 **true**로 설정되거나, **HostType** 같은 특성을 사용하는 경우 어댑터를 레거시 모드로 전환할 수 있습니다.
 >
 > ARM 아키텍처 기반 머신에서 자동화된 테스트를 실행하려면 *VSTest.Console.exe*를 사용해야 합니다.
+
+[개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 열어 명령줄 도구를 사용하거나 *%Program Files(x86)%\Microsoft Visual Studio\\<version\>\\<edition\>\common7\ide\CommonExtensions\\<Platform | Microsoft>* 에서 도구를 찾을 수 있습니다.
 
 ## <a name="general-command-line-options"></a>일반 명령줄 옵션
 
@@ -44,7 +46,7 @@ ms.locfileid: "75590425"
 |**/Framework: [*프레임워크 버전*]**|테스트 실행에 사용될 .NET 버전을 대상 지정합니다.<br />예제 값은 `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`입니다.<br />대상 프레임워크가 **Framework35**로 지정된 경우 테스트가 CLR 4.0 “호환 가능 모드”에서 실행됩니다.<br />예: `/Framework:framework40`|
 |**/TestCaseFilter:[*식*]**|지정된 식과 일치하는 테스트를 실행합니다.<br /><Expression\>은 <property\>=<value\>[\|<Expression\>] 형식입니다.<br />예: `/TestCaseFilter:"Priority=1"`<br />예: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 명령줄 옵션은 **/Tests** 명령줄 옵션과 함께 사용할 수 없습니다. <br />식 만들기 및 사용에 대한 정보는 [TestCase 필터](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)를 참조하세요.|
 |**/?**|사용 정보를 표시합니다.|
-|**/Logger:[*uri/friendlyname*]**|테스트 결과에 대해 로거를 지정합니다.<br />예: Visual Studio 테스트 결과 파일(TRX)에 결과를 기록하려면 **/Logger:trx**를 사용합니다.<br />예: Team Foundation Server에 테스트 결과를 게시하려면 TfsPublisher를 사용합니다.<br />**/logger:TfsPublisher;**<br />**Collection=<프로젝트 url\>;**<br />**BuildName=<빌드 이름\>;**<br />**TeamProject=<프로젝트 이름\>;**<br />**[;Platform=\<기본값은 "Any CPU">]**<br />**[;Flavor=\<기본값은 "Debug">]**<br />**[;RunTitle=<제목\>]**|
+|**/Logger:[*uri/friendlyname*]**|테스트 결과에 대해 로거를 지정합니다.<br />예: Visual Studio 테스트 결과 파일(TRX)에 결과를 기록하려면 다음을 사용합니다.<br />**/Logger:trx**<br />**[;LogFileName=\<기본값은 고유한 파일 이름>]**<br />예: Team Foundation Server에 테스트 결과를 게시하려면 TfsPublisher를 사용합니다.<br />**/logger:TfsPublisher;**<br />**Collection=<프로젝트 url\>;**<br />**BuildName=<빌드 이름\>;**<br />**TeamProject=<프로젝트 이름\>;**<br />**[;Platform=\<기본값은 "Any CPU">]**<br />**[;Flavor=\<기본값은 "Debug">]**<br />**[;RunTitle=<제목\>]**<br />참고: TfsPublisher 로거는 Visual Studio 2017에서 더 이상 사용되지 않으며 이후 버전의 Visual Studio에서는 지원되지 않습니다. 이러한 시나리오에서는 사용자 지정 로거를 대신 사용합니다. 이 로거는 로거를 레거시 모드로 전환합니다.|
 |**/ListTests:[*파일 이름*]**|지정된 테스트 컨테이너에서 검색된 테스트를 나열합니다.|
 |**/ListDiscoverers**|설치된 테스트 Discoverer를 나열합니다.|
 |**/ListExecutors**|설치된 테스트 Executor를 나열합니다.|
@@ -55,7 +57,7 @@ ms.locfileid: "75590425"
 |**/ResultsDirectory:[*path*]**|테스트 결과 디렉터리가 존재하지 않는 경우 지정된 경로에 생성됩니다.<br />예: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|현재 프로세스를 시작하는 일을 담당하는 부모 프로세스의 프로세스 ID입니다.|
 |**/Port:[*port*]**|소켓 연결 및 이벤트 메시지를 받기 위한 포트입니다.|
-|**/Collect:[*dataCollector friendlyName*]**|테스트 실행에 대한 데이터 수집기를 사용하도록 설정합니다. [추가 정보](https://aka.ms/vstest-collect).|
+|**/Collect:[*dataCollector friendlyName*]**|테스트 실행에 대한 데이터 수집기를 사용하도록 설정합니다. [추가 정보](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > 옵션 및 값은 대/소문자를 구분하지 않습니다.

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 15869119ea867e41d3b91a1f046d1ffb995cd4e4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446644"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398429"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -70,6 +70,7 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
     ![Visual Studio 2019 설치 관리자의 Python 개발 옵션](media/installation-python-options-2019.png)
     ::: moniker-end
 
+    ::: moniker range="<=vs-2017"
     | 옵션 | 설명 |
     | --- | --- |
     | Python 배포 | 작업하려는 Python 2, Python 3, Miniconda, Anaconda2 및 Anaconda3 분배의 32비트 및 64비트 변형과 같은 사용 가능한 옵션 조합을 선택합니다. 각각은 배포의 인터프리터, 런타임 및 라이브러리를 포함합니다. 특히 Anaconda는 다양한 미리 설치된 패키지를 포함하는 개방형 데이터 과학 플랫폼입니다. (배포를 추가하거나 제거하기 위해 언제든지 Visual Studio 설치 관리자로 돌아갈 수 있습니다.)  **참고**: Visual Studio 설치 관리자 외부에서 배포를 설치한 경우 여기서 해당 옵션을 선택할 필요가 없습니다. Visual Studio에서 기존 Python 설치를 자동으로 검색합니다. [Python 환경 창](managing-python-environments-in-visual-studio.md#the-python-environments-window)을 참조하세요. 또한 설치 관리자에 표시된 버전보다 최신 버전의 Python을 사용할 수 있는 경우 해당 버전을 별도로 설치할 수 있으며, Visual Studio에서 이를 검색합니다. |
@@ -78,6 +79,17 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
     | **Python IoT 지원** | Python을 사용하여 Windows IoT Core 개발을 지원합니다. |
     | **Python 네이티브 개발 도구** | C++ 컴파일러 및 Python에 대한 기본 확장을 개발하는 데 필요한 기타 구성 요소를 설치합니다. [Python용 C++ 확장 만들기](working-with-c-cpp-python-in-visual-studio.md)를 참조하세요. 또한 전체 C++ 지원을 사용하려면 **C++를 사용한 데스크톱 개발** 워크로드를 설치하세요. |
     | **Azure Cloud Services 핵심 도구** | Python에서 개발자 Azure Cloud Services에 대한 추가 지원을 제공합니다. [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요. |
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    | 옵션 | 설명 |
+    | --- | --- |
+    | Python 배포 | 작업하려는 Python 2, Python 3, Miniconda, Anaconda2 및 Anaconda3 분배의 32비트 및 64비트 변형과 같은 사용 가능한 옵션 조합을 선택합니다. 각각은 배포의 인터프리터, 런타임 및 라이브러리를 포함합니다. 특히 Anaconda는 다양한 미리 설치된 패키지를 포함하는 개방형 데이터 과학 플랫폼입니다. (배포를 추가하거나 제거하기 위해 언제든지 Visual Studio 설치 관리자로 돌아갈 수 있습니다.)  **참고**: Visual Studio 설치 관리자 외부에서 배포를 설치한 경우 여기서 해당 옵션을 선택할 필요가 없습니다. Visual Studio에서 기존 Python 설치를 자동으로 검색합니다. [Python 환경 창](managing-python-environments-in-visual-studio.md#the-python-environments-window)을 참조하세요. 또한 설치 관리자에 표시된 버전보다 최신 버전의 Python을 사용할 수 있는 경우 해당 버전을 별도로 설치할 수 있으며, Visual Studio에서 이를 검색합니다. |
+    | **Cookiecutter 템플릿 지원** | Cookiecutter 그래픽 UI를 설치하여 템플릿을 검색하고, 템플릿 옵션을 입력하고, 프로젝트 및 파일을 만듭니다. [Cookiecutter 확장 사용](using-python-cookiecutter-templates.md)을 참조하세요. |
+    | **Python 웹 지원** | Bottle, Flask 및 Django 프레임워크를 사용하는 프로젝트에 대한 템플릿과 함께 HTML, CSS 및 JavaScript 편집 지원을 포함하는 웹 개발용 도구를 설치합니다. [Python 웹 프로젝트 템플릿](python-web-application-project-templates.md)을 참조하세요. |
+    | **Python 네이티브 개발 도구** | C++ 컴파일러 및 Python에 대한 기본 확장을 개발하는 데 필요한 기타 구성 요소를 설치합니다. [Python용 C++ 확장 만들기](working-with-c-cpp-python-in-visual-studio.md)를 참조하세요. 또한 전체 C++ 지원을 사용하려면 **C++를 사용한 데스크톱 개발** 워크로드를 설치하세요. |
+    | **Azure Cloud Services 핵심 도구** | Python에서 개발자 Azure Cloud Services에 대한 추가 지원을 제공합니다. [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요. |
+    ::: moniker-end
 
 1. 설치가 끝나면 설치 관리자는 Visual Studio를 수정, 실행, 복구 또는 제거하는 옵션을 제공합니다. **수정** 단추는 설치된 구성 요소의 Visual Studio에 대한 업데이트를 사용할 수 있으면 **업데이트**로 변경됩니다. (**수정** 옵션은 드롭다운 메뉴에서 사용할 수 있습니다.) "Visual Studio"를 검색하여 Windows **시작** 메뉴에서 Visual Studio 및 설치 관리자를 시작할 수도 있습니다.
 
@@ -109,9 +121,8 @@ Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 �
 
 1. 사용 중인 Visual Studio 버전에 맞는 적절한 버전의 Visual Studio용 Python 도구를 설치합니다.
 
-    - Visual Studio 2013: [Visual Studio 2013용 PTVS 2.2](https://github.com/Microsoft/PTVS/releases/v2.2). Visual Studio 2013에서 **파일** > **새 프로젝트** 대화 상자는 이 프로세스에 대한 바로 가기를 제공합니다.
-    - Visual Studio 2012: [Visual Studio 2012용 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010: [Visual Studio 2010용 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013: [Visual Studio 2013용 PTVS 2.2.2](https://github.com/Microsoft/PTVS/releases/v2.2.2) Visual Studio 2013에서 **파일** > **새 프로젝트** 대화 상자는 이 프로세스에 대한 바로 가기를 제공합니다.
+    - Visual Studio 2010 및 2012: [Visual Studio 2010 및 2012용 PTVS 2.1.1](https://github.com/Microsoft/PTVS/releases/v2.1.1)
 
 1. [원하는 Python 인터프리터를 설치합니다](installing-python-interpreters.md). 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
 
@@ -137,7 +148,7 @@ Visual Studio 2015 및 이전 버전에서 설치 경로는 다음과 같습니�
   - Visual Studio 2013의 경우 12.0
   - Visual Studio 2012의 경우 11.0
   - Visual Studio 2010의 경우 10.0
-- &lt;PTVS_ver&gt;는 2.2, 2.1, 2.0, 1.5, 1.1 또는 1.0과 같은 버전 번호입니다.
+- &lt;PTVS_ver&gt;는 2.2.2, 2.1.1, 2.0, 1.5, 1.1, 1.0과 같은 버전 번호입니다.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>사용자 고유의 설치(1.5 및 이전 버전)
 

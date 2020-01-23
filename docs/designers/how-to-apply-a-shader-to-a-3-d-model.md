@@ -3,17 +3,17 @@ title: '방법: 3D 모델에 셰이더 적용'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 445829c3171eeae3b483055688dcf5f77be67330
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637177"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112760"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>방법: 3D 모델에 셰이더 적용
 
@@ -35,7 +35,7 @@ ms.locfileid: "72637177"
 
 모델에 셰이더를 적용한 후 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **(고급)** 속성에서 말줄임표( **...** ) 단추를 선택하여 셰이더 디자이너에서 모델을 열 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)
 - [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)

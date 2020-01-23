@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461506"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115099"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
 
@@ -49,7 +49,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
     > [!NOTE]
     > 빌드 전 또는 빌드 후 이벤트가 성공적으로 완료되지 않으면 성공적인 작업을 나타내는 0(영) 이외의 코드로 이벤트 작업이 종료되도록 하여 빌드를 종료할 수 있습니다.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>예제: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>예: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
 
 다음 절차에서는 빌드 후 이벤트에서 호출된 *.exe* 명령을 사용하여 애플리케이션 매니페스트의 최소 운영 체제 버전을 설정하는 방법을 보여줍니다(프로젝트 디렉터리의 *.exe.manifest* 파일). 최소 운영 체제 버전은 네 부분으로 구성된 번호입니다(예: 4.10.0.0). 이를 위해 명령은 매니페스트의 `<dependentOS>` 섹션을 변경합니다.
 
@@ -163,7 +163,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [컴파일 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [게시 페이지, 프로젝트 디자이너](../ide/reference/publish-page-project-designer.md)

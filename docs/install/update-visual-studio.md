@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293688"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115082"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio를 최신 릴리스 버전으로 업데이트
 
@@ -36,7 +36,7 @@ ms.locfileid: "70293688"
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
 >
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 버전 15.6 이상 업데이트
 
@@ -57,11 +57,11 @@ IDE 내에서 바로 사용하기 쉽도록 설치 및 업데이트 환경이 �
 
 1. **업데이트** 대화 상자가 열리면 **지금 업데이트**를 선택합니다.
 
-    ![알림 허브의 업데이트 대화 상자를 사용하여 Visual Studio 2017 업데이트](media/vs-update-now-from-notifications-hub.png "Visual Studio 알림 허브의 업데이트 대화 상자")
+    ![알림 허브의 업데이트 대화 상자를 사용하여 Visual Studio 2017 업데이트](media/vs-update-now-from-notifications-hub.png "Visual Studio의 알림 허브에서 표시되는 업데이트 대화 상자")
 
      사용자 액세스 제어 대화 상자가 열리면 **예**를 선택합니다. “잠시 기다려 주세요.” 대화 상자가 잠시 열릴 수 있으며, 그런 다음, Visual Studio 설치 관리자가 열려 업데이트를 시작합니다.
 
-     ![버전 15.6의 새 Visual Studio 설치 관리자 환경](media/visual-studio-15dot6-installer.png "버전 15.6의 새 Visual Studio 설치 관리자 환경")
+     ![버전 15.6의 새로운 Visual Studio 설치 관리자 환경](media/visual-studio-15dot6-installer.png "버전 15.6의 새로운 Visual Studio 설치 관리자 환경")
 
      업데이트가 계속됩니다. 업데이트가 완료되면 Visual Studio가 다시 시작됩니다.
 
@@ -139,7 +139,7 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 
 알림 플래그를 선택하여 **알림** 허브를 열고 조치할 알림을 선택합니다. 또는 알림을 무시하거나 해제합니다.
 
- ![알림 허브의 선택적 또는 정보 메시지 보기](media/notification-flag-optional.png "Visual Studio의 선택적 또는 정보 메시지 알림 플래그")
+ ![알림 허브에서 선택적 또는 정보 메시지 보기](media/notification-flag-optional.png "Visual Studio의 선택적 또는 정보 메시지 알림 플래그")
 
 알림을 무시하도록 선택한 경우 Visual Studio에서 알림 표시를 중지합니다. 무시된 알림 목록을 다시 설정하려면 알림 허브에서 **설정** 단추를 선택합니다.
 
@@ -172,7 +172,7 @@ Visual Studio 2019를 아직 설치하지 않은 경우 [Visual Studio 다운로
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
 >
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
 
 Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니다.
 
@@ -188,17 +188,17 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
    예를 들어 이전에 Visual&nbsp;Studio Community&nbsp;2019를 설치했으며 업데이트가 있는 경우, **업데이트 사용 가능** 메시지가 설치 관리자에 표시됩니다.
 
-     ![업데이트하려는 Visual Studio 2019 버전 선택](media/vs-2019/vs-installer-update-visual-studio-community.png "업데이트하려는 Visual Studio 2019 버전 선택")
+     ![업데이트할 Visual Studio 2019 버전 선택](media/vs-2019/vs-installer-update-visual-studio-community.png "업데이트할 Visual Studio 2019 버전 선택")
 
 1. **업데이트**를 선택하여 업데이트를 설치합니다.
 
-    ![업데이트를 설치하려면 [업데이트] 단추 선택](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "업데이트를 설치하려면 [업데이트] 단추 선택")
+    ![업데이트 단추를 선택하여 업데이트 설치](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "업데이트 단추를 선택하여 업데이트 설치")
 
 1. 업데이트가 완료되면 컴퓨터를 다시 시작하라는 메시지가 표시될 수 있습니다. 그러면 컴퓨터를 다시 시작한 후 평상시와 같은 방법으로 Visual Studio를 시작합니다.
 
    컴퓨터를 다시 시작하라는 메시지가 표시되지 않으면 **시작**을 선택하여 설치 관리자에서 Visual Studio를 시작합니다.
 
-    ![Visual Studio를 시작하려면 [시작] 단추 선택](media/vs-2019/choose-launch-visual-studio-community.png "Visual Studio를 시작하려면 [시작] 단추 선택")
+    ![시작 단추를 선택하여 Visual Studio 시작](media/vs-2019/choose-launch-visual-studio-community.png "시작 단추를 선택하여 Visual Studio 시작")
 
 ## <a name="use-the-ide"></a>IDE 사용
 
@@ -224,7 +224,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 1. **업데이트 다운로드 및 설치 준비** 대화 상자에서 **업데이트**를 선택합니다.
 
-     !['업데이트 다운로드 및 설치 준비' 대화 상자에서 [업데이트] 단추 선택](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "'업데이트 다운로드 및 설치 준비' 대화 상자에서 [업데이트] 단추 선택")
+     !['업데이트 다운로드 및 설치 준비' 대화 상자에서 업데이트 단추 선택](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "'업데이트 다운로드 및 설치 준비' 대화 상자에서 업데이트 단추 선택")
 
    Visual Studio가 업데이트되고, 닫힌 다음, 다시 열립니다.
 
@@ -232,14 +232,14 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 1. 메뉴 모음에서 **도움말**을 선택한 다음, **업데이트 확인**을 선택합니다.
 
-     ![도움말 메뉴에서 ‘업데이트 확인’ 선택](media/vs-2019/vs-ide-check-updates-help-menu.png "도움말 메뉴에서 ‘업데이트 확인’ 선택")
+     ![도움말 메뉴에서 '업데이트 확인' 선택](media/vs-2019/vs-ide-check-updates-help-menu.png "도움말 메뉴에서 '업데이트 확인' 선택")
 
     > [!NOTE]
     > IDE의 검색 상자를 사용하여 업데이트를 확인할 수도 있습니다. **Ctrl**+**Q**를 누르고, “업데이트 확인”을 입력한 다음, 일치하는 검색 결과를 선택합니다.
 
 1. **업데이트 사용 가능** 대화 상자에서 **업데이트**를 선택합니다.
 
-     !['업데이트 다운로드 및 설치 준비' 대화 상자에서 [업데이트] 단추 선택](media/vs-2019/update-visual-studio-community-from-ide.png "'업데이트 다운로드 및 설치 준비' 대화 상자에서 [업데이트] 단추 선택")
+     !['업데이트 다운로드 및 설치 준비' 대화 상자에서 업데이트 단추 선택](media/vs-2019/update-visual-studio-community-from-ide.png "'업데이트 다운로드 및 설치 준비' 대화 상자에서 업데이트 단추 선택")
 
    Visual Studio가 업데이트되고, 닫힌 다음, 다시 열립니다.
 
@@ -275,7 +275,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 방법은 다음과 같습니다.
 
-1. 메뉴 모음에서 **도구** >**옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **환경**을 확장한 다음 **제품 업데이트**를 선택합니다.
 
@@ -287,7 +287,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 버전 side-by-side 설치](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)

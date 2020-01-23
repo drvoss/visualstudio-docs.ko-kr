@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 8b03d1e698108fac2f81d1e3263d7b38ff82b1dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852343"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916690"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
 Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서 Azure Storage에 다음을 연결할 수 있습니다.
@@ -63,12 +63,12 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 ## <a name="how-your-project-is-modified"></a>프로젝트를 수정하는 방법
 대화 상자를 완료하면 Visual Studio는 참조를 추가하고 특정 구성 파일을 수정합니다. 특정 변경 내용은 프로젝트 형식에 따라 달라집니다.
 
-- ASP.NET 프로젝트 - [변경된 내용 – ASP.NET 프로젝트](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- ASP.NET Core 프로젝트 - [변경된 내용 – ASP.NET 5 프로젝트](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- 클라우드 서비스 프로젝트(웹 역할 및 작업자 역할) - [변경된 내용 – 클라우드 서비스 프로젝트](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
+- ASP.NET 프로젝트 - [변경된 내용 – ASP.NET 프로젝트](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core 프로젝트 - [변경된 내용 – ASP.NET 5 프로젝트](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- 클라우드 서비스 프로젝트(웹 역할 및 작업자 역할) - [변경된 내용 – 클라우드 서비스 프로젝트](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob 프로젝트 - [변경된 내용 -WebJob 프로젝트](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>다음 단계
 - [MSDN 포럼: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure Storage 팀 블로그](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-- [Azure Storage 설명서](https://docs.microsoft.com/azure/storage/)
+- [Azure Storage 설명서](/azure/storage/)

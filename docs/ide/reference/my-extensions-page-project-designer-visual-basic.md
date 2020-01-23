@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748679"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114222"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>프로젝트 디자이너, My 확장 페이지(Visual Basic)
 **프로젝트 디자이너**의 **내 확장** 페이지를 사용하여 프로젝트에서 `My` 네임스페이스 확장을 관리합니다. `My` 네임스페이스 확장을 사용하면 `My` 네임스페이스를 사용자 지정하여 고유한 사용자 지정 멤버를 추가할 수 있습니다. 사용자 지정 `My` 네임스페이스 확장을 만드는 방법에 대한 내용은 [Visual Basic에서 내 네임스페이스 확장](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)을 참조하세요.
@@ -40,7 +40,7 @@ ms.locfileid: "72748679"
 
 **내 네임스페이스 확장** 목록에서 하나 이상의 참조를 선택하고 이 단추를 클릭하여 프로젝트에서 `My` 네임스페이스 확장을 제거합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Basic의 내 네임스페이스 확장](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [사용자 지정 My 확장명 패키징 및 배포](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

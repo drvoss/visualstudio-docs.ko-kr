@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 38082d854a6c817503d2765c48c5b08c0bd2a5b3
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888532"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843732"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio용 R 도구를 설치하는 방법
 
@@ -64,7 +64,7 @@ Microsoft R Open 및 CRAN R은 둘 다 여러 개의 동시 버전을 허용합�
 
 ### <a name="install-the-r-tools"></a>R 도구 설치
 
-[https://aka.ms/rtvs-current](https://aka.ms/rtvs-current)에서 Visual Studio 2015용 최신 RTVS를 다운로드합니다. RTVS는 적합한 Visual Studio 버전을 확인하고 해당 버전이 아직 없는 경우 R 인터프리터를 설치하도록 지원합니다.
+[https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe)에서 Visual Studio 2015용 최신 RTVS를 다운로드합니다. RTVS는 적합한 Visual Studio 버전을 확인하고 해당 버전이 아직 없는 경우 R 인터프리터를 설치하도록 지원합니다.
 
 > [!Note]
 > 독립 실행형 RTVS 설치 관리자는 Visual Studio 2015, Visual Studio 2017과만 작동합니다. 앞에서 설명한 대로 [데이터 과학 및 분석 애플리케이션 작업](#install-rtvs-in-visual-studio-2017)을 통해 R 지원을 설치합니다.
@@ -81,11 +81,11 @@ Visual Studio 2015용 RTVS는 `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Co
 
 1. 웹 페이지에서 오프라인 설치를 만들기 위한 지침을 수행하세요.
 
-1. Visual Studio 2015의 경우 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 및 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip)에서 오프라인 RTVS 설치 관리자를 다운로드합니다.
+1. Visual Studio 2015의 경우 [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) 및 [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip)에서 오프라인 RTVS 설치 관리자를 다운로드합니다.
 
 1. 오프라인 설치 관리자에서 Visual Studio 및 RTVS를 설치합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [R 시작](getting-started-with-r.md)
 - [R 도구 샘플 프로젝트](getting-started-samples.md)

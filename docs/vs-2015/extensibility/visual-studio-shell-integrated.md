@@ -11,19 +11,19 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f6e88e5c430129faa80f34a45f9b6620d5b0d13
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 6220afc2bdf75cc22529c65d5514f5f9e0766555
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850354"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919219"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell(통합)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 통합 셸에는 IDE(통합 개발 환경), 디버거, 소스 제어 통합 등이 포함되어 있습니다. 프로그래밍 언어는 포함 되지 않습니다. 그러나 통합 셸은 프로그래밍 언어를 추가 하는 데 사용할 수 있는 프레임 워크를 제공 합니다.  
   
- Visual Studio 통합 셸은 실제로는 Visual Studio 격리 셸 및 통합 된 셸 관련 구성 요소가 포함 된 추가 설치의 조합입니다.  통합 셸 응용 프로그램은 [Microsoft Visual Studio Shell(격리) 재배포 가능 패키지](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J) 의 격리 된 셸 재배포 가능 패키지 뿐만 아니라 [Microsoft Visual Studio Shell(통합) 재배포 가능 패키지](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J)의 통합 셸 재배포 가능 패키지를 포함 해야 합니다.  
+ Visual Studio 통합 셸은 실제로는 Visual Studio 격리 셸 및 통합 된 셸 관련 구성 요소가 포함 된 추가 설치의 조합입니다.  통합 셸 응용 프로그램에는 격리 된 셸 재배포 가능 패키지 뿐만 아니라 [Microsoft Visual Studio shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)재배포 가능 패키지의 통합 셸 재배포 가능 패키지가 모두 포함 되어야 합니다.  
   
 > [!NOTE]
 > 격리 및 통합 셸 재배포 가능 패키지에 액세스하려면 먼저 간단한 고객 설문 조사를 작성해야 합니다.  설문 조사를 작성하면 재배포 가능 패키지 다운로드 링크가 포함된 Visual Studio 연결 페이지로 이동됩니다.  **&#124; 프로그램 VISUAL STUDIO 2015 통합 및 격리 셸** 탭에서 visual studio Connect 사이트에 대 한 후속 방문에서 다운로드 링크를 찾을 수 있습니다.  

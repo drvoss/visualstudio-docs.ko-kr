@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954829"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917378"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -75,7 +75,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 소스 제어를 사용하는 경우 가상 환경은 *requirements.txt*만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2 및 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
 
-Microsoft Azure App Service에 배포할 때는 [사이트 확장](https://aka.ms/PythonOnAppService)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로** [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService)의 구성 세부 정보를 따릅니다.
+Microsoft Azure App Service에 배포할 때는 [사이트 확장](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
 
 Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*. 자세한 내용은 [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 
@@ -93,7 +93,7 @@ Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*
 
 **서버 실행 명령** 및 **서버 디버그 명령** 그룹의 속성(후자는 아래 이미지에 표시됨)에 따라 웹 서버가 시작되는 방식이 결정됩니다. 많은 프레임워크에서는 현재 프로젝트 외부에서 스크립트를 사용해야 하기 때문에 여기에서 스크립트를 구성할 수 있으며 시작 모듈의 이름을 매개 변수로 전달할 수 있습니다.
 
-- **명령**: Python 스크립트(*\*.py* 파일), 모듈 이름(`python.exe -m module_name`에서와 같이) 또는 단일 코드 줄(`python.exe -c "code"`에서와 같이)일 수 있습니다. 드롭다운의 값은 이러한 형식 중 어떤 것이 의도되었는지를 나타냅니다.
+- **명령**: Python 스크립트( *\*.py* 파일), 모듈 이름(`python.exe -m module_name`에서와 같이) 또는 단일 코드 줄(`python.exe -c "code"`에서와 같이)일 수 있습니다. 드롭다운의 값은 이러한 형식 중 어떤 것이 의도되었는지를 나타냅니다.
 - **인수**: 이러한 인수는 명령줄에서 명령 다음에 전달됩니다.
 - **환경**: 환경 변수를 지정하는 줄 바꿈 문자로 구분된 \<NAME>=\<VALUE> 쌍 목록입니다. 이러한 변수는 포트 번호 및 검색 경로 등 환경을 수정할 수 있는 모든 속성 뒤에 설정되므로 이러한 값을 덮어쓸 수 있습니다.
 
@@ -145,7 +145,7 @@ Pyramid 앱은 현재 `pcreate` 명령줄 도구를 사용하여 최적으로 �
 
 ![Microsoft Azure Cloud Service 프로젝트 명령으로 변환](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Python 항목 템플릿 참조](python-item-templates.md)
 - [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)

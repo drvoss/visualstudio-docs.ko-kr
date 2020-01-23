@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653047"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591543"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 질문과 대답
 
@@ -85,15 +85,26 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>\<OutputPath > 또는 \<OutDir>을 포함한 오류 메시지
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>\<OutputPath>, \<OutDir> 또는 \<IntermediateOutputPath>가 포함된 오류 메시지
 
 **Live Unit Testing이 내 솔루션을 빌드하려고 하는 경우 다음 오류가 표시되는 이유는 무엇인가요? “무조건 `<OutputPath>` 또는 `<OutDir>`으로 설정된 것으로 보입니다. Live Unit Testing은 출력 어셈블리에서 테스트를 실행하지 않습니다.”**
 
-솔루션에 대한 빌드 프로세스가 무조건 `<OutputPath>` 또는 `<OutDir>`를 재정의하는 경우에 이 오류가 발생할 수 있습니다. 따라서 `<BaseOutputPath>`의 하위 디렉터리가 아닙니다. 이러한 경우에 빌드 아티팩트가 `<BaseOutputPath>` 아래의 폴더에 배치되도록 이러한 값을 재정의하기 때문에 Live Unit Testing은 작동하지 않습니다. 빌드 아티팩트를 일반적인 빌드에 배치하는 위치를 재정의해야 하는 경우 `<BaseOutputPath>`에 따라 조건부로 `<OutputPath>`를 재정의합니다.
+솔루션 빌드 프로세스에 이진 파일을 생성해야 하는 위치를 지정하는 사용자 지정 논리가 있는 경우 이 오류가 발생할 수 있습니다. 기본적으로 이진 파일의 위치는 `<OutputPath>`. `<OutDir>` 또는 `<IntermediateOutputPath>`. 그리고 `<BaseOutputPath>` 또는 `<BaseIntermediateOutputPath>`에 따라 달라집니다.
 
-예를 들어 다음과 같이 빌드가 `<OutputPath>`를 재정의하는 경우:
+Live Unit Testing은 이러한 변수를 재정의하여 빌드 아티팩트가 Live Unit Testing 아티팩트 폴더에 배치되도록 하며, 빌드 프로세스에서 이러한 변수도 재정의하는 경우에는 실패합니다.
 
-```xml 
+Live Unit Testing 빌드를 성공적으로 수행하는 두 가지 주요 방법이 있습니다. 빌드 구성을 용이하게 하기 위해 `<BaseIntermediateOutputPath>`에 기반하여 출력 경로를 지정할 수 있습니다. 보다 복잡한 구성의 경우 `<LiveUnitTestingBuildRootPath>`에 기반하여 출력 경로를 지정할 수 있습니다.
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>`<BaseOutputPath>`/ `<BaseIntermediateOutputPath>`를 기반으로 조건부로 `<OutputPath>`/`<IntermediateOutputPath>`를 재정의.
+
+> [!NOTE]
+> 이 방법을 사용하려면 각 프로젝트가 서로 독립적으로 빌드할 수 있어야 합니다. 빌드하는 동안 한 프로젝트가 다른 프로젝의 아티팩트를 참조하지 않게 합니다. 런타임 도중 한 프로젝트가 다른 프로젝트의 어셈블리를 동적으로 로드하지 않게 합니다(예: `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")` 호출).
+
+빌드하는 동안 Live Unit Testing이 `<BaseOutputPath>`/`<BaseIntermediateOutputPath>` 변수를 자동으로 재정의하여 Live Unit Testing 아티팩트 폴더를 대상으로 합니다.
+
+예를 들어 다음과 같이 빌드가 <OutputPath>를 재정의하는 경우:
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 그러면 다음 XML로 바꿀 수 있습니다.
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 그렇게 하면 `<OutputPath>`은 `<BaseOutputPath>` 폴더 내에 위치합니다.
 
 `<OutDir>`를 빌드 프로세스에서 직접 재정의하지 않습니다. 특정 위치에 빌드 아티팩트를 배치하는 대신 `<OutputPath>`를 재정의합니다.
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>`<LiveUnitTestingBuildRootPath>` 속성을 기반으로 속성을 재정의.
+
+> [!NOTE]
+> 이 방법에서는 빌드 도중 생성되지 않은 아티팩트 폴더에 추가된 파일을 주의해야 합니다. 아래 예제에서는 패키지 폴더를 아티팩트 아래에 배치할 때 수행할 작업을 보여 줍니다. 이 폴더의 콘텐츠는 빌드하는 동안 생성되지 않으므로 MSBuild 속성을 **변경하면 안 됩니다**.
+
+Live Unit Testing 빌드 동안 `<LiveUnitTestingBuildRootPath>` 속성은 Live Unit Testing 아티팩트 폴더의 위치로 설정됩니다.
+
+예를 들어 프로젝트에 다음과 같은 구조가 있다고 가정합니다.
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Live Unit Testing 빌드 동안 `<LiveUnitTestingBuildRootPath>` 속성은 `.vs\...\lut\0\b`의 전체 경로로 설정됩니다. 프로젝트가 솔루션 dir에 매핑되는 `<ArtifactsRoot>` 속성을 정의하는 경우 다음과 같이 MSBuild 프로젝트를 업데이트할 수 있습니다.
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>아티팩트 빌드 위치
 
@@ -133,8 +184,6 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 - Live Unit Testing은 테스트를 실행하기 위해 새 애플리케이션 도메인을 만들지 않지만 **테스트 탐색기** 창에서 실행되는 테스트는 새 애플리케이션 도메인을 만듭니다.
 
 - Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트 탐색기**에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
-
-- Live Unit Testing에서 테스트를 검색하고 실행하려면 `TestPlatform`의 버전 2를 사용하는 반면 **테스트 탐색기** 창은 버전 1을 사용합니다. 그러나 대부분의 경우에는 차이를 알 수 없습니다.
 
 - **테스트 탐색기**는 기본적으로 STA(단일 스레드 아파트)에서 실행되는 반면 Live Unit Testing은 MTA(다중 스레드 아파트)에서 테스트를 실행합니다. Live Unit Testing의 STA에서 MSTest 테스트를 실행하려면 `MSTest.STAExtensions 1.0.3-beta`에서 찾을 수 있는 `<STATestMethod>` 또는 `<STATestClass>` 특성을 사용하여 NuGet 패키지 테스트 메서드 또는 포함한 클래스를 데코레이트합니다. NUnit의 경우 테스트 메서드를 `<RequiresThread(ApartmentState.STA)>` 특성을 사용하여 데코레이트하고 xUnit의 경우 `<STAFact>` 특성을 사용하여 데코레이트합니다.
 
@@ -215,6 +264,6 @@ Live Unit Testing이 작동하는 어셈블리가 어떤 이유로든 계측되�
 
 - `VS_UTE_DIAGNOSTICS`이라는 사용자 수준 환경 변수를 만들고 1(또는 다른 값)로 설정한 다음 Visual Studio를 다시 시작합니다. 이제 Visual Studio의 **출력 - 테스트** 탭에서 여러 로깅이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [유닛 테스트](live-unit-testing.md)

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853492"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847457"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 피드백 옵션
 
@@ -75,12 +75,12 @@ Visual Studio를 개선하기 위한 아이디어나 제안이 있는 경우 **�
 
 ## <a name="contact-microsoft-support"></a>Microsoft 지원팀에 문의
 
-Visual Studio 지원 정보는 [제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/) 페이지를 참조하세요. 다른 Microsoft 제품 및 서비스에 대한 온라인 도움말을 보려면 [Microsoft 지원](https://go.microsoft.com/fwlink/?LinkID=99019)을 참조하세요.
+Visual Studio 지원 정보는 [제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/) 페이지를 참조하세요. 다른 Microsoft 제품 및 서비스에 대한 온라인 도움말을 보려면 [Microsoft 지원](https://support.microsoft.com/)을 참조하세요.
 
 > [!NOTE]
 > 미국 및 캐나다 이외의 지역에서는 지원 내용이 다를 수 있습니다. 지역별 연락처 목록은 [Microsoft 국가별 사이트](https://www.microsoft.com/worldwide/)를 참조하세요.
 
-Microsoft에서 직접 관리와 지원을 받아야 하는 대규모 조직의 경우 다양한 엔터프라이즈 지원 제안을 통해 계약을 체결할 수 있습니다. 자세한 내용은 [Microsoft 엔터프라이즈 지원 솔루션](https://go.microsoft.com/fwlink/?LinkId=258223)을 참조하세요.
+Microsoft에서 직접 관리와 지원을 받아야 하는 대규모 조직의 경우 다양한 엔터프라이즈 지원 제안을 통해 계약을 체결할 수 있습니다. 자세한 내용은 [Microsoft 엔터프라이즈 지원 솔루션](https://www.microsoft.com/industry/services/support)을 참조하세요.
 
 제품이 새 컴퓨터 또는 디바이스와 함께 설치되어 온 경우 하드웨어 제조업체가 이 소프트웨어에 대한 기술 지원을 제공합니다. 제조업체에 직접 문의하여 지원을 받으세요.
 
@@ -96,7 +96,7 @@ Microsoft 지원 서비스는 현재 가격, 약관 및 조건에 따라 다를 
 
 [코드 샘플 찾아보기](/samples/browse/) 페이지에서 다른 개발자의 코드를 보고 직접 작성한 예제를 공유할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [설치 및 업그레이드 문제 해결](../install/troubleshooting-installation-issues.md)
 * [개발자 커뮤니티 데이터 개인 정보](developer-community-privacy.md)

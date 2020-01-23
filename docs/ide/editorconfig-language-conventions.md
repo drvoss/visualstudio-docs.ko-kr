@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588631"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -1465,7 +1465,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 #### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
-이 스타일 규칙을 사용 하 여 관련는 [ `default` 기본값 식에 대 한 리터럴](/dotnet/csharp/language-reference/operators/default#default-literal) 때 컴파일러는 식의 형식을 유추할 수 있습니다.
+이 스타일 규칙을 사용 하 여 관련는 [`default` 기본값 식에 대 한 리터럴](/dotnet/csharp/language-reference/operators/default#default-literal) 때 컴파일러는 식의 형식을 유추할 수 있습니다.
 
 |||
 |-|-|
@@ -1885,7 +1885,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [서식 지정 규칙](editorconfig-formatting-conventions.md)
 - [명명 규칙](editorconfig-naming-conventions.md)

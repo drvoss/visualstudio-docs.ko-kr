@@ -3,8 +3,8 @@ title: Visual Studio 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
 keywords: ''
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a5da7186bcc67fb61e80fdd691142423b879f312
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 05a5a1cb55356dbdd0d0d0127793abbd2e73e109
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588436"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114160"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 워크로드 및 구성 요소 ID
 

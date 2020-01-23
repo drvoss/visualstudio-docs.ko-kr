@@ -2,8 +2,8 @@
 title: Visual Studio Test Professional 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터를 위한 통합된 테스트 도구를 제공합니다.
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 9ed75c9731d36f48dcb50be7f929c4cba5ed3b6c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c662732a4ba1cd05b1c9affa8fb86305f65b10a7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590900"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114309"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 구성 요소 디렉터리
 

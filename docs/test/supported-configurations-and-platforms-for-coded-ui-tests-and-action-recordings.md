@@ -4,17 +4,17 @@ ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cf70ad5e28286d3906b1d670303e5fdfad4cbbe2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+author: mikejo5000
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982952"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845804"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -36,7 +36,7 @@ ms.locfileid: "72982952"
 | 운영 체제 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | 32비트/64비트 지원 | 32비트 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 를 실행하는 32비트 Windows에서 32비트 애플리케이션을 테스트할 수 있습니다.<br /><br /> 32비트 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 를 실행하는 64비트 Windows에서 UI 동기화 기능이 있는 32비트 WOW 애플리케이션을 테스트할 수 있습니다.<br /><br /> 32비트 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 를 실행하는 64비트 Windows에서 UI 동기화 기능이 없는 64비트 Windows Forms 및 WPF 애플리케이션을 테스트할 수 있습니다. |
 | 아키텍처 | x86 및 x64 **참고:**  Internet Explorer는 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 또는 이후 버전에서 실행하는 경우를 제외하고 64비트 모드에서 지원되지 않습니다. |
-| .NET | .NET 2.0, 3.0, 3.5, 4 및 4.5. **참고:**  [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 및 Visual Studio를 작동하려면 .NET 4가 필요합니다. 그러나 여기 나열된 .NET 버전을 사용하여 개발한 애플리케이션은 모두 지원됩니다. |
+| .NET | .NET 2.0, 3.0, 3.5, 4 및 4.5. **참고:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 및 Visual Studio를 작동하려면 .NET 4가 필요합니다. 그러나 여기 나열된 .NET 버전을 사용하여 개발한 애플리케이션은 모두 지원됩니다. |
 
 > [!NOTE]
 > *UI 동기화* 는 각 컨트롤의 메시지 큐에서 재생을 확인할 수 있는 기능입니다. 컨트롤에 이벤트를 보내도 컨트롤이 응답하지 않으면 이벤트가 다시 전달됩니다.
@@ -54,7 +54,7 @@ ms.locfileid: "72982952"
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | 지원되지 않습니다. |
 | Chrome<br /><br /> Firefox | 작업 단계 기록은 지원되지 않습니다. 코딩된 UI 테스트는 Visual Studio 2012 Update 4 이상에서 Chrome 및 Firefox 브라우저로 재생할 수 있습니다. 자세한 내용을 보려면 [여기](using-different-web-browsers-with-coded-ui-tests.md) 로 이동하세요. |
 | Opera<br /><br /> Safari | 지원되지 않습니다. |
-| Silverlight | 지원되지 않습니다.<br /><br /> 그러나 Visual Studo 2013의 경우 Visual Studio 갤러리에서 [Silverlight용 Microsoft Visual Studio 2013 코딩된 UI 테스트 플러그 인](https://go.microsoft.com/fwlink/?LinkId=691026)을 다운로드할 수 있습니다. |
+| Silverlight | 지원되지 않습니다.<br /><br /> 그러나 Visual Studo 2013의 경우 Visual Studio 갤러리에서 [Silverlight용 Microsoft Visual Studio 2013 코딩된 UI 테스트 플러그 인](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve)을 다운로드할 수 있습니다. |
 | Flash/Java | 지원되지 않습니다. |
 | Windows Forms 2.0 이상 | 완전하게 지원됨 **참고:**  NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다. |
 | WPF 3.5 이상 | 완전하게 지원됨<br /><br /> **참고** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다. |
@@ -70,6 +70,6 @@ ms.locfileid: "72982952"
 
 다른 플랫폼을 지원하기 위한 확장을 만드는 방법에 대한 자세한 내용은 [컨트롤의 코딩된 UI 테스트 사용](../test/enable-coded-ui-testing-of-your-controls.md) 및 [코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962722"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75679002"
 ---
 # <a name="debug-python-and-c-together"></a>Python과 C++ 함께 디버그
 
@@ -38,7 +38,7 @@ Visual Studio에서는 Python 및 네이티브 C/C++에 대한 통합된 동시 
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Visual Studio로 네이티브 C 모듈을 빌드, 테스트 및 디버그하는 방법에 대한 소개는 [심층 분석: 네이티브 모듈 만들기](https://youtu.be/D9RlT06a1EI) (youtube.com, 9분 09초)를 시청하세요. 이 동영상은 Visual Studio 2015 및 2017 모두에 적용됩니다. |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | Visual Studio로 네이티브 C 모듈을 빌드, 테스트 및 디버그하는 방법에 대한 소개는 [심층 분석: 네이티브 모듈 만들기](https://youtu.be/D9RlT06a1EI) (youtube.com, 9분 09초)를 시청하세요. 이 동영상은 Visual Studio 2015 및 2017 모두에 적용됩니다. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Python 프로젝트에서 혼합 모드 디버깅 사용
 
@@ -69,6 +69,9 @@ Visual Studio(2017 15.5 이상 버전)는 C/C++ 프로젝트에서 혼합 모드
 1. **디버깅** 탭을 선택하고, **실행할 디버거**에서 **Python/네이티브 디버깅**을 선택하고, **확인**을 선택합니다.
 
     ![C/C++ 프로젝트에서 Python/네이티브 디버거를 선택합니다.](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> **Python/네이티브 디버깅**을 선택할 수 있는 옵션이 없는 경우 먼저 VS 설치 관리자를 사용하여 **Python 네이티브 개발 도구**를 설치해야 합니다. 이 설치 관리자는 Python 개발 워크로드에서 옵션으로 찾을 수 있습니다. 자세한 내용은 [Windows의 Visual Studio에서 Python 지원 설치 방법](installing-python-support-in-visual-studio.md)을 참조하세요.
 
 이 메서드를 사용하면 디버거를 연결할 수 없는 자식 *python.exe* 프로세스를 생성하기 때문에 *py.exe* 시작 관리자 자체를 디버그할 수 없습니다. 인수를 사용하여 *python.exe*를 직접 시작하려면 **Python/네이티브 디버깅** 속성에서 **명령** 옵션을 변경(이전 이미지에 표시)하여 전체 경로를 *python.exe*로 지정한 다음, **명령 인수**에서 인수를 지정합니다.
 

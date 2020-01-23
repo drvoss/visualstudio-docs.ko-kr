@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815478"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916813"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
 
@@ -107,7 +107,7 @@ Windows의 Hyper-V 요구 사항
 
 |요구 사항|요구 사항을 확인하고 사용하도록 설정하는 방법|
 |-----------------|----------------------------------------------|
-|Hyper-V를 설치해야 함|[Windows Phone 에뮬레이터용 Hyper-V를 설정](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))하는 데 사용되는 것과 동일한 지침을 따릅니다.<br /><br /> 서비스 스냅인에서 **Hyper-V 가상 머신 관리** 서비스의 상태를 확인합니다.|
+|Hyper-V를 설치해야 함|[Windows Phone 에뮬레이터용 Hyper-V를 설정](/previous-versions/windows/apps/jj863509(v=vs.105))하는 데 사용되는 것과 동일한 지침을 따릅니다.<br /><br /> 서비스 스냅인에서 **Hyper-V 가상 머신 관리** 서비스의 상태를 확인합니다.|
 |Hyper-V를 실행해야 함|서비스 관리에 대한 자세한 내용은 다음 항목을 참조합니다.<br /><br /> -   [서비스 시작, 중지, 일시 중지, 계속 또는 다시 시작](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [서비스 시작 방법 구성](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  로컬 Hyper-V Administrators 그룹의 구성원이어야 합니다.
@@ -119,7 +119,7 @@ Windows의 Hyper-V 요구 사항
 > [!IMPORTANT]
 > 그룹에 참여한 후에는 로그오프하거나 다시 부팅하여 변경 내용을 적용합니다.
 
- ![Hyper&#45;V 관리자 보안 그룹 가입](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Hyper&#45;V 관리자 보안 그룹에 가입](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다.
 
@@ -145,6 +145,6 @@ ReFS 파일 시스템에서는 가상 하드 디스크 파일에 무결성 비�
 
 에뮬레이터가 OpenGL ES에서 사용되는 GPU 등에 대한 호출을 에뮬레이트하기 위해서는 컴퓨터에 적절한 DirectX 드라이버와 함께 DirectX 호환 GPU가 설치되어 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Android용 Visual Studio 에뮬레이터 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

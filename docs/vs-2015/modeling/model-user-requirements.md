@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844911"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918265"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |개념적 클래스 다이어그램의 요소|[UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)|
 |개념적 클래스에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
- 개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다. 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장에서는 비방향 화살표가 기본값으로 설정됩니다. [샘플: UML 도메인 모델링 기능](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+ 개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다.
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.
@@ -239,4 +239,4 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
   다양한 다이어그램에서 제공하는 뷰 간의 관계를 검사하면 사용자 작업에 사용되는 주요 개념을 빠르게 이해하고 사용자가 시스템에서 필요한 사항을 이해하도록 도울 수 있습니다. 이해 관계자가 가장 확신하지 못하는 요구 사항을 더 효과적으로 파악할 수 있습니다. 프로젝트의 초기 단계에서 적어도 간소화된 형태로 이러한 기능의 개발을 계획하여 사용자가 실험하도록 할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
- [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [모델에서 테스트](../modeling/develop-tests-from-a-model.md) [를 사용](../modeling/use-models-in-your-development-process.md) 하 여 모델을 사용 합니다. [응용 프로그램의 아키텍처](../modeling/model-your-app-s-architecture.md) [샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) vs 확장: [스테레오 타입 별](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) Uml 요소 모델링 샘플 vs 확장: uml [요소를 다이어그램, 파일 및 기타 요소에 연결](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 샘플 vs 확장: [uml 다이어그램에서 셰이프 맞춤](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [비디오: 비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [모델에서 테스트 개발](../modeling/develop-tests-from-a-model.md) [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md) [앱 아키텍처](../modeling/model-your-app-s-architecture.md) [비디오: 비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

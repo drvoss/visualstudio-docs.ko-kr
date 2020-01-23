@@ -5,31 +5,31 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6570a80de5be17b2893fc4105f057e655e841881
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77954925533c51885a056f7156121e68851ad769
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649759"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115172"
 ---
 # <a name="while-activity-designer"></a>While 활동 디자이너
 
-@No__t_0 작업은 지정 된 <xref:System.Activities.Statements.While.Condition%2A> **true**로 평가 되는 동안 <xref:System.Activities.Statements.While.Body%2A>에 포함 된 활동을 실행 합니다. 포함된 활동이 실행되지 않을 수도 있습니다. 포함된 활동이 적어도 한 번은 실행되도록 하려면 그 대신 <xref:System.Activities.Statements.DoWhile> 활동을 사용하세요.
+<xref:System.Activities.Statements.While> 작업은 지정 된 <xref:System.Activities.Statements.While.Condition%2A> **true**로 평가 되는 동안 <xref:System.Activities.Statements.While.Body%2A>에 포함 된 활동을 실행 합니다. 포함된 활동이 실행되지 않을 수도 있습니다. 포함된 활동이 적어도 한 번은 실행되도록 하려면 그 대신 <xref:System.Activities.Statements.DoWhile> 활동을 사용하세요.
 
 ## <a name="while-properties-in-workflow-designer"></a>Workflow Designer의 While 속성
 
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.While> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필요한 공간|사용 현황|
+|속성 이름|필수|용도|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.While> 활동 디자이너의 이름을 지정합니다. 기본값은 While입니다. 값은 **속성** 창에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.While.Body%2A>|False|@No__t_0 **true**로 평가 되는 동안 실행할 작업을 포함 합니다.|
-|<xref:System.Activities.Statements.While.Condition%2A>|True|@No__t_0의 작업을 실행할지 여부를 결정 하기 위해 평가 되는 Visual Basic 식을 포함 합니다.|
+|<xref:System.Activities.Statements.While.Body%2A>|False|<xref:System.Activities.Statements.While.Condition%2A> **true**로 평가 되는 동안 실행할 작업을 포함 합니다.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|<xref:System.Activities.Statements.While.Body%2A>의 작업을 실행할지 여부를 결정 하기 위해 평가 되는 Visual Basic 식을 포함 합니다.|
 
 ## <a name="see-also"></a>참조
 

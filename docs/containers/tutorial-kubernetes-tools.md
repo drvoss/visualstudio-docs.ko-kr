@@ -8,20 +8,20 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188764"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916956"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
 Visual Studio Kubernetes 도구는 Kubernetes를 대상으로 하는 컨테이너화된 애플리케이션의 개발을 간소화하는 데 도움이 됩니다. Visual Studio는 Kubernetes 배포를 지원하는 데 필요한 Dockerfile, Helm 차트 등의 코드로 구성 파일을 자동으로 만들 수 있습니다. Azure Dev Spaces를 사용하여 라이브 AKS(Azure Kubernetes Service) 클러스터에서 코드를 디버그하거나, Visual Studio 내에서 AKS 클러스터로 직접 게시할 수 있습니다.
 
-이 자습서에서는 Visual Studio를 사용하여 프로젝트에 Kubernetes 지원을 추가하고 AKS에 게시하는 방법을 설명합니다. [Azure Dev Spaces](https://aka.ms/get-azds)를 사용하여 AKS에서 실행되는 프로젝트를 디버그하고 테스트하는 방법을 알아보려면 [Azure Dev Spaces 자습서](/azure/dev-spaces/get-started-netcore-visualstudio)로 바로 이동할 수 있습니다.
+이 자습서에서는 Visual Studio를 사용하여 프로젝트에 Kubernetes 지원을 추가하고 AKS에 게시하는 방법을 설명합니다. [Azure Dev Spaces](/azure/dev-spaces/)를 사용하여 AKS에서 실행되는 프로젝트를 디버그하고 테스트하는 방법을 알아보려면 [Azure Dev Spaces 자습서](/azure/dev-spaces/get-started-netcore-visualstudio)로 바로 이동할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 새로운 기능을 활용하려면 다음 조건을 충족해야 합니다.
 
@@ -30,7 +30,7 @@ Visual Studio Kubernetes 도구는 Kubernetes를 대상으로 하는 컨테이�
 - 별도의 다운로드로 제공되는 [Kubernetes tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)
 ::: moniker-end
 ::: moniker range="vs-2019"
-- *ASP.NET 및 웹 개발* 워크로드가 있는 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+- *ASP.NET 및 웹 개발* 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)입니다.
 ::: moniker-end
 - Docker 이미지를 빌드하거나, 로컬에서 실행 중인 Docker 컨테이너를 디버그하거나, AKS에 게시하려는 경우 Visual Studio를 실행하는 개발 워크스테이션에 설치된 [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows). Azure Dev Spaces를 사용하여 AKS에서 Docker 컨테이너를 빌드하고 디버그하는 경우에는 Docker가 필요하지 ‘않습니다’. 
 ::: moniker range="vs-2017"
@@ -38,7 +38,7 @@ Visual Studio Kubernetes 도구는 Kubernetes를 대상으로 하는 컨테이�
 
     1. 별도의 다운로드로 제공되는 [AKS 게시 도구](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)
 
-    1. Azure Kubernetes Service 클러스터입니다. 자세한 내용은 [AKS 클러스터 만들기](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster)를 참조하세요. 개발 워크스테이션에서 [클러스터에 연결](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)해야 합니다.
+    1. Azure Kubernetes Service 클러스터. 자세한 내용은 [AKS 클러스터 만들기](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster)를 참조하세요. 개발 워크스테이션에서 [클러스터에 연결](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)해야 합니다.
 
     1. 개발 워크스테이션에 설치된 Helm CLI. 자세한 내용은 [Helm 설치](https://github.com/kubernetes/helm/blob/master/docs/install.md)를 참조하세요.
 
@@ -121,13 +121,13 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
 - Helm 차트와 *charts* 폴더. 이러한 yaml 파일은 Kubernetes에 배포하는 데 사용할 수 있는 애플리케이션 Helm 차트를 구성합니다. Helm에 대한 자세한 내용은 [https://www.helm.sh](https://www.helm.sh)를 참조하세요.
 
-- *azds.yaml*. 이 파일에는 Azure Kubernetes Service에서 빠르고 반복적인 디버깅 환경을 제공하는 Azure Dev Spaces의 설정이 포함되어 있습니다. 자세한 내용은 [Azure Dev Spaces 설명서](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)를 참조하세요.
+- *azds.yaml*. 이 파일에는 Azure Kubernetes Service에서 빠르고 반복적인 디버깅 환경을 제공하는 Azure Dev Spaces의 설정이 포함되어 있습니다. 자세한 내용은 [Azure Dev Spaces 설명서](/azure/dev-spaces/azure-dev-spaces)를 참조하세요.
 
 ::: moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>AKS(Azure Kubernetes Service)에 게시
 
-이러한 파일이 모두 준비되면, Visual Studio IDE를 사용하여 일반적인 방법으로 애플리케이션 코드를 작성하고 디버그할 수 있습니다. [Azure Dev Spaces](https://aka.ms/get-azds)를 사용하여 코드를 빠르게 실행하고, AKS 클러스터에서 라이브로 실행 중인 코드를 디버그할 수도 있습니다. 자세한 내용은 [Azure Dev Spaces 자습서](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)를 참조하세요.
+이러한 파일이 모두 준비되면, Visual Studio IDE를 사용하여 일반적인 방법으로 애플리케이션 코드를 작성하고 디버그할 수 있습니다. [Azure Dev Spaces](/azure/dev-spaces/)를 사용하여 코드를 빠르게 실행하고, AKS 클러스터에서 라이브로 실행 중인 코드를 디버그할 수도 있습니다. 자세한 내용은 [Azure Dev Spaces 자습서](/azure/dev-spaces/get-started-netcore-visualstudio)를 참조하세요.
 
 코드가 원하는 방식으로 실행되면, Visual Studio에서 AKS 클러스터로 직접 게시할 수 있습니다.
 
@@ -171,4 +171,4 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
 [AKS 설명서](/azure/aks)를 참조하여 Azure의 Kubernetes 개발에 대해 자세히 알아봅니다.
 
-[Azure Dev Spaces 설명서](https://aka.ms/get-azds)를 참조하여 Azure Dev Spaces에 대해 자세히 알아봅니다.
+[Azure Dev Spaces 설명서](/azure/dev-spaces/)를 참조하여 Azure Dev Spaces에 대해 자세히 알아봅니다.

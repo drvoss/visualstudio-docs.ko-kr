@@ -15,23 +15,23 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669193"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919229"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [CA1709: 식별자](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)가 대/소문자를 올바르게 지정 해야 합니다.
+Visual Studio에 대 한 최신 설명서는 [CA1709: 식별자](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)가 대/소문자를 올바르게 지정 해야 합니다.
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|범주|Microsoft. 이름 지정|
+|범주|Microsoft.Naming|
 |변경 수준|중단-어셈블리, 네임 스페이스, 형식, 멤버 및 매개 변수에서 발생 합니다.<br /><br /> 일반 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인

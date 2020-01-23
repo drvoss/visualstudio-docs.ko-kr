@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23b5705b7ee81e56945050fe63dd2f086894bd08
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661099"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917925"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: 값 형식 필드는 이식 가능해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [CA1900: 값 형식 필드는 이식 가능 해야](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)합니다 .를 참조 하세요.
+Visual Studio에 대 한 최신 설명서는 [CA1900: 값 형식 필드는 이식 가능 해야](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)합니다 .를 참조 하세요.
 
 |||
 |-|-|
@@ -41,7 +41,7 @@ Visual Studio에 대 한 최신 설명서는 [CA1900: 값 형식 필드는 이�
  잘못 정렬 된 필드를 포함 하는 명시적 레이아웃이 있는 구조체는 64 비트 운영 체제에서 충돌을 일으킵니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 8 바이트 보다 작은 모든 필드는 크기의 배수이 고 8 바이트 이상인 필드는 8의 배수 오프셋을 포함 해야 합니다. 다른 솔루션은 적절 한 경우 `LayoutKind.Explicit` 대신 `LayoutKind.Sequential`를 사용 하는 것입니다.
+ 8 바이트 보다 작은 모든 필드는 크기의 배수이 고 8 바이트 이상인 필드는 8의 배수 오프셋을 포함 해야 합니다. 다른 솔루션은 적절 한 경우 `LayoutKind.Explicit`대신 `LayoutKind.Sequential`를 사용 하는 것입니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  오류가 발생 하는 경우에만이 경고를 표시 하지 않아야 합니다.

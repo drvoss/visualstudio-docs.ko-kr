@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254611"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929241"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
 
@@ -65,13 +65,13 @@ ms.locfileid: "71254611"
      > [!NOTE]
      > 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅샷을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5**). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.
      >
-     >  ![스냅숏 사용](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
+     >  ![스냅샷 사용](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  중지(바로 가기 키: **Shift**+**F5**) 및 디버깅을 다시 시작합니다.
 
 6. 디버깅 세션의 시작 부분에 스냅샷을 만들려면 **메모리 사용량** 요약 도구 모음에서 **스냅샷 만들기**를 선택합니다. (이는 여기에 중단점을 설정하는 데도 도움이 될 수 있습니다.)
 
-    ![스냅숏 만들기](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![스냅샷 만들기](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > 메모리 비교 기준을 만들려면 디버깅 세션을 시작할 때 스냅샷을 만드는 것이 좋습니다.
@@ -89,7 +89,7 @@ ms.locfileid: "71254611"
 ## <a name="analyze-memory-usage-data"></a>메모리 사용량 데이터 분석
 메모리 사용량 요약 테이블의 행에는 디버깅 세션 중에 만든 스냅샷이 나열되고 더 자세한 보기에 대한 링크가 제공됩니다.
 
-![메모리 요약 테이블](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![메모리 요약 표](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  열의 이름은 프로젝트 속성에서 선택한 디버깅 모드(.NET, 네이티브 또는 혼합(.NET 및 네이티브))에 따라 달라집니다.
 
@@ -101,7 +101,7 @@ ms.locfileid: "71254611"
 
 메모리 사용량을 분석하려면 메모리 사용량에 대한 자세한 보고서를 여는 다음 링크 중 하나를 클릭합니다.
 
-- 현재 스냅샷과 이전 스냅샷 간의 차이 정보를 보려면 행의 왼쪽에 있는 변경 링크(![메모리 사용량 증가](../profiling/media/prof-tour-mem-usage-up-arrow.png "메모리 사용량 증가"))를 선택합니다. 빨간색 화살표는 메모리 사용량 증가를 나타내고 녹색 화살표는 감소를 나타냅니다.
+- 현재 스냅샷과 이전 스냅샷 간의 차이 정보를 보려면 화살표의 왼쪽에 있는 변경 링크(![메모리 사용량 증가](../profiling/media/prof-tour-mem-usage-up-arrow.png "메모리 사용량 증가"))를 선택합니다. 빨간색 화살표는 메모리 사용량 증가를 나타내고 녹색 화살표는 감소를 나타냅니다.
 
 > [!TIP]
 > 메모리 문제를 더 빠르게 확인하기 위해 차이 보고서는 전체 수에서 가장 많이 증가한 개체 형식(**개체(차이)** 열의 변경 링크 클릭) 또는 전체 힙 크기에서 가장 많이 증가한 개체 형식(**힙 크기(차이)** 열의 변경 링크 클릭)별로 정렬됩니다.
@@ -119,9 +119,9 @@ ms.locfileid: "71254611"
 
  아래쪽 창의 **루트 경로** 트리에는 위쪽 창에서 선택한 형식을 참조하는 개체가 표시됩니다. .NET Framework 가비지 수집기는 개체를 참조하는 마지막 형식이 해제된 경우에만 개체에 대한 메모리를 정리합니다.
 
- **참조 된 형식** 트리에는 위쪽 창에서 선택한 형식이 보유하고 있는 참조가 표시됩니다.
+ **참조된 개체** 트리에는 위쪽 창에서 선택한 형식이 보유하고 있는 참조가 표시됩니다.
 
- ![관리형 참조 형식 보고서 보기](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![관리되는 참조된 개체 보고서 보기](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
  위쪽 창에서 선택한 형식의 인스턴스를 표시하려면 ![인스턴스 아이콘](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") 아이콘을 선택합니다.
 
@@ -144,13 +144,13 @@ ms.locfileid: "71254611"
 
 - **뷰 모드** 에서 **스택 뷰** 를 선택하여 선택한 형식에 대한 할당 스택을 확인합니다.
 
-     ![스택 뷰](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_Instances")
+     ![뷰 모드](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
 ### <a name="change-diff-reports"></a>변경(차이) 보고서
 
 - **진단 도구** 창의 **메모리 사용량** 탭에서 요약 테이블 셀의 변경 링크를 선택합니다.
 
-   ![변경 &#40;Diff&#41; 보고서 선택](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![변경&#40;diff&#41; 보고서 선택](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - 관리되는 보고서 또는 네이티브 보고서의 **비교 대상** 목록에서 스냅샷을 선택합니다.
 
@@ -158,7 +158,7 @@ ms.locfileid: "71254611"
 
 변경 보고서는 기본 스냅샷 값과 비교 스냅샷 간의 차이를 표시하는 열( **(차이)** 로 표시됨)을 기본 보고서에 추가합니다. 네이티브 형식 뷰 차이 보고서가 표시되는 모양은 다음과 같습니다.
 
-![네이티브 형식 Diff 보기](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![네이티브 형식 Diff 뷰](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>블로그 및 동영상
 

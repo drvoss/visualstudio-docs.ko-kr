@@ -2,17 +2,17 @@
 title: 성능을 향상시키기 위한 팁
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647143"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944213"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -63,7 +63,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
     옵션을 **모든 모듈** 대신 **지정된 모듈만**으로 설정하고 로드할 모듈을 지정합니다. 디버깅 중에 **모듈** 창의 특정 모듈을 마우스 오른쪽 단추로 클릭하여 기호 로드에 모듈을 명시적으로 포함할 수도 있습니다. 디버깅 중에 이 창을 열려면 **디버그** > **창** > **모듈**을 선택합니다.
 
-    자세한 내용은 [기호 파일 이해](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)를 참조하세요.
+    자세한 내용은 [기호 파일 이해](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019)를 참조하세요.
 
 - **진단 도구 사용 안 함**
 
@@ -107,13 +107,13 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
    ::: moniker range="vs-2017"
 
-    확장을 사용하지 않으려면 **도구** > **확장 및 업데이트**로 이동하여 특정 확장을 사용하지 않도록 설정합니다.
+    확장 기능을 사용하지 않으려면 **도구** > **확장 및 업데이트**로 이동하고 특정 확장 기능을 사용하지 않도록 설정합니다.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    확장을 사용하지 않으려면 **확장** > **확장 관리**로 이동하여 특정 확장을 사용하지 않도록 설정합니다.
+    확장 기능을 사용하지 않으려면 **확장** > **확장 관리**로 이동하여 특정 확장 기능을 사용하지 않도록 설정합니다.
 
    ::: moniker-end
 
@@ -137,7 +137,7 @@ CLR은 가비지 수집 메모리 관리 시스템을 사용합니다. 이 시�
 
 CLR 가비지 수집기에 대한 자세한 내용은 [가비지 수집 기본 사항](/dotnet/standard/garbage-collection/fundamentals)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 성능 최적화](../ide/optimize-visual-studio-performance.md)
 - [솔루션을 더 빠르게 로드(Visual Studio 블로그)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

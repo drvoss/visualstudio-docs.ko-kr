@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850330"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918797"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>방법: Visual C++ 프로젝트를 Visual Studio 2015로 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에 대한 최신 설명서는 [Visual C++ 포팅 및 업그레이드 가이드](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)를 참조하세요.
+Visual Studio 2017에 대한 최신 설명서는 [Visual C++ 포팅 및 업그레이드 가이드](/cpp/porting/visual-cpp-porting-and-upgrading-guide)를 참조하세요.
 
 이전 버전의 Visual Studio에서 만든 Visual C++ 프로젝트를 처음 열면 프로젝트를 업데이트해야 한다는 메시지가 표시될 수 있습니다. 최신 버전의 Visual C++ 컴파일러와 라이브러리로 업그레이드할 것인지 묻는 메시지가 나타납니다. 업그레이드하는 방법은 프로젝트를 만드는 데 사용한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에 따라 달라집니다.
 
@@ -54,4 +54,4 @@ Visual Studio 2017에 대한 최신 설명서는 [Visual C++ 포팅 및 업그�
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]에서 사용자 지정 플랫폼 도구 집합으로 계속 작업하려면 해당 도구 집합이 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\(x86 컴퓨터) 또는 %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\(x64 컴퓨터)에 있어야 합니다. 사용자 지정 플랫폼 도구 집합을 만드는 방법에 대한 자세한 내용은 Visual C++ 팀 블로그에서 [C++ 네이티브 멀티 타기팅](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) 을 참조하세요.
 
 ## <a name="see-also"></a>관련 항목
- [시각적 C++ 포팅 및 업그레이드 가이드](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Visual Studio 프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++ 포팅 및 업그레이드 가이드](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Visual Studio 프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

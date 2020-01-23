@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a571be6b713cd59ca290906e9398b78c8c021ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ce4aa6aef9c70d0d628603afa7a256c309f280d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661163"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917940"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: 멤버를 static으로 표시하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 [CA1822: 멤버를 static으로 표시](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static)를 참조 하세요.
+Visual Studio에 대 한 최신 설명서는 [CA1822: 멤버를 static으로 표시](/visualstudio/code-quality/ca1822-mark-members-as-static)를 참조 하세요.
 
 |||
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|범주|Microsoft 성능|
-|변경 수준|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우입니다.<br /><br /> @No__t_0 키워드를 사용 하 여 멤버를 인스턴스 멤버로 변경 하는 경우에는 안 됩니다.<br /><br /> 중단-멤버를 인스턴스 멤버에서 정적 멤버로 변경 하 고 어셈블리 외부에서 볼 수 있는 경우.|
+|범주|Microsoft.Performance|
+|변경 수준|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우입니다.<br /><br /> `this` 키워드를 사용 하 여 멤버를 인스턴스 멤버로 변경 하는 경우에는 안 됩니다.<br /><br /> 중단-멤버를 인스턴스 멤버에서 정적 멤버로 변경 하 고 어셈블리 외부에서 볼 수 있는 경우.|
 
 ## <a name="cause"></a>원인
  인스턴스 데이터에 액세스 하지 않는 멤버는 static으로 표시 되지 않습니다 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 공유).

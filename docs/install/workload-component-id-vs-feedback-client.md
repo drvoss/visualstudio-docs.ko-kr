@@ -3,8 +3,8 @@ title: Visual Studio Feedback Client 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 워크로드 및 구성 요소 ID를 사용하여 Azure DevOps Services 또는 Team Foundation Server에 대한 풍부한 피드백을 제공할 수 있습니다.
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960751"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113839"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client 구성 요소 디렉터리
 
@@ -46,21 +46,21 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 필수
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 필요한 공간
 
 ## <a name="unaffiliated-components"></a>독립적 구성 요소
 
 이러한 구성 요소는 작업에 포함되지 않지만 개별 구성 요소로 선택할 수 있습니다.
 
-구성 요소 ID | name | 버전
+구성 요소 ID | 이름 | 버전
 --- | --- | ---
 N/A | N/A | N/A
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

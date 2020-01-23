@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516435"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916742"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
 Visual Studio를 사용하여 React.js 단일 페이지 앱과 같은 클라이언트 쪽 JavaScript를 포함한 앱과 더불어 컨테이너화된 ASP.NET Core 앱을 손쉽게 빌드, 디버그, 실행하고 Azure Container Registry(ACR), Docker Hub, Azure App Service 또는 자체 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ACR에 게시합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -47,7 +47,7 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
    ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs2017/new-react-project.png)
 
-1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **Docker 지원**을 선택하여 프로젝트에 Dockerfile을 추가합니다.
+1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가**> **Docker 지원**을 선택하여 프로젝트에 Dockerfile을 추가합니다.
 
    ![Docker 지원 추가](media/container-tools-react/vs2017/add-docker-support.png)
 
@@ -59,7 +59,7 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
    ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs2019/new-react-project.png)
 
-1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **Docker 지원**을 선택하여 프로젝트에 Dockerfile을 추가합니다.
+1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가**> **Docker 지원**을 선택하여 프로젝트에 Dockerfile을 추가합니다.
 
    ![Docker 지원 추가](media/container-tools-react/vs2017/add-docker-support.png)
 
@@ -227,7 +227,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |
     | **[리소스 그룹](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  컨테이너 레지스트리를 만들 리소스 그룹의 이름입니다. **새로 만들기**를 선택하여 새 리소스 그룹을 만듭니다.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | 표준 | 컨테이너 레지스트리의 서비스 계층  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 표준 | 컨테이너 레지스트리의 서비스 계층  |
     | **레지스트리 위치** | 가까운 위치 | 사용자 또는 컨테이너 레지스트리를 사용할 기타 서비스에 가까운 [지역](https://azure.microsoft.com/regions/)의 위치를 선택합니다. |
 
     ![Visual Studio의 Azure Container Registry 만들기 대화 상자][0]

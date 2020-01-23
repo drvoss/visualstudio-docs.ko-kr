@@ -25,8 +25,6 @@
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Cognitive Services 추가
       items:
-        - name: Cognitive Services 추가
-          href: cognitive-services-connected-services.yml
         - name: Text Analytics
           href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Bing Search
@@ -112,7 +110,7 @@
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: 클라우드 탐색기
   items:
-    - name: 서버 탐색기로 스토리지 리소스 찾아보기 및 관리
+    - name: 서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md

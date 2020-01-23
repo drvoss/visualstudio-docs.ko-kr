@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850801"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917321"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
@@ -34,7 +34,7 @@ ms.locfileid: "75850801"
 
 #### <a name="to-divide-an-application-into-layers"></a>애플리케이션을 레이어로 나누려면
 
-1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN)에 설명 되어 있습니다.
+1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](/previous-versions/msp-n-p/ee658107(v=pandp.10))에 설명 되어 있습니다.
 
 2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만들고 아키텍처 솔루션이라고 부릅니다. 이 솔루션은 시스템의 전반적인 디자인을 만드는 데 사용됩니다. 모델을 포함하지만 코드는 포함하지 않습니다.
 

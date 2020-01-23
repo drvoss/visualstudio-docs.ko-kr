@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748534"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115190"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 스토리지 속성 및 사용자 지정 스토리지 속성
 DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언어 탐색기에서 사용자에 게 표시 될 수 있으며 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 값이 저장 되는 방식에 따라 달라 집니다.
@@ -26,7 +26,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 |-|-|
 |**Standard** (기본값)|*저장소* 에 저장 되 고 파일로 serialize 되는 도메인 속성입니다.|
 |**계산**|저장소에 저장 되지 않지만 다른 값에서 계산 되는 읽기 전용 도메인 속성입니다.<br /><br /> 예를 들어 `Person.Age` `Person.BirthDate`에서 계산할 수 있습니다.<br /><br /> 계산을 수행 하는 코드를 제공 해야 합니다. 일반적으로 다른 도메인 속성의 값을 계산 합니다. 그러나 외부 리소스를 사용할 수도 있습니다.|
-|**사용자 지정 저장소**|저장소에 직접 저장 되지 않지만 get 및 set 일 수 있는 도메인 속성입니다.<br /><br /> 값을 가져오고 설정 하는 메서드를 제공 해야 합니다.<br /><br /> 예를 들어 `Person.FullAddress` `Person.StreetAddress`, `Person.City` 및 `Person.PostalCode`에 저장 될 수 있습니다.<br /><br /> 예를 들어 데이터베이스에서 값을 가져오고 설정 하기 위해 외부 리소스에 액세스할 수도 있습니다.<br /><br /> @No__t_0 true 이면 코드에서 저장소에 값을 설정 하면 안 됩니다. [트랜잭션 및 사용자 지정 setter](#setters)를 참조 하세요.|
+|**사용자 지정 저장소**|저장소에 직접 저장 되지 않지만 get 및 set 일 수 있는 도메인 속성입니다.<br /><br /> 값을 가져오고 설정 하는 메서드를 제공 해야 합니다.<br /><br /> 예를 들어 `Person.FullAddress` `Person.StreetAddress`, `Person.City`및 `Person.PostalCode`에 저장 될 수 있습니다.<br /><br /> 예를 들어 데이터베이스에서 값을 가져오고 설정 하기 위해 외부 리소스에 액세스할 수도 있습니다.<br /><br /> `Store.InUndoRedoOrRollback` true 이면 코드에서 저장소에 값을 설정 하면 안 됩니다. [트랜잭션 및 사용자 지정 setter](#setters)를 참조 하세요.|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>계산 된 저장소 속성 또는 사용자 지정 저장소 속성에 대 한 코드 제공
  도메인 속성의 종류를 계산 또는 사용자 지정 저장소로 설정 하는 경우 액세스 방법을 제공 해야 합니다. 솔루션을 빌드하면 오류 보고서에서 필요한 항목을 알려 줍니다.
@@ -52,7 +52,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
     > [!NOTE]
     > 이 파일은 DslDefinition. dsl에서 생성 됩니다. 이 파일을 편집 하는 경우 다음 번에 **모든 템플릿 변환**을 클릭 하면 변경 내용이 손실 됩니다. 대신, 필요한 메서드를 별도의 파일에 추가 합니다.
 
-6. 별도의 폴더 (예: CustomCode \\*YourDomainClass*)에서 클래스 파일을 만들거나 엽니다.
+6. 별도의 폴더 (예: CustomCode\\*YourDomainClass*)에서 클래스 파일을 만들거나 엽니다.
 
      네임 스페이스는 생성 된 코드의 네임 스페이스와 동일 해야 합니다.
 
@@ -66,7 +66,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
     }  }
     ```
 
-8. **Kind** 를 **사용자 지정 저장소**로 설정 하는 경우에도 `Set` 메서드를 제공 해야 합니다. 예를 들면,
+8. **Kind** 를 **사용자 지정 저장소**로 설정 하는 경우에도 `Set` 메서드를 제공 해야 합니다. 예를 들면 다음과 같습니다.:
 
     ```
     void SetAgeValue(int value)
@@ -75,7 +75,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
             System.DateTime.Today.Year - value; }
     ```
 
-     @No__t_0 true 이면 코드에서 저장소에 값을 설정 하면 안 됩니다. [트랜잭션 및 사용자 지정 setter](#setters)를 참조 하세요.
+     `Store.InUndoRedoOrRollback` true 이면 코드에서 저장소에 값을 설정 하면 안 됩니다. [트랜잭션 및 사용자 지정 setter](#setters)를 참조 하세요.
 
 9. 솔루션을 빌드하고 실행합니다.
 
@@ -84,13 +84,13 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 ## <a name="setters"></a>트랜잭션 및 사용자 지정 Setter
  메서드가 일반적으로 활성 트랜잭션 내에서 호출 되기 때문에 사용자 지정 저장소 속성의 Set 메서드에서는 트랜잭션을 열 필요가 없습니다.
 
- 그러나 사용자가 실행 취소 또는 다시 실행을 호출 하거나 트랜잭션을 롤백하는 경우에는 Set 메서드를 호출할 수도 있습니다. @No__t_0 true 이면 Set 메서드는 다음과 같이 동작 합니다.
+ 그러나 사용자가 실행 취소 또는 다시 실행을 호출 하거나 트랜잭션을 롤백하는 경우에는 Set 메서드를 호출할 수도 있습니다. <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> true 이면 Set 메서드는 다음과 같이 동작 합니다.
 
 - 다른 도메인 속성에 값을 할당 하는 것과 같이 저장소에서 변경 하지 않아야 합니다. 실행 취소 관리자가 해당 값을 설정 합니다.
 
 - 그러나 데이터베이스 또는 파일 내용과 같은 외부 리소스 또는 저장소 외부의 개체를 업데이트 해야 합니다. 이렇게 하면 synchronism에 저장 된 값으로 유지 됩니다.
 
-  예를 들면,
+  예를 들면 다음과 같습니다.:
 
 ```
 void SetAgeValue(int value)

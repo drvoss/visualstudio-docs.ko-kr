@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72bf11519ec500082304fde431122d05ee65db54
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186006"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124519"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,28 +62,28 @@ Visual Studio의 최신 설명서는 [Visual Studio의 오프라인 설치 만�
 | 구성 요소 또는 패키지 | 솔루션 |
 |-|-|
 | Dotfuscator 및 Analytics Community Edition 5.19.1(**Windows 7 SP1** 및 **Windows Server 2008 R2**에 설치된 Visual Studio Community, Professional 및 Enterprise Edition용) | 오프라인 머신에서 **Windows 7 SP1** 또는 **Windows Server 2008 R2**를 실행 중인 경우 Visual Studio 2015를 설치하기 전에 다음 단계를 수행해야 합니다.<br /><br /> 1.  CTL 파일을 다운로드하도록 파일 또는 웹 서버를 구성합니다.<br /><br /> 2.    연결이 끊어진 환경의 Microsoft 자동 업데이트 URL을 리디렉션합니다.<br /><br /> 자세한 내용은 Microsoft TechNet 사이트에서 [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/library/dn265983.aspx)(신뢰할 수 있는 루트 및 허용되지 않는 인증서 구성) 페이지를 참조하세요. |
-| Android SDK 설치(API 수준) | Android SDK(API 수준) 패키지를 설치하려면 인터넷 연결이 있어야 합니다. 제한된 네트워크에 있는 경우 Visual Studio를 설치할 때 다음 URL에 대한 액세스를 허용해야 합니다.<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />가능한 프록시 설정 문제를 해결하는 방법에 대한 자세한 내용은 [프록시를 사용하는 Visual Studio 2015 설치 오류(Android SDK 설정)](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) 블로그 게시물을 참조하세요. |
-| Visual Studio 확장성 항목 템플릿<br /><br /> Visual Studio용 GitHub 확장<br /><br /> PowerShell Tools for Visual Studio | Visual Studio 2015를 설치할 때 인터넷 연결이 없으면 특수 오프라인 피드를 사용하여 오프라인 설치 레이아웃을 생성할 수 있습니다. **참고:** 이 특수 피드에는 Visual Studio 2015의 최신 업데이트가 포함됩니다. <br /><br /> 특수 오프라인 피드를 만들려면 /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml* 명령을 실행합니다.<br /><br /> 예를 들어 Visual Studio 2015 Enterprise용 영어 특수 오프라인 피드의 경우 다음을 실행합니다.<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 선택한 언어의 특수 오프라인 피드를 만드는 데 사용할 수 있는 전체 URL 목록은 아래 표를 참조하세요. |
+| Android SDK 설치(API 수준) | Android SDK(API 수준) 패키지를 설치하려면 인터넷 연결이 있어야 합니다. 제한된 네트워크에 있는 경우 Visual Studio를 설치할 때 다음 URL에 대한 액세스를 허용해야 합니다.<br /><br /> -   https://dl.google.com:443<br />-   https://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />가능한 프록시 설정 문제를 해결하는 방법에 대한 자세한 내용은 [프록시를 사용하는 Visual Studio 2015 설치 오류(Android SDK 설정)](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) 블로그 게시물을 참조하세요. |
+| Visual Studio 확장성 항목 템플릿<br /><br /> Visual Studio용 GitHub 확장<br /><br /> PowerShell Tools for Visual Studio | Visual Studio 2015를 설치할 때 인터넷 연결이 없으면 특수 오프라인 피드를 사용하여 오프라인 설치 레이아웃을 생성할 수 있습니다. **참고:**  이 특수 피드에는 Visual Studio 2015의 최신 업데이트가 포함됩니다. <br /><br /> 특수 오프라인 피드를 만들려면 /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml* 명령을 실행합니다.<br /><br /> 예를 들어 Visual Studio 2015 Enterprise용 영어 특수 오프라인 피드의 경우 다음을 실행합니다.<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 선택한 언어의 특수 오프라인 피드를 만드는 데 사용할 수 있는 전체 URL 목록은 아래 표를 참조하세요. |
 
  다음 URL을 사용하여 위의 표에 설명된 대로 언어별 특수 오프라인 피드를 만듭니다.
 
 |       언어        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
-| 및  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| 중국어 (번체) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
-|         체코어         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
-|        독일어         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
-|        영어        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
-|        스페인어        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
-|        프랑스어         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
-|        이탈리아어        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
-|       일본어        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
-|        한국어         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
-|        폴란드어         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
-|      포르투갈어       | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
-|        러시아어        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
-|        터키어        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
+| 및  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| 옵션 대신, | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+|         체코어         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
+|        독일어         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
+|        영어        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
+|        스페인어        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
+|        프랑스어         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
+|        이탈리아어        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
+|       일본어        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
+|        한국어         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
+|        폴란드어         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
+|      포르투갈어       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
+|        러시아어        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
+|        터키어        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Visual Studio 설치](install-visual-studio-2015.md)

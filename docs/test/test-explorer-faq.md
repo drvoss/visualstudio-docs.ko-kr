@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254543"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846816"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019에서 특성별 그룹화 위치
-이 특성 그룹화는 이동하여 열이 되었습니다. Visual Studio 2019 버전 16.2의 사용자 지정 가능한 복수의 계층 구조에 대해, 특성을 그룹으로 포함한 것이 불필요한 시각적 복잡성을 만들어냈다고 생각했습니다. 이 디자인에 대한 사용자 의견에 귀를 기울이고 있습니다. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+이 특성 그룹화는 이동하여 열이 되었습니다. Visual Studio 2019 버전 16.2의 사용자 지정 가능한 복수의 계층 구조에 대해, 특성을 그룹으로 포함한 것이 불필요한 시각적 복잡성을 만들어냈다고 생각했습니다. 이 디자인에 대한 사용자 의견에 귀를 기울이고 있습니다. [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
 
 지금은 테스트 탐색기에서 열을 마우스 오른쪽 단추로 클릭하고 열을 선택할 수 있습니다. 특성 열을 선택하면 테스트 탐색기에 표시됩니다. 이제 관심 있는 특성을 기준으로 이 열을 필터링할 수 있습니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "71254543"
 ::: moniker range="vs-2017"
 프로젝트를 빌드하고 **도구** > **옵션** > **테스트**에서 어셈블리 기반 검색이 켜져 있는지 확인합니다.
 ::: moniker-end
-[실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. Visual Studio 2017 버전 15.6 이상에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 편집 중에 실시간 테스트 검색이 할 수 있는 만큼 많은 테스트를 검색한 후, 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시되게 할 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하면서도 여전히 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
+[실시간 테스트 검색](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. Visual Studio 2017 버전 15.6 이상에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 편집 중에 실시간 테스트 검색이 할 수 있는 만큼 많은 테스트를 검색한 후, 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시되게 할 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하면서도 여전히 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
 
 ## <a name="test-explorer--plus-symbol"></a>테스트 탐색기 ‘+’(더하기) 기호
 
@@ -67,13 +67,13 @@ ms.locfileid: "71254543"
 
 **이제 프로젝트를 빌드할 필요 없이 입력하는 동안 테스트 탐색기에 테스트가 나타납니다. 변경된 내용은 무엇인가요?**
 
-이 기능을 [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)이라고 합니다. 이 기능은 프로젝트를 빌드하지 않아도 Roslyn 분석기를 사용하여 실시간으로 테스트를 검색하고 테스트 탐색기를 채웁니다. 이론 또는 사용자 지정 특성과 같은 동적으로 정의된 테스트의 테스트 검색 동작에 대한 자세한 내용은 [동적 테스트 검색](#dynamic-test-discovery)을 참조하세요.
+이 기능을 [실시간 테스트 검색](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)이라고 합니다. 이 기능은 프로젝트를 빌드하지 않아도 Roslyn 분석기를 사용하여 실시간으로 테스트를 검색하고 테스트 탐색기를 채웁니다. 이론 또는 사용자 지정 특성과 같은 동적으로 정의된 테스트의 테스트 검색 동작에 대한 자세한 내용은 [동적 테스트 검색](#dynamic-test-discovery)을 참조하세요.
 
 ## <a name="real-time-test-discovery-compatibility"></a>실시간 테스트 검색 호환성
 
 **실시간 테스트 검색을 사용할 수 있는 언어 및 테스트 프레임워크는 무엇인가요?**
 
-[실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 Roslyn 컴파일러를 사용하여 빌드되므로 관리 언어(C# 및 Visual Basic)에서만 작동합니다. 현재 실시간 테스트 검색은 xUnit, NUnit 및 MSTest 프레임워크에서만 작동합니다.
+[실시간 테스트 검색](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/)은 Roslyn 컴파일러를 사용하여 빌드되므로 관리 언어(C# 및 Visual Basic)에서만 작동합니다. 현재 실시간 테스트 검색은 xUnit, NUnit 및 MSTest 프레임워크에서만 작동합니다.
 
 ## <a name="test-explorer-logs"></a>테스트 탐색기 로그
 
@@ -127,7 +127,7 @@ Visual Studio 2019에서는 이전에 공개로 표시되었지만 공식적으�
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> NUnit 2 테스트 어댑터를 사용하고 있으며 NUnit 3 테스트 어댑터로 마이그레이션할 수 없는 경우 **도구** > **옵션**  >  **테스트**를 통해 Visual Studio 버전 15.8에서 이 새로운 검색 동작을 해제할 수 있습니다.
+> NUnit 2 테스트 어댑터를 사용하고 있으며 NUnit 3 테스트 어댑터로 마이그레이션할 수 없는 경우 **도구** > **옵션** > **테스트**를 통해 Visual Studio 버전 15.8에서 이 새로운 검색 동작을 해제할 수 있습니다.
 
 ![도구 옵션의 테스트 탐색기 어댑터 동작](media/testex-adapterbehavior.png)
 ::: moniker-end
@@ -171,7 +171,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > dword 뒤에 1 대신 0을 사용하면 동일한 명령으로 플래그를 끌 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [기존 코드에 대한 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

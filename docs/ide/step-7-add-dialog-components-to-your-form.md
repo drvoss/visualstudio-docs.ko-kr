@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ba7fd495d3ab3bdfd53752cb20d6a45d10892
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118915"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589957"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7단계: 양식에 대화 상자 구성 요소 추가
 
@@ -55,7 +55,7 @@ ms.locfileid: "71118915"
 
 * 이전 자습서 단계로 돌아가려면 [6단계: 단추 컨트롤 이름 지정](../ide/step-6-name-your-button-controls.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

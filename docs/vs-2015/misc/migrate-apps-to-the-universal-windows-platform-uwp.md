@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60951091914474f07f19672799fb59c8b2d0aa56
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299474"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919131"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션
 필요한 경우 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대한 기존 프로젝트 파일을 수동으로 변경하면 Visual Studio 2015 RTM과 함께 사용할 수 있습니다. Windows 앱 프로젝트 및 Windows Phone 프로젝트를 둘 다 포함하는 Windows 8.1 유니버설 앱이 있는 경우 각 프로젝트를 마이그레이션하는 단계를 따라야 합니다.
@@ -292,7 +292,7 @@ ms.locfileid: "74299474"
         </PropertyGroup>
         ```
 
-4. \<PlatformToolset 집합 > 요소의 모든 인스턴스를 v140 값이 되도록 변경 합니다. 예를 들면 다음과 같습니다.
+4. \<PlatformToolset 집합 > 요소의 모든 인스턴스를 v140 값이 되도록 변경 합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -379,7 +379,7 @@ ms.locfileid: "74299474"
 
 5. \<필수 구성 요소 > 요소를 찾고이 요소와이 요소에 포함 된 모든 자식 요소를 삭제 합니다.
 
-6. **Uap** 네임 스페이스를 다음 \<리소스 > 요소: Scale, DXFeatureLevel에 추가 합니다. 예를 들면 다음과 같습니다.
+6. **Uap** 네임 스페이스를 다음 \<리소스 > 요소: Scale, DXFeatureLevel에 추가 합니다. 예를 들면 다음과 같습니다.:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ ms.locfileid: "74299474"
 
    ```
 
-7. **Uap** 네임 스페이스를 다음 \<기능 > 요소: 문서 라이브러리, PicturesLibrary, VideosLibrary, MusicLibrary, Enterpriseauthentication, sharedUserCertificates, removableStorage, 약속 및 연락처에 추가 합니다. 예를 들면 다음과 같습니다.
+7. **Uap** 네임 스페이스를 다음 \<기능 > 요소: 문서 라이브러리, PicturesLibrary, VideosLibrary, MusicLibrary, Enterpriseauthentication, sharedUserCertificates, removableStorage, 약속 및 연락처에 추가 합니다. 예를 들면 다음과 같습니다.:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ ms.locfileid: "74299474"
 
    ```
 
-8. \<VisualElements > 요소 및 해당 자식 요소에 **uap** 네임 스페이스를 추가 합니다. 예를 들면 다음과 같습니다.
+8. \<VisualElements > 요소 및 해당 자식 요소에 **uap** 네임 스페이스를 추가 합니다. 예를 들면 다음과 같습니다.:
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ ms.locfileid: "74299474"
 
    ```
 
-9. \<ApplicationContentUriRules > 및 모든 자식 요소에 **uap** 네임 스페이스를 추가 합니다. 예를 들면 다음과 같습니다.
+9. \<ApplicationContentUriRules > 및 모든 자식 요소에 **uap** 네임 스페이스를 추가 합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ ms.locfileid: "74299474"
 
     ```
 
-10. 다음 \<확장 > 요소와 모든 자식 요소에 **uap** 네임 스페이스를 추가 합니다. AppointmentsProvider을 제공 합니다. windows. alarm, Windows. autoPlayContent, Windows. Autoplaycontent, Windows. cachedFileUpdate, cameraSettings, Windows. fileOpenPicker, Windows. FilprintTaskSettings Association, FileSavePicke, LockScreenCall, Windows.sharetarget,,,, Windows. 예를 들면 다음과 같습니다.
+10. 다음 \<확장 > 요소와 모든 자식 요소에 **uap** 네임 스페이스를 추가 합니다. AppointmentsProvider을 제공 합니다. windows. alarm, Windows. autoPlayContent, Windows. Autoplaycontent, Windows. cachedFileUpdate, cameraSettings, Windows. fileOpenPicker, Windows. FilprintTaskSettings Association, FileSavePicke, LockScreenCall, Windows.sharetarget,,,, Windows. 예를 들면 다음과 같습니다.:
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ ms.locfileid: "74299474"
 
     ```
 
-11. chatMessageNotification 형식의 백그라운드 작업에 **uap** 네임스페이스를 추가합니다. 예를 들면 다음과 같습니다.
+11. chatMessageNotification 형식의 백그라운드 작업에 **uap** 네임스페이스를 추가합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -505,9 +505,9 @@ ms.locfileid: "74299474"
 
      사용 중인 실제 프레임워크에 적합한 Publisher 및 MinVersion 값을 사용합니다. 이러한 이름은 Windows 10에서 변경될 수 있습니다.
 
-13. gattCharacteristicNotification 및 rfcommConnection 백그라운드 형식 작업을 Bluetooth 형식 작업으로 바꿉니다. 예를 들면 다음과 같습니다.
+13. gattCharacteristicNotification 및 rfcommConnection 백그라운드 형식 작업을 Bluetooth 형식 작업으로 바꿉니다. 예를 들면 다음과 같습니다.:
 
-     **원래의**
+     **OLD:**
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -528,9 +528,9 @@ ms.locfileid: "74299474"
     </Extension>
     ```
 
-14. Bluetooth 디바이스 기능 bluetooth.rfcomm 및 bluetooth.genericAttributeProfile을 제네릭 Bluetooth 기능으로 바꿉니다. 예를 들면 다음과 같습니다.
+14. Bluetooth 디바이스 기능 bluetooth.rfcomm 및 bluetooth.genericAttributeProfile을 제네릭 Bluetooth 기능으로 바꿉니다. 예를 들면 다음과 같습니다.:
 
-     **원래의**
+     **OLD:**
 
     ```xml
     <Capabilities>
@@ -566,7 +566,7 @@ ms.locfileid: "74299474"
 
        - \<ApplicationView > 요소
 
-         예를 들면 다음과 같습니다.
+         예를 들면 다음과 같습니다.:
 
        ```xml
        <m2:VisualElements
@@ -691,7 +691,7 @@ ms.locfileid: "74299474"
 
    ```
 
-8. NuGet 패키지에 대 한 자식 요소 >를 \<참조 하는 \<ItemGroup >를 찾습니다. 이 정보는 향후 단계에 필요하므로 참조되는 NuGet 패키지를 기록해 둡니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](https://docs.microsoft.com/nuget/) 버전 3을 사용한다는 것입니다.
+8. NuGet 패키지에 대 한 자식 요소 >를 \<참조 하는 \<ItemGroup >를 찾습니다. 이 정보는 향후 단계에 필요하므로 참조되는 NuGet 패키지를 기록해 둡니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](/nuget/) 버전 3을 사용한다는 것입니다.
 
     \<ItemGroup >와 모든 자식을 제거 합니다. 예를 들어 Visual Studio RC로 만든 UWP 프로젝트에서 다음과 같은 NuGet 패키지를 제거해야 합니다.
 
@@ -739,7 +739,7 @@ ms.locfileid: "74299474"
 
     2. 변경 내용을 저장합니다.
 
-14. NuGet 관리자를 사용하여 이전 단계에서 삭제한 패키지를 추가합니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](https://docs.microsoft.com/nuget/) 버전 3을 사용한다는 것입니다.
+14. NuGet 관리자를 사용하여 이전 단계에서 삭제한 패키지를 추가합니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](/nuget/) 버전 3을 사용한다는 것입니다.
 
     이제 앱을 코딩, 빌드 및 디버그할 수 있습니다.
 

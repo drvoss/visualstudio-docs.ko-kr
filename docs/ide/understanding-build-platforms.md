@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925824"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115067"
 ---
 # <a name="understand-build-platforms"></a>빌드 플랫폼 이해
 
@@ -36,7 +36,7 @@ ms.locfileid: "68925824"
 [방법: 여러 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 여러 플랫폼을 대상으로 한 프로젝트를 구성하는 방법을 설명합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

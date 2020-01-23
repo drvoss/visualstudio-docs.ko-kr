@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b422b1844ffb30c1c6f2f8fa8845995c98c794e4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416838"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115151"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리
 
@@ -42,7 +42,7 @@ ms.locfileid: "68416838"
 
      이제 **빌드** 메뉴에서 **구성 관리자**를 사용할 수 있고 **구성** 및 **플랫폼** 목록이 **프로젝트 디자이너**에 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbdeeab49da1a63562bb9a4188a264a8d3d99da2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297723"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917040"
 ---
 # <a name="setup-and-install"></a>설정 및 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
 > [!NOTE]
 > 2016년 3월 31일부터는 모든 Visual Studio 버전에 모든 Xamarin이 추가 비용 없이 포함되며 별도의 라이선스는 필요하지 않습니다. 학생, OSS 개발자 및 소규모 팀의 경우에는 Xamarin Studio Community for Mac도 무료로 사용할 수 있습니다. 이전 Xamarin 라이선스로 구성한 기존 Visual Studio 설치의 경우에는 Xamarin을 버전 4.0.3.214 이상으로 업데이트해야 합니다. 이 작업을 수행하려면 **도구 > 옵션 > Xamarin > 기타**로 이동하여 **지금 확인** 링크를 클릭한 다음 4.0.3.214 업데이트를 다운로드합니다. Visual Studio를 다시 시작하고 **도구 > Xamarin 계정...** 으로 이동하면 업데이트된 상태가 표시됩니다.  
   
- **항목 내용**  
+ **항목 내용:**  
   
 - [필수 구성 요소](#prereq)  
   
@@ -97,8 +97,8 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
   
 2. [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)에서 Xcode를 다운로드하여 설치하고 [Adding Your Account to XCode(XCode에 계정 추가)](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1)(apple.com)에 설명된 대로 Apple ID를 추가합니다.  
   
-3. [Xamarin.iOS 설치 및 구성](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
+3. [Xamarin.iOS 설치 및 구성](/xamarin/ios/get-started/installation/mac) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
   
-4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [Mac에 연결](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
+4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [Mac에 연결](/xamarin/ios/get-started/installation/windows/connecting-to-mac/)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
   
      두 컴퓨터는 같은 로컬 네트워크에 있어야 합니다.

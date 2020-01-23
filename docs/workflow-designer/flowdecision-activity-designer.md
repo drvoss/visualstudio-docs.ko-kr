@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650434"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111442"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 활동 디자이너
 
@@ -27,7 +27,7 @@ ms.locfileid: "72650434"
 
 ### <a name="using-the-flowdecision-designer"></a>FlowDecision 디자이너 사용
 
-**Flowdecision 결정** 디자이너는 **도구**상자의 **순서도** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너의 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** +**alt** +**X**를 누릅니다.
+**Flowdecision 결정** 디자이너는 **도구**상자의 **순서도** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너의 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl**+**alt**+**X**를 누릅니다.
 
 **Flowdecision 결정** 디자이너를 **도구 상자** 에서 끌어다 **순서도** 활동 디자이너 내의 워크플로 디자이너 화면에 놓을 수 있습니다. 이렇게 하면 <xref:System.Activities.Statements.Flowchart> 활동 내에서 **결정** <xref:System.Activities.Statements.FlowDecision> 레이블이 만들어집니다. 디자이너 위에 마우스를 놓고 두 분기에 대 한 **True** 및 **False** 제곱 핸들을 표시 합니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72650434"
 
 다음 표에서는 <xref:System.Activities.Statements.FlowDecision> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필요한 공간|사용 현황|
+|속성 이름|필수|용도|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|흐름 제어의 경로를 결정하는 조건입니다.|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A>이 충족되는 경우의 흐름 제어 경로입니다.|

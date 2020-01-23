@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950724"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588748"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>2단계: 그림 뷰어 앱 실행
 
@@ -32,7 +32,7 @@ Windows Forms 앱 프로젝트를 만들 때 실제로 실행하는 프로그램
     - 도구 모음에서 **디버깅 시작** 단추를 선택하면 다음과 같이 표시됩니다.
 
       ![디버깅 도구 모음 시작 단추](../ide/media/express_icondebug.png)<br>
-      ***디버깅 도구 모음*** *시작 단추*
+      ***디버깅 시작*** *도구 모음 단추*
 
 1. Visual Studio에서 앱이 실행되고 **Form1** 창이 표시됩니다. 다음 스크린샷은 방금 빌드한 앱을 보여 줍니다. 앱이 실행 중이며, 더 많은 기능이 추가될 예정입니다.
 
@@ -63,7 +63,7 @@ Windows Forms 앱 프로젝트를 만들 때 실제로 실행하는 프로그램
 
 * 이전 자습서 단계로 돌아가려면 [1단계: Windows Forms 앱 프로젝트 만들기](../ide/step-1-create-a-windows-forms-application-project.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

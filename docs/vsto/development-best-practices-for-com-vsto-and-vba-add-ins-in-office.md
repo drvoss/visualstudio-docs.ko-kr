@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846356"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918635"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office의 COM, VSTO 및 VBA 추가 기능에 대 한 개발 모범 사례
   Office 용 COM, VSTO 또는 VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따릅니다.   이렇게 하면 다음과 같은 이점을 얻을 수 있습니다.
@@ -61,7 +61,7 @@ VBA 코드를 작성 하는 경우 64 비트 safe 선언 문을 사용 하 고 �
 
 Office 클라이언트 응용 프로그램에 대 한 지원 문을 제공 하려면 (예: Word 또는 Excel) 먼저 현재 Office 릴리스에서 추가 기능이 실행 되는지 확인 한 다음 추가 기능이 이후 버전에서 중단 되는 경우 업데이트 제공을 커밋합니다. Microsoft에서 새 빌드 또는 Office 업데이트를 릴리스할 때 추가 기능을 테스트할 필요가 없습니다. Microsoft는 Office에서 COM, VSTO 및 VBA 확장성 플랫폼을 거의 변경 하지 않으며 이러한 변경 내용은 잘 설명 되어 있습니다.
 
->중요: Microsoft는 준비 보고서에 대해 지원 되는 추가 기능 목록과 ISV 연락처 정보를 유지 관리 합니다. 추가 기능을 나열 하려면 [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows)를 참조 하세요.
+>중요: Microsoft는 준비 보고서에 대해 지원 되는 추가 기능 목록과 ISV 연락처 정보를 유지 관리 합니다. 추가 기능 목록을 보려면 [/configmgr/desktop-analytics/ready-for-windows](/configmgr/desktop-analytics/ready-for-windows)를 참조 하세요.
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>프로세스 모니터를 사용 하 여 설치 또는 로드 문제를 디버깅할 수 있습니다.
 설치 또는 로드 하는 동안 추가 기능에 호환성 문제가 있는 경우 파일 또는 레지스트리 액세스와 관련 된 문제가 있을 수 있습니다. [프로세스 모니터](/sysinternals/downloads/procmon) 또는 유사한 디버깅 도구를 사용 하 여 문제를 식별 하는 데 도움이 되도록 작업 환경에 대 한 동작을 기록 하 고 비교 합니다.

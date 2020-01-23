@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 83500f599b909f189de86305e4f017abfd015059
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e34c51db062528c83e08e2cb463a1cc44ab476f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846558"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915755"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure 코드 최적화
 Microsoft Azure를 사용하는 앱을 프로그래밍할 경우 클라우드 환경에서 앱 안정성, 동작 및 성능 문제를 방지하기 위해 몇 가지 코딩 방법을 따라야 합니다. Microsoft는 이와 같이 자주 발생하는 문제를 인식 및 식별하고 해결해 주는 Azure 코드 분석 도구를 제공합니다. 이 도구는 Visual Studio에서 NuGet을 통해 다운로드할 수 있습니다.
@@ -30,8 +30,6 @@ AP0000
 
 ### <a name="description"></a>설명
 클라우드 애플리케이션에 대해 기본(In-Process) 세션 상태 모드를 사용할 경우 세션 상태가 끊어질 수 있습니다.
-
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
 
 ### <a name="reason"></a>Reason
 기본적으로 web.config 파일에 지정된 세션 상태 모드는 In-Process입니다. 또한 구성 파일에 지정된 항목이 없을 경우 세션 상태 모드가 기본 설정인 In-Process로 설정됩니다. In-Process 모드는 웹 서버의 메모리에 세션 상태를 저장합니다. 인스턴스를 다시 시작하거나 부하 분산 또는 장애 조치(Failover)를 위해 새 인스턴스를 사용할 웹 서버의 메모리에 저장된 세션 상태가 저장되지 않습니다. 이 상황에서는 클라우드에서 애플리케이션이 확장되지 않습니다.
@@ -93,8 +91,6 @@ AP2000
 ### <a name="description"></a>설명
 인증에 SAS(공유 액세스 서명)를 사용합니다. 서비스 버스 인증에 ACS(Access Control Service)를 사용 중입니다.
 
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
-
 ### <a name="reason"></a>Reason
 보안 강화를 위해 Azure Active Directory에서 ACS 인증을 SAS 인증으로 대체합니다. 전환 계획에 대한 자세한 내용은 [Azure Active Directory가 ACS의 미래](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) 를 참조하세요.
 
@@ -109,8 +105,7 @@ BrokeredMessage receivedMessage = sc.Receive();
 
 자세한 내용은 다음 항목을 참조하세요.
 
-* 개요를 보려면 [Service Bus를 사용한 공유 액세스 서명 인증](https://msdn.microsoft.com/library/dn170477.aspx)
-* [Service Bus를 사용한 공유 액세스 서명 인증을 사용하는 방법](https://msdn.microsoft.com/library/dn205161.aspx)
+* [Service Bus를 사용한 공유 액세스 서명 인증을 사용하는 방법](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>OnMessage 메시지를 사용하여 "수신 루프"를 방지합니다.
 ### <a name="id"></a>ID
@@ -118,8 +113,6 @@ AP2002
 
 ### <a name="description"></a>설명
 "수신 루프"로 전환되지 않기 위해서는 **Receive** 메서드를 호출하는 것보다 **OnMessage** 메서드를 호출하는 것이 메시지 수신에 더 효과적인 해결 방법입니다. 하지만 반드시 **Receive** 메서드를 사용하고 기본값 이외의 서버 대기 시간을 지정해야 할 경우 서버 대기 시간을 1분을 초과하도록 설정합니다.
-
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
 
 ### <a name="reason"></a>Reason
 **OnMessage**를 호출하면 클라이언트가 큐 또는 구독을 지속적으로 폴링하는 내부 메시지 펌프를 시작합니다. 이 메시지 펌프에는 메시지 수신을 위한 호출을 실행하는 무한 루프가 포함되어 있습니다. 호출 시간이 초과되면 새 호출을 실행합니다. 시간 초과 간격은 사용 중인 [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx)의 [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) 속성 값으로 결정됩니다.
@@ -223,8 +216,6 @@ AP2003
 ### <a name="description"></a>설명
 조정된 메시지의 성능을 개선하려면 비동기 Service Bus 메서드를 사용합니다.
 
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
-
 ### <a name="reason"></a>Reason
 비동기 메서드를 사용하면 호출을 실행할 때마다 메인 스레드가 차단되지 않으므로 애플리케이션 동시성이 지원됩니다. Service Bus 메시징 메서드를 사용할 때 작업(보내기, 받기, 삭제 등)을 수행하면 다소 시간이 소요됩니다. 이 시간에는 요청 및 응답 지연 시간과 Service Bus 서비스의 작업 처리가 포함됩니다. 시간당 작업 수를 늘리려면 작업이 동시에 실행되어야 합니다. 자세한 내용을 보려면 [Service Bus 조정된 메시징을 사용한 성능 향상의 모범 사례](https://msdn.microsoft.com/library/azure/hh528527.aspx)를 참조하세요.
 
@@ -239,8 +230,6 @@ AP2004
 
 ### <a name="description"></a>설명
 Service Bus 메시징에서 성능을 향상하려면 Service Bus 큐와 토픽을 분할합니다.
-
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
 
 ### <a name="reason"></a>Reason
 Service Bus 큐와 토픽을 분할하면 분할된 큐 또는 토픽이 더 이상 단일 메시지 브로커 또는 메시징 스토어의 성능으로 제한되지 않으므로 성능 처리량과 서비스 가용성이 향상됩니다. 또한 메시징 스토어가 일시적으로 중단된 경우에도 분할된 큐 또는 토픽을 계속 사용할 수 있습니다. 자세한 내용은 [메시징 엔터티 분할](https://msdn.microsoft.com/library/azure/dn520246.aspx)을 참조하세요.
@@ -264,8 +253,6 @@ AP3001
 
 ### <a name="description"></a>설명
 공유 액세스 정책을 즉시 시작하기 위해 SharedAccessStartTimeset을 현재 시간으로 설정하지 마십시오. 이 속성은 나중에 공유 액세스 정책을 시작하려는 경우에만 설정해야 합니다.
-
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
 
 ### <a name="reason"></a>Reason
 클록 동기화는 데이터 센터 간 약간의 시간 차이를 발생시킵니다. 예를 들어 DateTime.Now 또는 유사한 메서드를 사용하여 스토리지 SAS 정책의 시작 시간을 현재 시간으로 설정하면 SAS 정책이 즉시 적용된다고 생각하는 것이 일반적입니다. 하지만 데이터 센터 사이에는 약간의 시간 차이가 있으며 시작 시간보다 약간 빠르거나 느린 데이터 센터가 있을 수 있기 때문에 문제가 발생할 수 있습니다. 그 결과, 정책 수명을 너무 짧게 설정할 경우 SAS 정책이 빠르게 또는 즉시 만료될 수 있습니다.
@@ -347,8 +334,6 @@ AP4000
 ### <a name="description"></a>설명
 Azure 웹 사이트, Azure 모바일 서비스 등의 프로젝트에 [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx)클래스를 사용하면 런타임 문제가 발생하지 않습니다. 하지만 모든 Azure 클라우드 애플리케이션에서 단일화된 구성 관리 방법으로 Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx)를 사용하는 것이 좋습니다.
 
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
-
 ### <a name="reason"></a>Reason
 CloudConfigurationManager는 응용 프로그램 환경에 적합한 구성 파일을 읽습니다.
 
@@ -384,8 +369,6 @@ AP4001
 ### <a name="description"></a>설명
 하드 코드 연결 문자열을 사용하면서 나중에 업데이트가 필요할 경우 소스 코드를 변경하고 애플리케이션을 다시 컴파일해야 합니다. 하지만 연결 문자열을 구성 파일에 저장하면 구성 파일만 업데이트하여 변경할 수 있습니다.
 
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
-
 ### <a name="reason"></a>Reason
 연결 문자열을 하드 코드할 경우 연결 문자열을 급히 변경해야 할 때 문제가 될 수 있으므로 좋은 방법이 아닙니다. 또한 프로젝트를 소스 제어에 체크인해야 할 경우 문자열을 소스 코드에서 볼 수 있으므로 하드 코드 연결 문자열이 보안에 취약해집니다.
 
@@ -396,7 +379,7 @@ AP4001
 * IIS에서 호스팅되는 애플리케이션의 경우 web.config를 사용하여 연결 문자열 설정을 저장합니다.
 * ASP.NET vNext 애플리케이션의 경우 configuration.json을 사용하여 연결 문자열을 저장합니다.
 
-web.config 또는 app.config와 같은 구성 파일을 사용하는 방법은 [ASP.NET 웹 구성 지침](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx)을 참조하세요. Azure 환경 변수의 작동 방식에 대해서는 [Azure 웹 사이트: 애플리케이션 문자열 및 연결 문자열 작동 방식](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)을 참조하세요. 연결 문자열을 소스 제어에 저장하는 방법에 대한 자세한 내용은 [연결 문자열과 같은 민감한 정보를 소스 코드 리포지토리에 저장된 파일에 두지 않는 방식](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)을 참조하세요.
+web.config 또는 app.config와 같은 구성 파일을 사용하는 방법은 [ASP.NET 웹 구성 지침](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx)을 참조하세요. Azure 환경 변수의 작동 방식에 대해서는 [Azure 웹 사이트: 애플리케이션 문자열 및 연결 문자열 작동 방식](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)을 참조하세요. 연결 문자열을 소스 제어에 저장하는 방법에 대한 자세한 내용은 [연결 문자열과 같은 민감한 정보를 소스 코드 리포지토리에 저장된 파일에 두지 않는 방식](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)을 참조하세요.
 
 ## <a name="use-diagnostics-configuration-file"></a>진단 구성 파일 사용
 ### <a name="id"></a>ID
@@ -404,8 +387,6 @@ AP5000
 
 ### <a name="description"></a>설명
 Microsoft.WindowsAzure.Diagnostics 프로그래밍 API를 사용하는 등의 방법으로 코드에 진단 설정을 구성하는 대신 diagnostics.wadcfg 파일에 진단 설정을 구성해야 합니다. Azure SDK 2.5를 사용하는 경우에는 diagnostics.wadcfgx를 사용합니다. 그러면 코드를 다시 컴파일하지 않고도 진단 설정을 변경할 수 있습니다.
-
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
 
 ### <a name="reason"></a>Reason
 Azure SDK 2.5(Azure Diagnostics 1.3 사용) 전에는 스토리지의 구성 Blob에 추가하거나 명령적 코드, 선언적 구성 또는 기본 구성을 사용하는 등의 다양한 방법을 사용하여 Azure Diagnostics(WAD)을 구성할 수 있었습니다. 하지만 애플리케이션 프로젝트에 XML 구성 파일(SDK 2.5 이상에서 diagnostics.wadcfg 또는 diagnostics.wadcfgx)을 사용하여 진단을 구성하는 것이 더 좋은 방법입니다. 이 방식에서는 diagnostics.wadcfg 파일로 구성을 완전히 정의하며 언제든지 업데이트 및 재배포할 수 있습니다. [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)또는 [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) 클래스를 사용 하 여 구성을 설정 하는 프로그래밍 방법으로 diagnostics.wadcfg 구성 파일을 함께 사용 하면 혼동을 일으킬 수 있습니다. 자세한 내용은 [Azure Diagnostics 구성 초기화 또는 변경](https://msdn.microsoft.com/library/azure/hh411537.aspx)을 참조하세요.
@@ -429,8 +410,6 @@ AP6000
 
 ### <a name="description"></a>설명
 메모리를 절약하기 위해 DbContext 개체를 정적으로 선언하지 마십시오.
-
-[Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
 
 ### <a name="reason"></a>Reason
 DBContext 개체는 각 호출의 쿼리 결과를 보관합니다. 정적 DBContext 개체는 애플리케이션 도메인이 언로드될 때까지 삭제되지 않습니다. 따라서 정적 DBContext 개체는 많은 양의 메모리를 사용할 수 있습니다.

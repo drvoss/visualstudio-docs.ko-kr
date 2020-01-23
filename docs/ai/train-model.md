@@ -9,16 +9,16 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f69d978f7257398e1518828cd0bbe7ed1ff0e66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563885"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915767"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI에서 AI 모델 학습
 
-Batch AI는 데이터 과학자와 AI 연구자들이 GPU 지원이 적용된 VM을 포함하여 Azure Virtual Machines 클러스터에서 AI 및 기타 기계 학습 모델을 교육시킬 수 있게 하는 관리되는 서비스입니다. 작업 요구 사항, 입력 확인 및 출력 저장 위치를 설명하면 Batch AI가 나머지를 처리합니다. [Azure Batch AI에 대한 자세한 정보](https://docs.microsoft.com/azure/batch-ai/overview)
+Batch AI는 데이터 과학자와 AI 연구자들이 GPU 지원이 적용된 VM을 포함하여 Azure Virtual Machines 클러스터에서 AI 및 기타 기계 학습 모델을 교육시킬 수 있게 하는 관리되는 서비스입니다. 작업 요구 사항, 입력 확인 및 출력 저장 위치를 설명하면 Batch AI가 나머지를 처리합니다. [Azure Batch AI에 대한 자세한 정보](/azure/batch-ai/overview)
 
 Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 모델을 확장할 수 있습ㄴ디ㅏ.  [Visual Studio Tools for AI](installation.md)가 설치되면 Azure Machine Learning 샘플 갤러리에서 미리 만들어진 방법을 사용하여 새 Python 프로젝트를 쉽게 만들 수 있습니다.
 

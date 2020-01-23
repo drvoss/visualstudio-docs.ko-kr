@@ -2,17 +2,17 @@
 title: .runsettings 파일을 사용하여 단위 테스트 구성
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771504"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593254"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -249,7 +249,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 
 **RunConfiguration** 요소는 다음과 같은 요소를 포함할 수 있습니다.
 
-|노드|기본|값|
+|노드|기본값|값|
 |-|-|-|
 |**ResultsDirectory**||테스트 결과가 배치될 디렉터리입니다.|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10`은 .NET Core 소스, `FrameworkUap10`은 UWP 기반 소스, `Framework45`는 .NET Framework 4.5 이상, `Framework40`은 .NET Framework 4.0, `Framework35`는 .NET Framework 3.5를 나타냅니다.<br /><br />이 설정은 테스트를 검색하고 실행하는 데 사용할 단위 테스트 프레임워크의 버전을 지정합니다. 이 버전은 단위 테스트 프로젝트의 빌드 속성에 지정하는 .NET 플랫폼의 버전과 다를 수 있습니다.<br /><br />*.runsettings* 파일에서 `TargetFrameworkVersion` 요소를 생략하면, 플랫폼이 빌드된 이진 파일을 기준으로 프레임워크 버전을 자동으로 결정합니다.|
@@ -338,7 +338,7 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 |**InProcMode**|false|테스트를 MSTest 어댑터와 동일한 프로세스에서 실행하려면 이 값을 **true**로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|
 |**AssemblyResolution**|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다. 예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다. 경로를 지정하려면 **디렉터리 경로** 요소를 사용합니다. 경로는 환경 변수를 포함할 수 있습니다.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 실행 구성](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)

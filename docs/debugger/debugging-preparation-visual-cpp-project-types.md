@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738106"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916315"
 ---
 # <a name="debugging-preparation-c-project-types"></a>디버깅 준비: C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.
 
- DLL을 출력으로 만드는 이러한 프로젝트 형식은 공유하는 일반적인 기능으로 인해 [DLL 디버깅 프로젝트](../debugger/debugging-dll-projects.md)로 그룹화되었습니다.
+ Dll을 출력으로 만드는 이러한 프로젝트 형식은 공유 하는 일반적인 기능으로 인해 [Dll 프로젝트로](../debugger/debugging-dll-projects.md) 그룹화 되었습니다.
 
 ## <a name="BKMK_In_this_topic"></a> 항목 내용
  [권장되는 속성 설정](#BKMK_Recommended_Property_Settings)
@@ -92,12 +92,12 @@ ms.locfileid: "72738106"
 
 6. **링커** 노드를 열고 **디버깅**을 선택합니다. 첫 번째 **생성** 행의 드롭다운 목록에서 **예(/DEBUG)** 를 선택합니다. 디버깅하는 경우 항상 이 값으로 설정해야 합니다.
 
-    자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
+   자세한 내용은[ C++ 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조 하세요.
 
    [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 애플리케이션(.NET)
- **Windows Forms 애플리케이션(.NET)** 템플릿은 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 애플리케이션을 만드는 데 사용됩니다. 자세한 내용은 [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))을 참조하세요.
+ **Windows Forms 애플리케이션(.NET)** 템플릿은 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 애플리케이션을 만드는 데 사용됩니다. 자세한 내용은 [How to: Create a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))을 참조하세요.
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 형식의 애플리케이션을 디버깅하는 방법은 관리되는 Windows Forms 애플리케이션의 경우와 비슷합니다.
 
@@ -114,4 +114,4 @@ ms.locfileid: "72738106"
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [실행 중인 프로그램 또는 여러 프로그램에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)
-- [방법: Windows 애플리케이션 프로젝트 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [방법: Windows 애플리케이션 프로젝트 만들기](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

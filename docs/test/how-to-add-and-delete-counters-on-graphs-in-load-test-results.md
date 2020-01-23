@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644370"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115183"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>방법: 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
 
@@ -82,7 +82,7 @@ ms.locfileid: "72644370"
     > [!NOTE]
     > **범례에 카운터 표시** 명령을 사용하여 성능 카운터를 범례에만 표시하고 그래프에는 표시하지 않도록 선택할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)

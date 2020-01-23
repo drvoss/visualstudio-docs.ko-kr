@@ -1,26 +1,26 @@
 ---
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
-ms.date: 10/07/2019
+ms.date: 01/08/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594437"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114968"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
@@ -28,17 +28,20 @@ ms.locfileid: "75594437"
 
 ## <a name="how-to-update-a-network-layout"></a>네트워크 레이아웃을 업데이트하는 방법
 
+> [!IMPORTANT]
+> 이 지침에서는 네트워크 설치 레이아웃을 이전에 만든 것으로 가정합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md) 페이지를 참조하세요.
+
 최신 업데이트를 포함하도록 네트워크 설치 공유를 새로 고치려면 `--layout` 명령을 실행하여 업데이트된 패키지를 점진적으로 다운로드합니다.
 
 ::: moniker range="vs-2017"
 
-**15.3의 새로운 기능**: 네트워크 레이아웃을 처음 만들 때 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다. 그러나 이전 버전의 레이아웃을 사용 중인 경우에는 네트워크 설치 레이아웃을 처음 만들 때 사용한 것과 같은 명령줄 매개 변수(즉, 같은 워크로드 및 언어)를 사용하여 콘텐츠를 업데이트해야 합니다.
+**15.3의 새로운 기능**: [네트워크 레이아웃을 처음 만들 때](create-a-network-installation-of-visual-studio.md) 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다. 그러나 이전 버전의 레이아웃을 사용 중인 경우에는 네트워크 설치 레이아웃을 처음 만들 때 사용한 것과 같은 명령줄 매개 변수(즉, 같은 워크로드 및 언어)를 사용하여 콘텐츠를 업데이트해야 합니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-네트워크 레이아웃을 처음 만들 때 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다.
+[네트워크 레이아웃을 처음 만들 때](create-a-network-installation-of-visual-studio.md) 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다.
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ ms.locfileid: "75594437"
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="how-to-deploy-an-update-to-client-machines"></a>업데이트를 클라이언트 컴퓨터에 배포하는 방법
+## <a name="deploy-an-update-to-client-machines"></a>클라이언트 머신에 업데이트 배포
 
 네트워크 환경 구성 방법에 따라 엔터프라이즈 관리자가 업데이트를 배포하거나 클라이언트 컴퓨터에서 업데이트를 시작할 수 있습니다.
 
@@ -111,7 +114,7 @@ ms.locfileid: "75594437"
 > [!TIP]
 > 사용자에게 업데이트 알림이 제공되는 시점을 제어하는 방법에 대한 자세한 내용은 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)를 참조하세요.
 
-## <a name="how-to-verify-a-layout"></a>레이아웃을 확인하는 방법
+## <a name="verify-a-layout"></a>레이아웃 확인
 
 `--verify`를 사용하여 제공된 오프라인 캐시에 대한 확인을 수행할 수 있습니다. 이 명령은 패키지 파일이 누락되거나 잘못되었는지 확인합니다. 확인이 끝나면 누락된 파일과 잘못된 파일의 목록을 표시합니다.
 
@@ -129,7 +132,7 @@ Microsoft에서 Visual Studio 업데이트를 정기적으로 제공하므로, �
 > [!NOTE]
 > 확인은 Visual Studio의 특정 부 버전의 최신 버전에 대해서만 작동합니다. 새 버전이 출시되는 즉시 동일한 부 버전의 이전 패치 수준 릴리스에서는 확인이 작동하지 않습니다.
 
-## <a name="how-to-fix-a-layout"></a>레이아웃을 수정하는 방법
+## <a name="fix-a-layout"></a>레이아웃 수정
 
 `--fix`를 사용하여 `--verify`와 동일한 확인을 수행하고 식별된 문제를 해결해 볼 수도 있습니다. `--fix` 프로세스를 실행하려면 인터넷 연결이 필요하므로 `--fix`를 호출하기 전에 머신이 인터넷에 연결되어 있는지 확인합니다.
 
@@ -139,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 vs_enterprise.exe는 layoutDir 내에서 호출할 수 있습니다.
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>레이아웃에서 이전 버전을 제거하는 방법
+## <a name="remove-older-versions-from-a-layout"></a>레이아웃에서 이전 버전 제거
 
 오프라인 캐시에 대한 레이아웃 업데이트를 수행한 후 레이아웃 캐시 폴더에 최신 Visual Studio 설치에 더 이상 필요하지 않은 사용되지 않는 패키지가 일부 포함되어 있을 수 있습니다. `--clean` 옵션을 사용하여 오프라인 캐시 폴더에서 사용되지 않는 패키지를 제거할 수 있습니다.
 
@@ -165,7 +168,13 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 이 명령을 실행하면 설치 프로그램은 오프라인 캐시 폴더를 분석하여 제거할 파일 목록을 찾습니다. 그러면 삭제될 파일을 검토하고 삭제를 확인할 수 있습니다.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+## <a name="get-support-for-your-offline-installer"></a>오프라인 설치 관리자에 대한 지원 받기
+
+오프라인 설치에 문제가 발생하는 경우와 관련하여 자세히 알려고 합니다. [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md)를 사용하여 알리는 것이 가장 좋습니다. 이 도구를 사용하면 문제를 진단하고 해결하는 데 필요한 원격 분석과 로그를 보낼 수 있습니다.
+
+설치 관련 문제는 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션도 제공합니다.
+
+사용 가능한 다른 지원 옵션도 있습니다. 목록은 [피드백](../ide/feedback-options.md) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

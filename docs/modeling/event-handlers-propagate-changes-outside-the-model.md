@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747556"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114599"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
 
@@ -37,7 +37,7 @@ ms.locfileid: "72747556"
 
 2. **Dslpackage** 프로젝트의 별도 코드 파일에 _dsl_**docdata** 에 대 한 부분 클래스 정의를 추가 합니다.
 
-3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. @No__t_1에 액세스 하려는 경우를 제외 하 고 `static` 수 있습니다.
+3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. `DocData`에 액세스 하려는 경우를 제외 하 고 `static`수 있습니다.
 
 4. 처리기를 등록 하려면 `OnDocumentLoaded()`를 재정의 합니다. 둘 이상의 처리기가 있는 경우 모두 동일한 장소에 등록할 수 있습니다.
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>이벤트를 사용 하 여 스토어에서 취소할 수 있는 조정을 수행 합니다.
 
-트랜잭션 커밋 후 이벤트 처리기가 실행 되기 때문에 저장소 이벤트는 일반적으로 저장소 내에서 변경 내용을 전파 하는 데 사용 되지 않습니다. 대신 저장소 규칙을 사용 합니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+트랜잭션 커밋 후 이벤트 처리기가 실행 되기 때문에 저장소 이벤트는 일반적으로 저장소 내에서 변경 내용을 전파 하는 데 사용 되지 않습니다. 대신 저장소 규칙을 사용 합니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
 그러나 사용자가 원래 이벤트와 별도로 추가 업데이트를 실행 취소할 수 있도록 하려면 이벤트 처리기를 사용 하 여 저장소에 대 한 추가 업데이트를 만들 수 있습니다. 예를 들어 낮은 케이스 문자가 앨범 제목의 일반적인 규칙 이라고 가정 합니다. 사용자가 대문자로 입력 한 후 소문자로 제목을 수정 하는 저장소 이벤트 처리기를 작성할 수 있습니다. 그러나 사용자는 실행 취소 명령을 사용 하 여 대/소문자를 복원 하는 수정 작업을 취소할 수 있습니다. 두 번째 실행 취소는 사용자의 변경 내용을 제거 합니다.
 

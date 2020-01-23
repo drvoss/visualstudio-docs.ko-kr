@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849950"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917093"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>서버 탐색기에서 Azure Virtual Machines에 액세스
 
@@ -31,7 +31,7 @@ ms.locfileid: "75849950"
    | DNS  이름 |가상 머신의 인터넷 주소 URL입니다. |
    | 환경 |가상 머신에 대한 이 속성의 값은 항상 프로덕션입니다. |
    | 이름 |가상 컴퓨터의 이름입니다. |
-   | 크기 |사용 가능한 디스크 공간과 메모리의 양이 반영된 가상 머신의 크기입니다. 자세한 내용은 [Virtual Machine 크기](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)를 참조하세요. |
+   | 크기 |사용 가능한 디스크 공간과 메모리의 양이 반영된 가상 머신의 크기입니다. 자세한 내용은 [Virtual Machine 크기](/azure/cloud-services/cloud-services-sizes-specs)를 참조하세요. |
    | Status |값은 시작, 시작됨, 중지, 중지됨 및 상태 검색을 포함합니다. 상태 검색이 나타나면 현재 상태는 알 수 없습니다. 이 속성의 값은 [Azure Portal](https://portal.azure.com/)에서 사용된 값과 다릅니다. |
    | 구독 ID |Azure 계정에 대한 구독 ID 구독에 대한 속성을 확인하여 [Azure Portal](https://portal.azure.com/)에 대한 이 정보를 표시할 수 있습니다. |
 2. 엔드포인트 노드를 선택한 다음 **속성** 창을 확인합니다.

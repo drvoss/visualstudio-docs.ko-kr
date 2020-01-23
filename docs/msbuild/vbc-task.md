@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577774"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591140"
 ---
 # <a name="vbc-task"></a>Vbc 작업
-실행 파일(*.exe*), 동적 링크 라이브러리(*.dll*) 또는 코드 모듈(*.netmodule*)을 생성하는 *vbc.exe*를 래핑합니다. *vbc.exe*에 대한 자세한 내용은 [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)를 참조하세요.
+실행 파일( *.exe*), 동적 링크 라이브러리( *.dll*) 또는 코드 모듈( *.netmodule*)을 생성하는 *vbc.exe*를 래핑합니다. *vbc.exe*에 대한 자세한 내용은 [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
  다음 표에서는 `Vbc` 작업의 매개 변수에 대해 설명합니다.
@@ -85,9 +85,9 @@ ms.locfileid: "62577774"
 | `WarningsAsErrors` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리할 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수를 재정의합니다. |
 | `WarningsNotAsErrors` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리하지 않을 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수가 `true`로 설정된 경우에만 유용합니다. |
 | `Win32Icon` | 선택적 `String` 매개 변수입니다.<br /><br /> **파일 탐색기**에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 스위치에 해당합니다. |
-| `Win32Resources` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스(*.res*) 파일을 출력 파일에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 스위치에 해당합니다. |
+| `Win32Resources` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res*) 파일을 출력 파일에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 스위치에 해당합니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
@@ -101,7 +101,7 @@ ms.locfileid: "62577774"
    OutputAssembly="out.exe"/>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

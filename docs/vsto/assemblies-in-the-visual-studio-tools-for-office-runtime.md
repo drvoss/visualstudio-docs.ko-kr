@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c227748e1808aecabd9554b0e6b398a7c6c6df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986198"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918790"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office 런타임의 어셈블리
   Office 프로젝트를 만들면 Visual Studio에서 프로젝트 형식 및 프로젝트의 대상 .NET Framework에 사용되는 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 어셈블리에 자동으로 참조를 추가합니다. .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]및 [!INCLUDE[net_v45](includes/net-v45-md.md)]용 Office 확장에는 각각 다른 어셈블리가 있습니다. Office 확장에 대 한 자세한 내용은 [Visual Studio Tools for Office 런타임 개요](visual-studio-tools-for-office-runtime-overview.md)를 참조 하세요.
@@ -55,7 +55,7 @@ ms.locfileid: "72986198"
 |Microsoft.Office.Tools.Excel.v9.0.dll|Excel 솔루션에 대한 호스트 항목 및 호스트 컨트롤을 제공합니다. 자세한 내용은 [확장 개체를 사용 하 여 Excel 자동화](automating-excel-by-using-extended-objects.md)를 참조 하세요.|
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Outlook VSTO 추가 기능에서 사용자 지정 양식 영역을 만드는 데 사용할 수 있는 클래스를 제공합니다.|
 |Microsoft.Office.Tools.Word.v9.0.dll|Word 솔루션에 대한 호스트 항목 및 호스트 컨트롤을 제공합니다. 자세한 내용은 [확장 개체를 사용 하 여 Word 자동화](automating-word-by-using-extended-objects.md)를 참조 하세요.|
-|Microsoft.Office.Tools.v9.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -문서 수준 사용자 지정의 호스트 컨트롤에 대 한 데이터 바인딩 기능을 제공 하는 [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) 클래스입니다.<br />-Visual Studio Tools for Office 런타임 인프라의 일부 이며 코드에서 직접 사용 하기 위한 것이 아닙니다.|
+|Microsoft.Office.Tools.v9.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -문서 수준 사용자 지정의 호스트 컨트롤에 대 한 데이터 바인딩 기능을 제공 하는 [RemoteBindableComponent](/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) 클래스입니다.<br />-Visual Studio Tools for Office 런타임 인프라의 일부 이며 코드에서 직접 사용 하기 위한 것이 아닙니다.|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 특성 및 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> 인터페이스로, 문서 수준 사용자 지정에서 데이터 개체를 캐시 하는 데 사용할 수 있습니다. 자세한 내용은 [데이터 캐시](caching-data.md)를 참조 하세요.<br />-Visual Studio Tools for Office 런타임에 의해 throw 될 수 있는 예외입니다.<br />-Visual Studio Tools for Office 런타임 인프라의 일부 이며 코드에서 직접 사용 하기 위한 것이 아닙니다.|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|<xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> 인터페이스로, Office 솔루션에 대한 ClickOnce 설치 관리자의 최종 단계로 추가 설치 단계를 실행하기 위해 구현할 수 있습니다. 자세한 내용은 [고급 Office 솔루션 배포](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100))를 참조 하세요.|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -문서에 사용자 지정 어셈블리를 프로그래밍 방식으로 연결 하 고 문서에서 캐시 된 데이터에 액세스 하는 데 사용할 수 있는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스입니다. 자세한 내용은 [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](managing-documents-on-a-server-by-using-the-serverdocument-class.md)를 참조 하세요.<br />-문서 수준 사용자 지정에서 캐시 된 데이터의 계층 구조를 나타내는 여러 클래스입니다. 자세한 내용은 [서버에 있는 문서의 데이터 액세스](accessing-data-in-documents-on-the-server.md)를 참조 하세요.|

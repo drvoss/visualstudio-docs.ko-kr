@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706827"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916935"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
 
@@ -103,7 +103,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="volume-mapping"></a>볼륨 매핑
 
-컨테이너에서 디버깅이 작동하기 위해 Visual Studio에서는 볼륨 매핑을 사용하여 호스트 머신의 디버거 및 NuGet 폴더를 매핑합니다. 컨테이너에 탑재된 볼륨은 다음과 같습니다.
+컨테이너에서 디버깅이 작동하기 위해 Visual Studio에서는 볼륨 매핑을 사용하여 호스트 머신의 디버거 및 NuGet 폴더를 매핑합니다. 볼륨 매핑은 [여기](https://docs.docker.com/storage/volumes/) Docker 설명서에 설명되어 있습니다. 컨테이너에 탑재된 볼륨은 다음과 같습니다.
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ ASP.NET Core 웹앱의 경우, SSL 인증서 및 사용자 비밀에 대한 추�
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>SSL 사용 ASP.NET Core 앱
 
-Visual Studio의 컨테이너 도구는 컨테이너 없이 작동하는 것과 동일한 방식으로 개발 인증서를 사용하여 SSL 사용 ASP.NET Core 앱의 디버깅을 지원합니다. 이러한 작업을 수행하기 위해 Visual Studio는 인증서를 내보내고 컨테이너에서 사용할 수 있도록 하는 몇 가지 단계를 더 추가합니다. 흐름은 다음과 같습니다.
+Visual Studio의 컨테이너 도구는 컨테이너 없이 작동하는 것과 동일한 방식으로 개발 인증서를 사용하여 SSL 사용 ASP.NET Core 앱의 디버깅을 지원합니다. 이러한 작업을 수행하기 위해 Visual Studio는 인증서를 내보내고 컨테이너에서 사용할 수 있도록 하는 몇 가지 단계를 더 추가합니다. 컨테이너에서 디버깅할 때 Visual Studio에서 처리하는 흐름은 다음과 같습니다.
 
 1. 로컬 개발 인증서가 있고 `dev-certs` 도구를 통해 호스트 머신에서 신뢰할 수 있는지 확인합니다.
 2. 이 특정 앱에 대한 사용자 비밀 저장소에 저장되어 있는 보안 암호를 사용하여 %APPDATA%\ASP.NET\Https로 인증서를 내보냅니다.
-3. 다음 디렉터리에 볼륨 탑재:
+3. 다음 디렉터리에 볼륨을 탑재합니다.
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core는 *Https* 폴더 아래에서 어셈블리 이름과 일치하는 
 }
 ```
 
-컨테이너에서 ASP.NET Core 앱과 함께 SSL을 사용하는 방법에 대한 자세한 내용은 [HTTPS를 통해 Docker를 사용하여 ASP.NET Core 이미지 호스팅](https://docs.microsoft.com/aspnet/core/security/docker-https)을 참조하세요.
+구성에서 컨테이너화된 빌드와 컨테이너화되지 않은 빌드를 모두 지원하는 경우에는 경로가 컨테이너 환경과 관련되므로 환경 변수를 사용해야 합니다.
+
+컨테이너에서 ASP.NET Core 앱과 함께 SSL을 사용하는 방법에 대한 자세한 내용은 [HTTPS를 통해 Docker를 사용하여 ASP.NET Core 이미지 호스팅](/aspnet/core/security/docker-https)을 참조하세요.
 
 ## <a name="debugging"></a>디버깅
 
@@ -187,7 +189,7 @@ Visual Studio는 프로젝트 형식 및 컨테이너 운영 체제에 따라 �
 
 프로젝트 파일에서 추가 MSBuild 속성을 설정하여 빌드를 추가로 사용자 지정하는 방법을 알아봅니다. [컨테이너 프로젝트에 대한 MSBuild 속성](container-msbuild-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [MSBuild](../msbuild/msbuild.md)
 [Windows의 Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

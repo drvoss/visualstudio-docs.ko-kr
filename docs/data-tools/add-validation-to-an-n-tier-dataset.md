@@ -10,17 +10,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff9b2bab755a341d512669578c40ae71f554c235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 426399022c2484dca28bb4f4e1f26c14783a3d19
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648880"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113316"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 세트에 유효성 검사 추가
 N 계층 솔루션으로 분리 된 데이터 집합에 유효성 검사를 추가 하는 것은 기본적으로 단일 파일 데이터 집합에 유효성 검사를 추가 하는 것과 같습니다 (단일 프로젝트의 데이터 집합). 데이터에 대 한 유효성 검사를 수행 하기 위한 제안 된 위치는 데이터 테이블의 <xref:System.Data.DataTable.ColumnChanging> 및/또는 <xref:System.Data.DataTable.RowChanging> 이벤트 중입니다.
@@ -34,7 +34,7 @@ N 계층 솔루션으로 분리 된 데이터 집합에 유효성 검사를 추�
 > 데이터 집합 디자이너는 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.RowChanging> 이벤트 C# 에 대해 이벤트 처리기를 자동으로 만들지 않습니다. 이벤트 처리기를 수동으로 만들고 이벤트 처리기를 기본 이벤트에 연결 해야 합니다. 다음 절차에서는 Visual Basic와 C#모두에서 필요한 이벤트 처리기를 만드는 방법을 설명 합니다.
 
 ## <a name="validate-changes-to-individual-columns"></a>개별 열에 대 한 변경 내용 유효성 검사
-@No__t_0 이벤트를 처리 하 여 개별 열에 있는 값의 유효성을 검사 합니다. 열 값이 수정 되 면 발생 하는 <xref:System.Data.DataTable.ColumnChanging> 이벤트입니다. **데이터 세트 디자이너**에서 원하는 열을 두 번 클릭 하 여 <xref:System.Data.DataTable.ColumnChanging> 이벤트에 대 한 이벤트 처리기를 만듭니다.
+<xref:System.Data.DataTable.ColumnChanging> 이벤트를 처리 하 여 개별 열에 있는 값의 유효성을 검사 합니다. 열 값이 수정 되 면 발생 하는 <xref:System.Data.DataTable.ColumnChanging> 이벤트입니다. **데이터 세트 디자이너**에서 원하는 열을 두 번 클릭 하 여 <xref:System.Data.DataTable.ColumnChanging> 이벤트에 대 한 이벤트 처리기를 만듭니다.
 
 처음으로 열을 두 번 클릭 하면 디자이너에서 <xref:System.Data.DataTable.ColumnChanging> 이벤트에 대 한 이벤트 처리기를 생성 합니다. 특정 열을 테스트 하는 `If...Then` 문도 생성 됩니다. 예를 들어 Northwind Orders 테이블에서 **RequiredDate** 열을 두 번 클릭 하면 다음 코드가 생성 됩니다.
 
@@ -102,7 +102,7 @@ End Sub
     ```
 
 ## <a name="validate-changes-to-whole-rows"></a>전체 행의 변경 내용 유효성 검사
-@No__t_0 이벤트를 처리 하 여 전체 행의 값에 대 한 유효성을 검사 합니다. @No__t_0 이벤트는 모든 열의 값이 커밋될 때 발생 합니다. 한 열의 값이 다른 열의 값에 의존 하는 경우 <xref:System.Data.DataTable.RowChanging> 이벤트에서 유효성을 검사 해야 합니다. 예를 들어 Northwind의 Orders 테이블에서 OrderDate 및 RequiredDate을 고려 합니다.
+<xref:System.Data.DataTable.RowChanging> 이벤트를 처리 하 여 전체 행의 값에 대 한 유효성을 검사 합니다. <xref:System.Data.DataTable.RowChanging> 이벤트는 모든 열의 값이 커밋될 때 발생 합니다. 한 열의 값이 다른 열의 값에 의존 하는 경우 <xref:System.Data.DataTable.RowChanging> 이벤트에서 유효성을 검사 해야 합니다. 예를 들어 Northwind의 Orders 테이블에서 OrderDate 및 RequiredDate을 고려 합니다.
 
 주문을 입력 하는 경우 유효성 검사를 수행 하면 OrderDate의 RequiredDate 이전에 주문이 입력 되지 않습니다. 이 예에서는 RequiredDate 열과 OrderDate 열 모두에 대 한 값을 비교 해야 하므로 개별 열 변경의 유효성을 검사 하는 것은 적합 하지 않습니다.
 
@@ -117,7 +117,7 @@ End Sub
      Partial 클래스는 `RowChanging` 이벤트 처리기를 사용 하 여 생성 되 고 코드 편집기에서 열립니다.
 
     > [!NOTE]
-    > 데이터 세트 디자이너는 프로젝트의 C# <xref:System.Data.DataTable.RowChanging> 이벤트에 대 한 이벤트 처리기를 자동으로 만들지 않습니다. @No__t_0 이벤트를 처리 하 고 코드를 실행 한 다음 테이블의 초기화 메서드에서 이벤트를 후크 하는 메서드를 만들어야 합니다.
+    > 데이터 세트 디자이너는 프로젝트의 C# <xref:System.Data.DataTable.RowChanging> 이벤트에 대 한 이벤트 처리기를 자동으로 만들지 않습니다. <xref:System.Data.DataTable.RowChanging> 이벤트를 처리 하 고 코드를 실행 한 다음 테이블의 초기화 메서드에서 이벤트를 후크 하는 메서드를 만들어야 합니다.
 
 3. Partial 클래스 선언 내에 사용자 코드를 추가 합니다.
 

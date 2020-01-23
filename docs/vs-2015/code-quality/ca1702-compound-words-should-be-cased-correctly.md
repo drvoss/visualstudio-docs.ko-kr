@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669259"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919245"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에 대 한 최신 설명서는 CA1702을 참조 하세요. [복합 단어](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)는 대/소문자를 올바르게 지정 해야 합니다.
+Visual Studio에 대 한 최신 설명서는 CA1702을 참조 하세요. [복합 단어](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)는 대/소문자를 올바르게 지정 해야 합니다.
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|범주|Microsoft. 이름 지정|
+|범주|Microsoft.Naming|
 |변경 수준|중단-어셈블리에서 발생 한 경우<br /><br /> 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인
@@ -55,5 +55,5 @@ Visual Studio에 대 한 최신 설명서는 CA1702을 참조 하세요. [복합
 
  [CA1708: 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [명명 지침](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) 의 [대문자 표기 규칙](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

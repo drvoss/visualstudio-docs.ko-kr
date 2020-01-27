@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637947"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542635"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>연습: C \#에서 시각화 도우미 작성
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>연습: C\#에서 시각화 도우미 작성
 이 연습에서는 C#을 사용하여 간단한 시각화 도우미를 작성하는 방법을 보여줍니다. 이 연습에서 만들 시각화 도우미는 Windows Forms 메시지 상자를 사용하여 문자열의 내용을 표시합니다. 이 간단한 문자열 시각화 도우미는 특히 유용 하지 않지만 다른 데이터 형식에 더 유용한 시각화 도우미를 만들기 위해 수행 해야 하는 기본 단계를 보여 줍니다.
 
 > [!NOTE]
@@ -38,10 +38,10 @@ ms.locfileid: "72637947"
 1. 새 클래스 라이브러리 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력 하 여 검색 상자를 열고 **클래스 라이브러리**를 입력 한 다음 **템플릿**을 선택 하 고 **새 클래스 라이브러리 만들기 (.NET Standard)** 를 선택 합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력 하 여 검색 상자를 열고 **클래스 라이브러리**를 입력 한 다음 **템플릿**을 선택 하 고 **새 클래스 라이브러리 만들기 (.NET Framework)** 를 선택 합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에 있는 **시각적 개체 C#** 에서 **.NET Standard**를 선택한 다음 가운데 창에서 **클래스 라이브러리 (.NET Standard)** 를 선택 합니다.
+    상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에 있는 **시각적 개체 C# **에서 **.NET Framework**를 선택한 다음 가운데 창에서 **클래스 라이브러리 (.NET Framework)** 를 선택 합니다.
     ::: moniker-end
 
 2. 클래스 라이브러리의 적절 한 이름 (예: `MyFirstVisualizer`)을 입력 한 다음 **만들기** 또는 **확인**을 클릭 합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "72637947"
 
 4. **참조 추가** 대화 상자의 **찾아보기** 탭에서 **찾아보기** 를 선택 하 고 VisualStudio. microsoft.visualstudio.debuggervisualizers.dll를 찾습니다.
 
-    Visual Studio 설치 디렉터리의 *\<Visual Studio 설치 디렉터리 > \Common7\IDE\PublicAssemblies* 하위 디렉터리에서 DLL을 찾을 수 있습니다.
+    Visual studio 설치 디렉터리의 \Common7\IDE\PublicAssemblies 하위 디렉터리 *\<Visual Studio 설치 디렉터리* 에서 DLL을 찾을 수 있습니다.
 
 5. **확인**을 클릭합니다.
 
@@ -135,7 +135,7 @@ ms.locfileid: "72637947"
 
 ### <a name="to-add-the-debuggee-side-code"></a>디버기 쪽 코드를 추가 하려면
 
-1. 다음 특성 코드를 DebuggerSide.cs에 추가 하 고 `using` 지시문 뒤에 `namespace MyFirstVisualizer` 합니다.
+1. 다음 특성 코드를 DebuggerSide.cs에 추가 하 고 `using` 지시문 뒤에 `namespace MyFirstVisualizer`합니다.
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -173,7 +173,7 @@ ms.locfileid: "72637947"
     검색 상자에 **console 앱**을 입력 하 고 **템플릿**을 선택한 다음 **새 콘솔 앱 만들기 (.NET Framework)** 를 선택 합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
+    상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
     ::: moniker-end
 
 2. 클래스 라이브러리의 적절 한 이름 (예: `MyTestConsole`)을 입력 한 다음 **만들기** 또는 **확인**을 클릭 합니다.
@@ -230,7 +230,7 @@ ms.locfileid: "72637947"
 
    이로써 첫 번째 시각화 도우미를 빌드하고 테스트했습니다.
 
-   시각화 도우미를 테스트 환경에서 호출하는 대신 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 사용하려면 이를 설치해야 합니다. 자세한 내용은 [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조하세요.
+   시각화 도우미를 테스트 환경에서 호출하는 대신 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 사용하려면 이를 설치해야 합니다. 자세한 내용은 [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조 하세요.
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>시각화 도우미 항목 템플릿을 사용 하 여 시각화 도우미 만들기
 
@@ -242,7 +242,7 @@ ms.locfileid: "72637947"
 
 1. **파일** 메뉴에서 **새로 만들기 > 프로젝트**를 선택합니다.
 
-2. **새 프로젝트** 대화 상자의 **시각적 개체 C#** 에서 **.NET Standard**를 선택 합니다.
+2. **새 프로젝트** 대화 상자의 **시각적 개체 C# **에서 **.NET Framework**를 선택 합니다.
 
 3. 가운데 창에서 **클래스 라이브러리**를 선택 합니다.
 
@@ -258,7 +258,7 @@ ms.locfileid: "72637947"
 
 2. 바로 가기 메뉴에서 **추가** 를 선택한 다음 **새 항목**을 클릭 합니다.
 
-3. **새 항목 추가** 대화 상자의  **C# 시각적 항목**에서 **디버거 시각화 도우미**를 선택 합니다.
+3. **새 항목 추가** 대화 상자의 ** C# 시각적 항목**에서 **디버거 시각화 도우미**를 선택 합니다.
 
 4. **이름** 상자에 SecondVisualizer.cs와 같은 적절 한 이름을 입력 합니다.
 
@@ -266,7 +266,7 @@ ms.locfileid: "72637947"
 
    이것이 전부입니다. SecondVisualizer.cs 파일을 확인 하 고 템플릿이 추가한 코드를 확인 합니다. 계속 해 서 코드를 시험해 보세요. 이제 기본 사항을 배웠으므로 사용자는 자신의 고유한 시각화 도우미를 직접 만들 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [시각화 도우미 아키텍처](../debugger/visualizer-architecture.md)
 - [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)

@@ -8,25 +8,25 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c34995a49a785061c67f1324c9c9cd5b5316178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d486aac8e990fef6b139bca989a51d74146ecb67
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633116"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826408"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>방법: 비동기 Visual Studio 서비스 제공
-UI 스레드를 차단 하지 않고 서비스를 가져오려면 비동기 서비스를 만들어 백그라운드 스레드에서 패키지를 로드 해야 합니다. 이러한 목적을 위해 <xref:Microsoft.VisualStudio.Shell.Package> 대신 <xref:Microsoft.VisualStudio.Shell.AsyncPackage>를 사용 하 고 비동기 패키지의 특별 한 비동기 메서드를 사용 하 여 서비스를 추가할 수 있습니다.
+UI 스레드를 차단 하지 않고 서비스를 가져오려면 비동기 서비스를 만들어 백그라운드 스레드에서 패키지를 로드 해야 합니다. 이러한 목적을 위해 <xref:Microsoft.VisualStudio.Shell.Package>대신 <xref:Microsoft.VisualStudio.Shell.AsyncPackage>를 사용 하 고 비동기 패키지의 특별 한 비동기 메서드를 사용 하 여 서비스를 추가할 수 있습니다.
 
  동기 Visual Studio 서비스를 제공 하는 방법에 대 한 자세한 내용은 [방법: 서비스 제공](../extensibility/how-to-provide-a-service.md)을 참조 하세요.
 
 ## <a name="implement-an-asynchronous-service"></a>비동기 서비스 구현
 
-1. Vsix 프로젝트 만들기 (**파일**  > **새**  > **프로젝트**  > **Visual C#**   > **확장성** 0**vsix 프로젝트**). 프로젝트 이름을 **Testasync**로 합니다.
+1. Vsix 프로젝트 만들기 (**파일** > **새** > **프로젝트** > **Visual C#**  > **확장성** > **vsix 프로젝트**). 프로젝트 이름을 **Testasync**로 합니다.
 
-2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 **추가**  > **새 항목**  > **시각적 C# 항목**  > **확장성**  > **visual Studio 패키지**를 클릭 합니다. 이 파일의 이름을 *TestAsyncPackage.cs*로 합니다.
+2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 **추가** > **새 항목** > **시각적 C# 항목** > **확장성** > **visual Studio 패키지**를 클릭 합니다. 이 파일의 이름을 *TestAsyncPackage.cs*로 합니다.
 
-3. *TestAsyncPackage.cs*에서 `Package` 대신 `AsyncPackage`에서 상속 하도록 패키지를 변경 합니다.
+3. *TestAsyncPackage.cs*에서 `Package`대신 `AsyncPackage`에서 상속 하도록 패키지를 변경 합니다.
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -130,6 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
+    이 서비스를이 패키지 외부에서 볼 수 있도록 하려면 승격 플래그 값을 마지막 매개 변수로 *true* 로 설정 합니다. `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. VisualStudio에 대 한 참조를 추가 합니다. *14.0*에 대 한 참조를 추가 합니다.
 
@@ -170,9 +171,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>명령 처리기에서 비동기 서비스 사용
  메뉴 명령에서 비동기 서비스를 사용 하는 방법에 대 한 예제는 다음과 같습니다. 여기에 표시 된 절차를 사용 하 여 비동기 이외의 다른 메서드에서 서비스를 사용할 수 있습니다.
 
-1. 프로젝트에 메뉴 명령을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **추가**  > **새 항목**  > **확장성**  > **사용자 지정 명령**을 선택 합니다. 명령 파일의 이름을 *TestAsyncCommand.cs*로 합니다.
+1. 프로젝트에 메뉴 명령을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **추가** > **새 항목** > **확장성** > **사용자 지정 명령**을 선택 합니다. 명령 파일의 이름을 *TestAsyncCommand.cs*로 합니다.
 
-2. 사용자 지정 명령 템플릿은 명령을 초기화 하기 위해 *TestAsyncPackage.cs* 파일에 `Initialize()` 메서드를 다시 추가 합니다. @No__t_0 메서드에서 명령을 초기화 하는 줄을 복사 합니다. 다음과 같이 표시됩니다.
+2. 사용자 지정 명령 템플릿은 명령을 초기화 하기 위해 *TestAsyncPackage.cs* 파일에 `Initialize()` 메서드를 다시 추가 합니다. `Initialize()` 메서드에서 명령을 초기화 하는 줄을 복사 합니다. 다음과 같이 표시됩니다.
 
     ```csharp
     TestAsyncCommand.Initialize(this);
@@ -199,7 +200,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-3. @No__t_0 메서드를 삭제 합니다.
+3. `Initialize()` 메서드를 삭제 합니다.
 
 4. *TestAsyncCommand.cs* 파일에서 `MenuItemCallback()` 메서드를 찾습니다. 메서드의 본문을 삭제 합니다.
 
@@ -209,7 +210,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     using System.IO;
     ```
 
-6. @No__t_0 라는 비동기 메서드를 추가 합니다 .이 메서드는 서비스를 가져오고 해당 메서드를 사용 합니다.
+6. `UseTextWriterAsync()`라는 비동기 메서드를 추가 합니다 .이 메서드는 서비스를 가져오고 해당 메서드를 사용 합니다.
 
     ```csharp
     private async System.Threading.Tasks.Task UseTextWriterAsync()
@@ -225,7 +226,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-7. @No__t_0 메서드에서이 메서드를 호출 합니다.
+7. `MenuItemCallback()` 메서드에서이 메서드를 호출 합니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

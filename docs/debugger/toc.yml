@@ -52,6 +52,8 @@
       items:
         - name: 디버거 창에서 데이터 검사
           href: debugger-windows.md
+        - name: 예외 검사
+          href: exception-helper.md
         - name: 변수 검사
           href: autos-and-locals-windows.md
         - name: 변수 보기
@@ -680,7 +682,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: 디버거 보안
       href: debugger-security.md
-- name: 참조
+- name: 참고
   items:
     - name: 사용자 인터페이스 참조 디버깅
       items:

@@ -1,4 +1,4 @@
-- name: MsBuild
+- name: MSBuild
   items:
     - name: MsBuild
       href: msbuild.md
@@ -8,7 +8,8 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild 개념
       items:
-        - name: MSBuild 개념 - 개요
+        - name: 개요
+          displayName: msbuild concepts
           href: msbuild-concepts.md
         - name: 속성
           items:
@@ -134,15 +135,16 @@
               href: resolving-assemblies-at-design-time.md
             - name: 대상 및 작업 구성
               items:
-                - name: 대상 및 작업 구성
+                - name: 개요
                   href: configuring-targets-and-tasks.md
                 - name: 대상 및 작업 구성
                   href: how-to-configure-targets-and-tasks.md
-            - name: .NET Framework 대상 지정 오류 문제 해결
+            - name: .NET Framework 타기팅 오류 문제 해결
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: 파일 추적
           items:
-            - name: 파일 추적 - 개요
+            - name: 개요
+              displayName: file tracking
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -168,7 +170,8 @@
           href: msbuild-best-practices.md
     - name: 로깅
       items:
-        - name: MSBuild의 로깅 - 개요
+        - name: 개요
+          displayName: logging
           href: logging-in-msbuild.md
         - name: MSBuild를 사용하여 빌드 로그 가져오기
           href: obtaining-build-logs-with-msbuild.md
@@ -186,63 +189,67 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild 참조
       items:
-        - name: MSBuild 참조 - 개요
+        - name: 개요
+          displayName: msbuild reference
           href: msbuild-reference.md
         - name: MSBuild 프로젝트 파일 스키마 참조
           items:
-            - name: MSBuild 프로젝트 파일 스키마 참조 - 개요
+            - name: 개요
+              displayName: Project File Schema Reference
               href: msbuild-project-file-schema-reference.md
-            - name: Choose 요소(MSBuild)
+            - name: Choose 요소
               href: choose-element-msbuild.md
-            - name: Import 요소(MSBuild)
+            - name: Import 요소
               href: import-element-msbuild.md
             - name: ImportGroup 요소
               href: importgroup-element.md
-            - name: Item 요소(MSBuild)
+            - name: Item 요소
               href: item-element-msbuild.md
-            - name: ItemDefinitionGroup 요소(MSBuild)
+            - name: ItemDefinitionGroup 요소
               href: itemdefinitiongroup-element-msbuild.md
-            - name: ItemGroup 요소(MSBuild)
+            - name: ItemGroup 요소
               href: itemgroup-element-msbuild.md
-            - name: ItemMetadata 요소(MSBuild)
+            - name: ItemMetadata 요소
               href: itemmetadata-element-msbuild.md
-            - name: OnError 요소(MSBuild)
+            - name: OnError 요소
               href: onerror-element-msbuild.md
-            - name: Otherwise 요소(MSBuild)
+            - name: Otherwise 요소
               href: otherwise-element-msbuild.md
-            - name: Output 요소(MSBuild)
+            - name: Output 요소
               href: output-element-msbuild.md
             - name: Parameter 요소
               href: parameter-element.md
             - name: ParameterGroup 요소
               href: parametergroup-element.md
-            - name: Project 요소(MSBuild)
+            - name: Project 요소
               href: project-element-msbuild.md
-            - name: ProjectExtensions 요소(MSBuild)
+            - name: ProjectExtensions 요소
               href: projectextensions-element-msbuild.md
-            - name: Property 요소(MSBuild)
+            - name: Property 요소
               href: property-element-msbuild.md
-            - name: PropertyGroup 요소(MSBuild)
+            - name: PropertyGroup 요소
               href: propertygroup-element-msbuild.md
-            - name: SDK 요소(MSBuild)
+            - name: Sdk 요소
               href: sdk-element-msbuild.md
-            - name: Target 요소(MSBuild)
+            - name: Target 요소
               href: target-element-msbuild.md
-            - name: Task 요소(MSBuild)
+            - name: Task 요소
               href: task-element-msbuild.md
-            - name: TaskBody 요소(MSBuild)
+            - name: TaskBody 요소
               href: taskbody-element-msbuild.md
-            - name: UsingTask 요소(MSBuild)
+            - name: UsingTask 요소
               href: usingtask-element-msbuild.md
-            - name: When 요소(MSBuild)
+            - name: When 요소
               href: when-element-msbuild.md
         - name: 작업 참조
           items:
-            - name: MSBuild 작업 참조 - 개요
+            - name: 개요
+              displayName: Task Reference
               href: msbuild-task-reference.md
-            - name: Visaul C++ 관련 작업
+            - name: C++ 관련 작업
               items:
-                - name: Visual C++ 관련 MSBuild 작업 - 개요
+                - name: 개요
+                  displayName: C++ tasks
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake 작업
                   href: bscmake-task.md
@@ -442,13 +449,15 @@
           href: msbuild-response-files.md
         - name: WPF 참조
           items:
-            - name: WPF MSBuild 참조 - 개요
+            - name: 개요
+              displayName: WPF MSBuild Reference
               href: wpf-msbuild-reference.md
             - name: WPF .Targets 파일
               href: wpf-dot-targets-files.md
             - name: WPF 작업 참조
               items:
-                - name: WPF MSBuild 작업 참조 - 개요
+                - name: 개요
+                  displayName: WPF MSBuild Task Reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier 작업
                   href: fileclassifier-task.md
@@ -472,7 +481,8 @@
           href: special-characters-to-escape.md
     - name: 프로그래밍 방식으로 MSBuild 사용
       items:
-        - name: 프로그래밍 방식으로 MSBuild 사용
+        - name: 개요
+          displayName: Use MSBuild Programmatically
           href: msbuild-api.md
         - name: MSBuild 15로 업데이트
           href: updating-an-existing-application.md

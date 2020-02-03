@@ -24,7 +24,7 @@ Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 �
 
 Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 **Python 개발** 및 **데이터 과학** 워크로드(Visual Studio 2017 이상)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
 
-Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
+Python은 현재 Mac용 Visual Studio에서는 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
 
 시작하기:
 
@@ -163,7 +163,7 @@ Python용 Azure 라이브러리는 Windows, Mac OS X 및 Linux 앱에서 Azure �
 
 **질문: Mac용 Visual Studio에서 Python 지원을 사용할 수 있나요?**
 
-대답: 이번에는 아니지만 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)에 대한 요청을 긍정적으로 평가할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/) 설명서에서는 지원되는 현재 개발 유형을 식별합니다. 한편, Windows, Mac 및 Linux의 Visual Studio Code는 [사용 가능한 확장을 통해 Python에서 잘 작동](https://code.visualstudio.com/docs/languages/python)합니다.
+대답: 이번에는 아니지만 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)에 대한 요청을 긍정적으로 검토할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/) 설명서에서는 지원되는 현재 개발 유형을 확인합니다. 한편, Windows, Mac 및 Linux의 Visual Studio Code는 [사용 가능한 확장을 통해 Python에서 잘 작동](https://code.visualstudio.com/docs/languages/python)합니다.
 
 **질문: UI를 빌드하는 데 Python과 함께 무엇을 사용할 수 있나요?**
 

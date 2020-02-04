@@ -38,6 +38,8 @@
 - name: Visual Studio 학습
   expanded: true
   items:
+    - name: 프로그램 실행
+      href: run-program.md
     - name: 리포지토리에서 프로젝트 열기
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 코드 작성 및 편집

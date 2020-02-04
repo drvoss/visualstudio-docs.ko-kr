@@ -7,7 +7,7 @@
     - name: 빠른 시작
       expanded: true
       items:
-        - name: 컨테이너의 ASP.NET Core 앱
+        - name: 컨테이너의 ASP.NET 앱
           href: container-tools.md
         - name: 컨테이너의 React.js 단일 페이지 앱
           href: container-tools-react.md
@@ -40,7 +40,7 @@
           href: container-build.md
     - name: 문제 해결
       href: troubleshooting-docker-errors.md
-    - name: 참조
+    - name: 참고
       items:
         - name: 컨테이너 프로젝트에 대한 MSBuild 속성
           href: container-msbuild-properties.md

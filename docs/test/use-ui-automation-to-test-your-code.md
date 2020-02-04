@@ -221,9 +221,9 @@ UI 컨트롤을 위한 어설션을 생성하려면 **코딩된 UI 테스트 빌
 
 #### <a name="manually-record-mouse-hovers"></a>수동으로 마우스로 가리키기 기록
 
-컨트롤을 마우스로 가리키기를 기록할 수가 없는 경우.
+컨트롤을 마우스로 가리키기를 기록할 수가 없는 경우:
 
-경우에 따라 코딩된 UI 테스트에서 사용 중인 특정 컨트롤을 사용하려면 키보드를 사용하여 마우스 가리키기 이벤트를 수동으로 기록해야 하는 경우가 있습니다. 예를 들어 Windows Form 또는WPF(Windows Presentation Foundation) 애플리케이션을 테스트하는 경우 사용자 지정 코드가 있을 수 있습니다. 또는 사용자가 트리 노드를 마우스로 가리키면 트리 노드가 확장됨과 같이 컨트롤을 마우스로 가리키는 것에 대해 정의된 특별한 동작이 있을 수 있습니다. 이러한 상황을 테스트하려면 미리 정의된 키보드 키를 눌러 컨트롤을 마우스로 가리켰음을 **코딩된 UI 테스트 빌더**에 수동으로 알려야 합니다.
+경우에 따라 코딩된 UI 테스트에서 사용 중인 특정 컨트롤을 사용하려면 키보드를 사용하여 마우스 가리키기 이벤트를 수동으로 기록해야 하는 경우가 있습니다. 예를 들어 Windows Form 또는 WPF(Windows Presentation Foundation) 애플리케이션을 테스트하는 경우 사용자 지정 코드가 있을 수 있습니다. 또는 사용자가 트리 노드를 마우스로 가리키면 트리 노드가 확장됨과 같이 컨트롤을 마우스로 가리키는 것에 대해 정의된 특별한 동작이 있을 수 있습니다. 이러한 상황을 테스트하려면 미리 정의된 키보드 키를 눌러 컨트롤을 마우스로 가리켰음을 **코딩된 UI 테스트 빌더**에 수동으로 알려야 합니다.
 
 코딩된 UI 테스트를 수행하는 경우 컨트롤을 마우스로 가리킵니다. 그런 다음, 키보드에서 **Shift** 및 **R**을 누른 채 **Ctrl** 키를 누르고 있습니다. 키를 놓습니다. **코딩된 UI 테스트 빌더**가 마우스로 가리키기 이벤트를 기록합니다.
 
@@ -376,7 +376,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 코딩된 UI 테스트에서 UI 테스트 컨트롤 작업 시 이러한 컨트롤은 작업과 속성의 두 부분으로 나뉩니다.
 
-- 첫 번째 부분은 UI 테스트 컨트롤에 대해 수행할 수 있는 작업으로 구성됩니다. 예를 들어 코딩된 UI 테스트는 UI 테스트 컨트롤에서 마우스 클릭을 시뮬레이트하거나 UI 테스트 컨트롤에 영향을 주기 위해 키보드에 입력된 키를 시뮬레이션할 수 있습니다.
+- 첫 번째 부분은 UI 테스트 컨트롤에 대해 수행할 수 있는 작업으로 구성됩니다. 예를 들어 코딩된 UI 테스트는 UI 테스트 컨트롤에서 마우스 클릭을 시뮬레이션하거나 UI 테스트 컨트롤에 영향을 주기 위해 키보드에 입력된 키를 시뮬레이션할 수 있습니다.
 
 - 두 번째 파트는 UI 테스트 컨트롤에 대한 속성 얻기 및 설정 가능으로 구성됩니다. 예를 들어 코딩된 UI 테스트는 `ListBox`에서 항목 수를 가져오거나 `CheckBox`를 선택한 상태로 설정할 수 있습니다.
 
@@ -398,7 +398,7 @@ UI 컨트롤 관련 속성 값을 얻고 설정하기 위해 컨트롤의 속성
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>는 적절한 <xref:System.Type>으로 캐스팅할 수 있는 개체를 반환합니다. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>는 속성의 값에 대해 개체를 수락합니다.
 
-### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>UI 테스트 컨트롤에서 속성을 직접 얻거나 설정하려면
+### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>UI 테스트 컨트롤에서 속성을 직접 가져오거나 설정하는 방법
 
 [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) 또는 [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)처럼 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>에서 파생되는 컨트롤을 사용하여 속성 값을 직접 가져오거나 설정할 수 있습니다. 다음 코드에서는 몇 가지 예제를 보여줍니다.
 
@@ -407,7 +407,7 @@ int i = myHtmlList.ItemCount;
 myWinCheckBox.Checked = true;
 ```
 
-### <a name="to-get-properties-from-ui-test-controls"></a>UI 테스트 컨트롤에서 속성을 얻으려면
+### <a name="to-get-properties-from-ui-test-controls"></a>UI 테스트 컨트롤에서 속성을 가져오는 방법
 
 - 컨트롤에서 속성 값을 얻으려면 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>를 사용합니다.
 
@@ -419,7 +419,7 @@ myWinCheckBox.Checked = true;
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
-### <a name="to-set-properties-for-ui-test-controls"></a>UI 컨트롤의 속성을 설정하려면
+### <a name="to-set-properties-for-ui-test-controls"></a>UI 컨트롤의 속성을 설정하는 방법
 
 - 컨트롤에서 속성을 설정하려면 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>를 사용합니다.
 
@@ -429,7 +429,7 @@ myWinCheckBox.Checked = true;
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>디버그
 
 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트를 분석할 수 있습니다. 코딩된 UI 테스트 로그는 코딩된 UI 테스트 실행에 대한 중요한 정보를 필터링하고 기록합니다. 로그 서식을 통해 문제를 신속하게 디버깅할 수 있습니다. 자세한 내용은 [코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)을 참조하세요.
 

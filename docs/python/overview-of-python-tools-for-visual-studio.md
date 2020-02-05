@@ -24,7 +24,7 @@ Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 �
 
 Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 **Python 개발** 및 **데이터 과학** 워크로드(Visual Studio 2017 이상)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
 
-Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
+Python은 현재 Mac용 Visual Studio에서는 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
 
 시작하기:
 

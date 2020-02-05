@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: 관리자가 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797372"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892183"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 라이선스 할당
 Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자 또는 사용자 그룹에 구독을 할당할 수 있습니다.
@@ -33,7 +33,7 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
    > [!div class="mx-imgBorder"]
    > ![다운로드 액세스 권한](media/access-to-downloads.png)
 
-       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
+    구독에 고유한 참조 정보를 추가하려는 경우 **참조 추가** 섹션에서 수행할 수 있습니다.
    > [!div class="mx-imgBorder"]
    > ![각 구독에 고유한 참조 정보 추가](media/add-subscriber-reference-notes.png)
 

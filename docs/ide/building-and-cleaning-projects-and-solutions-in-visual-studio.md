@@ -87,13 +87,13 @@ ms.locfileid: "76114564"
 
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 선택한 다음, 메뉴 모음에서 **빌드** > **프로젝트만 해당**, 다음 명령 중 하나를 차례로 선택합니다.
 
-- *ProjectName***만 빌드**
+- *ProjectName* **만 빌드**
 
-- *ProjectName***만 다시 빌드**
+- *ProjectName* **만 다시 빌드**
 
-- *ProjectName***만 정리**
+- *ProjectName* **만 정리**
 
-- *ProjectName***만 링크**
+- *ProjectName* **만 링크**
 
 이러한 명령은 프로젝트 종속성 또는 솔루션 파일을 빌드, 다시 빌드, 정리 또는 링크하지 않고 선택한 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트에만 적용됩니다. 사용 중인 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 버전에 따라 **프로젝트만** 하위 메뉴에 추가 명령이 포함될 수 있습니다.
 

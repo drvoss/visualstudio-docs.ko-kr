@@ -16,17 +16,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4480442577ccb321d66ad65f94a7c86cdae62ae
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574008"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826590"
 ---
 # <a name="importgroup-element"></a>ImportGroup 요소
+  
 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.
 
- \<Project> \<ImportGroup>
+```xml
+<Project>
+  <ImportGroup>
+```
 
 ## <a name="syntax"></a>구문
 
@@ -72,5 +76,6 @@ ms.locfileid: "75574008"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
 - [항목](../msbuild/msbuild-items.md)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 01c31d96b7ee3e696f941725bbcb314c5f0e0e60
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405291"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542674"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -110,7 +110,7 @@ Microsoft 계정에서 **다른** 구독 수준의 다른 활성 Visual Studio �
 ## <a name="support-resources"></a>지원 리소스
 - Azure와 관련하여 도움이 필요하세요?  다음 리소스를 확인하세요.
   - 기술 지원: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-  - [Azure 설명서](/azure/)
+  - [Azure 유용한 정보](https://microsoft.github.io/AzureTipsAndTricks/ "Azure 유용한 정보") 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 

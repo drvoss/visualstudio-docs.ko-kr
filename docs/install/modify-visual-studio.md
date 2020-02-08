@@ -2,8 +2,7 @@
 title: Visual Studio 수정
 titleSuffix: ''
 description: Visual Studio를 수정하는 방법을 단계별로 알아봅니다.
-ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/19/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 07aa8afbb4e4ca3970a0f082ec6649a90bfaf2ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112703"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922885"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>워크로드와 구성 요소를 추가하거나 제거하여 Visual Studio 수정
 
@@ -144,6 +143,9 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 ## <a name="modify-individual-components"></a>개별 구성 요소 수정
 
 Visual Studio 설치를 사용자 지정하기 위해 워크로드를 사용하지 않으려면 Visual Studio 설치 관리자에서 **개별 구성 요소** 탭을 선택하고 원하는 구성 요소를 선택한 다음 지시를 따릅니다.
+
+>[!TIP]
+> SSDT(SQL Server Data Tools) 구성 요소에 대한 자세한 내용은 [Visual Studio용 SSDT 다운로드 및 설치](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)를 참조하세요.
 
 ## <a name="modify-language-packs"></a>언어 팩 수정
 

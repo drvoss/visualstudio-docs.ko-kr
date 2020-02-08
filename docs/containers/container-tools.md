@@ -1,17 +1,17 @@
 ---
-title: ASP.NET Core를 포함한 Visual Studio 컨테이너 도구
+title: ASP.NET을 포함한 Visual Studio 컨테이너 도구
 author: ghogen
 description: Visual Studio 컨테이너 도구 및 Windows용 Docker를 사용하는 방법 알아보기
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 01/24/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: c7d09f3a318049e8392f744d946138e59509470a
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 775abc2699bf3cef2dd360df701ab12b69a49496
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "71125994"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027312"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>빠른 시작: Visual Studio의 Docker
 
@@ -27,7 +27,7 @@ ms.locfileid: "71125994"
 
 ::: moniker-end
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 
 * [Visual Studio를 사용한 컨테이너 개발](/visualstudio/containers)
 * [Docker 관련 Visual Studio 개발 문제 해결](troubleshooting-docker-errors.md)

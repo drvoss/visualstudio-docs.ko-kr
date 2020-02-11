@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405205"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091784"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis 프레임 워크를 C++ 사용 하 여 디버거에서 개체의 사용자 지정 뷰 만들기
 
@@ -224,7 +224,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 시각화 항목의 유효성 검사에 실패 하면 다음으로 사용 가능한 시각화가 사용 됩니다.
 
 #### <a name="inheritable-attribute"></a>상속 가능한 특성
-선택적 `Inheritable` 특성은 시각화가 기본 형식에만 적용 되는지, 아니면 기본 형식에만 적용 되는지, 아니면 모든 파생 형식에만 적용 되는지 여부를 지정 합니다. `Inheritable` 의 기본값은 `true`입니다.
+선택적 `Inheritable` 특성은 시각화가 기본 형식에만 적용 되는지, 아니면 기본 형식에만 적용 되는지, 아니면 모든 파생 형식에만 적용 되는지 여부를 지정 합니다. `Inheritable`의 기본값은 `true`입니다.
 
 다음 예제에서 시각화는 `BaseClass` 형식에만 적용 됩니다.
 
@@ -236,7 +236,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 
 #### <a name="priority-attribute"></a>Priority 특성
 
-선택적 `Priority` 특성은 정의를 구문 분석 하지 못한 경우 대체 정의를 사용 하는 순서를 지정 합니다. `Priority`의 가능한 값은 `Low`, `MediumLow`,`Medium`, `MediumHigh`및 `High`입니다. 기본값은 `Medium`여야 합니다. `Priority` 특성은 동일한 *natvis* 파일 내의 우선 순위를 구분 합니다.
+선택적 `Priority` 특성은 정의를 구문 분석 하지 못한 경우 대체 정의를 사용 하는 순서를 지정 합니다. `Priority`의 가능한 값은 `Low`, `MediumLow`,`Medium`, `MediumHigh`및 `High`입니다. 기본값은 `Medium`입니다. `Priority` 특성은 동일한 *natvis* 파일 내의 우선 순위를 구분 합니다.
 
 다음 예제에서는 먼저 2015 STL과 일치 하는 항목을 구문 분석 합니다. 구문 분석에 실패 하는 경우 STL의 2013 버전에 대 한 대체 항목을 사용 합니다.
 
@@ -670,7 +670,7 @@ UIVisualizer 요소의 예는 다음과 같습니다.
 
 - `ServiceId` - `Id` 특성 쌍은 `UIVisualizer`를 식별 합니다. `ServiceId`는 시각화 도우미 패키지에서 노출 하는 서비스의 GUID입니다. `Id`는 서비스에서 두 개 이상 제공 하는 경우 시각화 도우미를 구분 하는 고유 식별자입니다. 위의 예에서는 동일한 시각화 도우미 서비스에서 두 개의 시각화 도우미를 제공 합니다.
 
-- `MenuName` 특성은 디버거의 돋보기 아이콘 옆에 있는 드롭다운에 표시 되는 시각화 도우미 이름을 정의 합니다. 예를 들면 다음과 같습니다.:
+- `MenuName` 특성은 디버거의 돋보기 아이콘 옆에 있는 드롭다운에 표시 되는 시각화 도우미 이름을 정의 합니다. 예들 들어 다음과 같습니다.
 
   ![UIVisualizer 도우미 메뉴 바로 가기 메뉴](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 메뉴 바로 가기 메뉴")
 
@@ -690,3 +690,9 @@ UIVisualizer 요소의 예는 다음과 같습니다.
 XML Natvis 정의 보다 사용자 지정 시각화 도우미를 작성 하는 데 더 많은 작업이 필요 하지만 Natvis에서 지원 하지 않거나 지원 하지 않는 항목에 대 한 제약에는 제한이 없습니다. 사용자 지정 시각화 도우미는 디버기 프로세스를 쿼리하고 수정 하거나 Visual Studio의 다른 부분과 통신할 수 있는 디버거 확장성 Api의 전체 집합에 액세스할 수 있습니다.
 
  `CustomVisualizer` 요소에 `Condition`, `IncludeView`및 `ExcludeView` 특성을 사용할 수 있습니다.
+
+ ## <a name="limitations"></a>제한 사항
+
+Natvis 사용자 지정은 클래스 및 구조체에서 작동 하지만 typedef는 사용 되지 않습니다.
+
+Natvis는 기본 형식 (예: `int`, `bool`) 또는 기본 형식에 대 한 포인터에 대 한 시각화 도우미를 지원 하지 않습니다. 이 시나리오에서 한 가지 옵션은 사용 사례에 적합 한 [형식 지정자](../debugger/format-specifiers-in-cpp.md) 를 사용 하는 것입니다. 예를 들어 코드에서 `double* mydoublearray` 사용 하는 경우 첫 번째 100 요소를 표시 하는 식 `mydoublearray, [100]`와 같이 디버거의 **조사식** 창에서 배열 형식 지정자를 사용할 수 있습니다.

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027339"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091810"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C++ 코드를 디버그하는 방법 알아보기
 
@@ -74,9 +74,11 @@ Visual Studio 2017이 설치되어 있어야 하고 **C++로 데스크톱 개발
 
 3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C++** 을 확장한 후 **Windows 데스크톱**을 선택합니다. 가운데 창에서 **Windows 콘솔 애플리케이션**을 선택합니다. 그런 다음 프로젝트 이름을 *get-started-debugging*으로 지정합니다.
 
-     **콘솔 앱** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 선택합니다.
+     **콘솔 앱** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
-     Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+4. **확인**을 클릭합니다.
+
+   Visual Studio에서 새 프로젝트를 엽니다.
 
 ::: moniker-end
 

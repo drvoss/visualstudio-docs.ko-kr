@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091875"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144782"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>디버깅 하는 동안 .NET 어셈블리에서 소스 코드 생성
 
@@ -80,8 +80,27 @@ ms.locfileid: "77091875"
 - 중단점은 일치 하는 소싱 위치에 항상 바인딩할 수 없습니다.
 - 단계별 실행은 항상 올바른 위치로 이동 하지 않을 수 있습니다.
 - 지역 변수의 이름이 정확 하지 않을 수 있습니다.
+- 일부 변수는 평가할 수 없습니다.
 
 자세한 내용은 GitHub 문제에서 확인할 수 있습니다. [IChsarpCompiler. 디컴파일러 integration IN VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901)을 참조 하세요.
+
+### <a name="decompilation-reliability"></a>디컴파일을 안정성
+
+상대적으로 적은 수의 디컴파일을 시도로 인해 오류가 발생할 수 있습니다. 이는 ILSpy에서 시퀀스 지점 null 참조 오류가 발생 한 것입니다.  이러한 문제를 포착 하 고 디컴파일을 시도를 정상적으로 실패 하 여 오류를 완화 했습니다.
+
+자세한 내용은 GitHub 문제에서 확인할 수 있습니다. [IChsarpCompiler. 디컴파일러 integration IN VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901)을 참조 하세요.
+
+### <a name="limitations-with-async-code"></a>비동기 코드의 제한 사항
+
+Async/wait 코드 패턴이 있는 디컴파일 모듈의 결과는 완전 하지 않거나 실패할 수 있습니다. Async/wait 및 yield 상태 컴퓨터의 ILSpy 구현은 부분적 으로만 구현 됩니다. 
+
+자세한 내용은 GitHub 문제: [PDB 생성기 상태](https://github.com/icsharpcode/ILSpy/issues/1422)에서 찾을 수 있습니다.
+
+### <a name="just-my-code"></a>내 코드만
+
+[JMC (내 코드만)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) 설정을 사용 하면 Visual Studio에서 시스템, 프레임 워크, 라이브러리 및 기타 사용자가 아닌 호출을 한 단계씩 실행 합니다. 디버깅 세션 중에 **모듈** 창에는 디버거가 내 코드로 처리 하는 코드 모듈 (사용자 코드)이 표시 됩니다.
+
+최적화 또는 릴리스 모듈 디컴파일을 사용자가 작성 하지 않은 코드를 생성 합니다. 디컴파일된 사용자가 아닌 코드에서 디버거가 중단 되는 경우 (예: **소스 없음** 창이 표시 됩니다. 내 코드만를 사용 하지 않도록 설정 하려면 **도구** > **옵션** (또는 **디버그** > **옵션**>)으로 이동한 후 **디버깅** > **일반**으로 이동한 후 **내 코드만 사용**을 선택 취소 합니다.
 
 ### <a name="extracted-sources"></a>추출 된 소스
 

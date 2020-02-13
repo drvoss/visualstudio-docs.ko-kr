@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596868"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923261"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 
@@ -65,6 +65,12 @@ ms.locfileid: "75596868"
 출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86**을 선택하고, 64비트 Intel 호환 프로세서의 경우 **x64**를 선택하고, ARM 프로세서의 경우 **ARM**을 선택하고, 임의 프로세스를 허용하도록 지정하려면 **임의 CPU**를 선택합니다. **임의 CPU**는 프로젝트의 기본값입니다. 하드웨어의 가장 광범위한 범위에서 애플리케이션을 실행할 수 있기 때문입니다.
 
 자세한 내용은 [/platform(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)을 참조하세요.
+
+**Null 허용**
+
+프로젝트 차원의 C# nullable 컨텍스트를 지정합니다. 이 UI 옵션은 Visual Studio 16.5에서 도입되었으며 C# 8.0 이상을 사용하는 프로젝트에서만 사용할 수 있습니다.
+
+자세한 내용은 [Nullable 컨텍스트](/dotnet/csharp/nullable-references#nullable-contexts)를 참조하세요.
 
 **32비트 선호**
 

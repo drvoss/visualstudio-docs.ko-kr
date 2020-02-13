@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "71125958"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027278"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker 관련 Visual Studio 개발 문제 해결
 
@@ -80,6 +80,18 @@ net localgroup docker-users DOMAIN\username /add
 ```
 
 PowerShell에서 [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) 함수를 사용합니다.
+
+## <a name="low-disk-space"></a>디스크 공간 부족
+
+기본적으로 Docker는 *% ProgramData%/Docker/* 폴더에 이미지를 저장합니다. 이 폴더는 일반적으로 시스템 드라이브인 *C:\ProgramData\Docker\*에 있습니다. 이미지가 시스템 드라이브에서 중요한 공간을 차지하지 않으려면 이미지 폴더 위치를 변경하면 됩니다.  작업 표시줄의 Docker 아이콘에서 Docker 설정을 열고 **디먼**을 선택한 다음 **기본**에서 **고급**으로 전환합니다. 편집 창에서 Docker 이미지의 원하는 위치 값을 사용하여 `graph` 속성 설정을 추가합니다.
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Docker 이미지 위치 설정의 스크린샷](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+**적용**을 클릭하여 Docker를 다시 시작합니다. 이러한 단계는 *%ProgramData%\docker\config\daemon.json*에서 구성 파일을 수정합니다. 이전에 빌드된 이미지는 이동되지 않습니다.
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub 리포지토리
 

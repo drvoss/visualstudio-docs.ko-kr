@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188784"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027294"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 ASP.NET Core 컨테이너 배포
 
@@ -21,7 +21,7 @@ ms.locfileid: "73188784"
 
 Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)을 만듭니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
@@ -29,7 +29,7 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 - "ASP.NET 및 웹 개발" 워크로드가 포함된 최신 버전의 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)을 설치합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- *ASP.NET 및 웹 개발* 워크로드가 있는 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+- *ASP.NET 및 웹 개발* 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)입니다.
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) 설치
 
@@ -53,13 +53,13 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 1. **웹 애플리케이션**을 선택합니다.
 1. **HTTPS에 대한 구성** 확인란을 사용하여 SSL 지원의 사용 여부를 선택합니다.
 1. **Docker 지원 사용** 확인란을 선택합니다.
-1. **Linux** 컨테이너 형식을 선택하고 **만들기**를 클릭합니다. Windows 컨테이너는 Azure App Service에 컨테이너로 배포할 수 없습니다.
+1. 컨테이너 형식을 선택하고 **만들기**를 클릭합니다. Windows 컨테이너는 Azure App Service에 컨테이너로 배포할 수 없습니다.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Azure에 컨테이너 배포
 
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
-1. 게시 대상 대화 상자에서 **App Service Linux**를 선택합니다.
+1. 게시 대상 대화 상자에서 **App Service Linux** 또는 **App Service**를 선택합니다. 웹 서버를 호스트하는 운영 체제입니다.
 1. App Service에만 게시하거나, App Service와 ACR(Azure Container Registry)에 모두 게시할 수 있습니다. ACR(Azure Container Registry)에 컨테이너를 게시하려면 **컨테이너에 대한 새 App Service 만들기**를 선택하고 **게시**를 클릭합니다.
 
    ![게시 대화 상자 스크린샷](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
    ![웹 애플리케이션 스크린샷](media/deploy-app-service/web-application-running.png)
 
 1. 리소스 그룹 및 컨테이너 레지스트리와 같은 선택한 모든 세부 정보와 함께 게시 프로필이 저장됩니다.
+
 1. 동일한 게시 프로필을 사용하여 다시 배포하려면 **게시** 단추 또는 **웹 게시 작업** 창의 **게시** 단추를 사용하거나, **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **게시** 항목을 선택합니다.
+
+## <a name="view-container-settings"></a>컨테이너 설정 보기
+
+[Azure Portal](https://portal.azure.com)에서 배포된 App Service를 열 수 있습니다.
+
+Visual Studio 2019 버전 16.4 이상을 사용하는 경우 **컨테이너 설정* 메뉴를 열어 배포된 App Service 설정을 볼 수 있습니다.
+
+![Azure Portal의 컨테이너 설정 메뉴 스크린샷](media/deploy-app-service/container-settings-menu.png)
+
+여기에서 컨테이너 정보를 보거나, 로그를 보거나 다운로드하거나, 지속적인 배포를 설정할 수 있습니다. [Azure App Service 지속적인 배포 CI/CD](/azure/app-service/containers/app-service-linux-ci-cd)를 참조하세요.
 
 ## <a name="clean-up-resources"></a>리소스 정리
 
@@ -89,8 +100,8 @@ Azure Portal에서 **리소스 그룹**을 선택한 다음, 리소스 그룹을
 
 ## <a name="next-steps"></a>다음 단계
 
-[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)를 사용하여 CI/CD(연속 통합 및 지속적인 업데이트)를 설정합니다.
+[Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro)에 대한 자세한 정보
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Azure Container Registry에 배포](hosting-web-apps-in-docker.md)

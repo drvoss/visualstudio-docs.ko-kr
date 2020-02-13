@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
+ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888638"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77071949"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
 
@@ -173,3 +173,5 @@ JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테�
     <GenerateProgramFile>false</GenerateProgramFile>
 </PropertyGroup>
 ```
+
+일부 테스트 프레임워크에는 테스트 검색을 위한 추가 npm 패키지가 필요할 수 있습니다. 예를 들어 jest는 jest-editor-support npm 패키지를 필요로 합니다. 필요한 경우 특정 프레임워크에 대한 설명서를 확인합니다.

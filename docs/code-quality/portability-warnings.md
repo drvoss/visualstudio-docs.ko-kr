@@ -10,21 +10,21 @@ helpviewer_keywords:
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3e1959066f81663d66e8af2af8039080d8cace6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61efbc2022b2c0cd60e005936e148bbaf1d900a4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649126"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091732"
 ---
 # <a name="portability-warnings"></a>이식성 경고
 이식성 경고는 다양 한 운영 체제 간의 이식성을 지원 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 |규칙|설명|
 |----------|-----------------|

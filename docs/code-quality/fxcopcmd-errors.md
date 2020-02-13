@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: jillfra
+ms.author: mikejo
 author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649554"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091771"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 도구 오류
 
@@ -23,13 +23,13 @@ FxCopCmd는 모든 오류가 치명적이 지는 것을 고려 하지 않습니�
 
 다음 표에서는 FxCopCmd에서 반환 하는 오류 코드에 대해 설명 합니다.
 
-|오류|숫자 값|
+|Error|숫자 값|
 |-----------|-------------------|
-|오류 없음|0|
+|오류 없음|0x0|
 |분석 오류|0x1|
 |규칙 예외|0x2|
 |프로젝트 로드 오류|0x4|
-|어셈블리 로드 오류|나오는|
+|어셈블리 로드 오류|0x8|
 |규칙 라이브러리 로드 오류|0x10|
 |보고서 가져오기 로드 오류|0x20|
 |출력 오류|0x40|

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406712"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125366"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -120,7 +120,7 @@ Visual Studio 2019 릴리스부터 Visual Studio를 PMA(모니터별 인식) 애
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>클라우드 우선 워크플로
+### <a name="git-first-workflow"></a>Git 우선 워크플로
 
 Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
@@ -152,7 +152,7 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
 자세한 내용은 [Visual Studio 끌어오기 요청 확장을 사용하여 코드 검토](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) 블로그 게시물을 참조하세요.
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>디버그
 
 디버그하는 동안 정확한 대상 지정으로 목표를 달성하는 방법에 대한 자세한 내용을 보려면 다음 비디오를 보세요. <br><br>*비디오 길이: 3.54분*
 

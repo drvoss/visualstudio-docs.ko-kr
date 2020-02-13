@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565983"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826499"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 MSBuild 프로젝트 파일 만들기
 .NET Framework를 대상으로 하는 프로그래밍 언어는 MSBuild 프로젝트 파일을 사용하여 애플리케이션 빌드 프로세스를 설명하고 제어합니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들 때 적절한 XML이 파일에 자동으로 추가됩니다. 그러나 XML이 구성되는 방식과 이러한 방식을 변경하여 빌드를 제어할 수 있는 방법을 이해하는 것이 좋습니다.
@@ -44,12 +44,10 @@ ms.locfileid: "75565983"
 
 이 연습에서는 명령 프롬프트에서 프로젝트를 빌드하고 결과를 검토하는 방법을 보여 줍니다. MSBuild 및 명령 프롬프트에서 MSBuild를 실행하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
-연습을 완료하려면 .NET Framework(버전 2.0, 3.5, 4.0 또는 4.5)가 설치되어 있어야 합니다. .NET Framework에 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.
+연습을 완료하려면 .NET Framework(버전 2.0, 3.5, 4.0, 4.5 또는 그 이상)가 설치되어 있어야 합니다. .NET Framework에 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.
 
 ## <a name="create-a-minimal-application"></a>최소 애플리케이션 만들기
- 이 섹션에서는 텍스트 편집기를 사용하여 최소 Visual C# 애플리케이션 소스 파일을 만드는 방법을 보여 줍니다.
-
-#### <a name="to-create-the-minimal-application"></a>최소 애플리케이션을 만들려면
+ 이 섹션에서는 텍스트 편집기를 사용하여 최소 C# 애플리케이션 소스 파일을 만드는 방법을 보여 줍니다.
 
 1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’).  
 
@@ -98,7 +96,7 @@ ms.locfileid: "75565983"
 
 - 애플리케이션을 빌드하기 위해 Visual C# 컴파일러를 시작하는 `Task` 요소
 
-#### <a name="to-create-a-minimal-msbuild-project-file"></a>최소 MSBuild 프로젝트 파일을 만들려면
+### <a name="to-create-a-minimal-msbuild-project-file"></a>최소 MSBuild 프로젝트 파일을 만들려면
 
 1. 텍스트 편집기에서 기존 텍스트를 다음 두 줄을 사용하여 바꿉니다.
 
@@ -157,20 +155,17 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 > 그러나 소스 파일이 추가되거나 삭제될 경우 디버깅 및 선택적 대상화가 어려워지므로 와일드카드 문자는 사용하지 않는 것이 좋습니다.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>MSBuild를 포함하도록 경로 확장
- MSBuild에 액세스하려면 먼저 .NET Framework 폴더를 포함하도록 PATH 환경 변수를 확장해야 합니다.
 
-#### <a name="to-add-msbuild-to-your-path"></a>경로에 MSBuild를 추가하려면
+MSBuild에 액세스하려면 먼저 .NET Framework 폴더를 포함하도록 PATH 환경 변수를 확장해야 합니다.
 
-- Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%ProgramFiles%\MSBuild* 또는 64비트 운영 체제의 경우 *%ProgramFiles(x86)%\MSBuild*)에서 *MSBuild.exe*를 찾을 수 있습니다.
+Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%ProgramFiles%\MSBuild* 또는 64비트 운영 체제의 경우 *%ProgramFiles(x86)%\MSBuild*)에서 *MSBuild.exe*를 찾을 수 있습니다.
 
-     명령 프롬프트에 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 또는 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**를 입력합니다.
+명령 프롬프트에 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 또는 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**를 입력합니다.
 
-     또는 Visual Studio가 설치되어 있는 경우 *MSBuild* 폴더를 포함하는 경로가 있는 **Visual Studio 명령 프롬프트**를 사용할 수 있습니다.
+또는 Visual Studio가 설치되어 있는 경우 *MSBuild* 폴더를 포함하는 경로가 있는 **Visual Studio용 개발자 명령 프롬프트**를 사용할 수 있습니다.
 
-## <a name="use-the-project-file-to-build-the-application"></a>프로젝트 파일을 사용하여 애플리케이션 빌드
+## <a name="build-the-application"></a>애플리케이션 빌드
  이제 애플리케이션을 빌드하기 위해 방금 만든 프로젝트 파일을 사용합니다.
-
-#### <a name="to-build-the-application"></a>애플리케이션을 빌드하려면
 
 1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.
 
@@ -192,7 +187,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
 - 애플리케이션을 포함할 폴더를 지정하기 위한 `OutputPath` 속성
 
-#### <a name="to-add-build-properties"></a>빌드 속성을 추가하려면
+### <a name="to-add-build-properties"></a>빌드 속성을 추가하려면
 
 1. 명령 프롬프트에서 **del helloworld.exe**를 입력하여 기존 애플리케이션을 삭제합니다.
 
@@ -257,8 +252,6 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 ## <a name="test-the-build-properties"></a>빌드 속성 테스트
  이제 출력 폴더 및 애플리케이션 이름을 지정하기 위해 빌드 속성을 사용한 프로젝트 파일을 사용하여 애플리케이션을 빌드할 수 있습니다.
 
-#### <a name="to-test-the-build-properties"></a>빌드 속성을 테스트하려면
-
 1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.
 
      그러면 *\Bin\\* 폴더가 만들어진 다음, Visual C# 컴파일러가 호출되어 *MSBuildSample* 애플리케이션이 만들어져 *\Bin\\* 폴더에 배치됩니다.
@@ -278,7 +271,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
 대상이 여러 개이므로 이제 Build 대상을 기본 대상으로 설정할 수 있습니다.
 
-#### <a name="to-add-build-targets"></a>빌드 대상을 추가하려면
+### <a name="to-add-build-targets"></a>빌드 대상을 추가하려면
 
 1. 프로젝트 파일에서 이러한 두 대상을 Build 대상 바로 뒤에 추가합니다.
 
@@ -332,7 +325,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
 - 다른 애플리케이션을 빌드하지 않고 애플리케이션을 삭제합니다.
 
-#### <a name="to-test-the-build-targets"></a>빌드 대상을 테스트하려면
+### <a name="to-test-the-build-targets"></a>빌드 대상을 테스트하려면
 
 1. 명령 프롬프트에 **msbuild helloworld.csproj -p:AssemblyName=Greetings**를 입력합니다.
 
@@ -363,7 +356,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 ## <a name="build-incrementally"></a>증분 방식으로 빌드
  대상이 의존하는 소스 파일 또는 대상 파일이 변경된 경우에만 대상을 빌드하라고 MSBuild에 지시할 수 있습니다. MSBuild는 파일의 타임스탬프를 사용하여 파일이 변경되었는지 여부를 확인합니다.
 
-#### <a name="to-build-incrementally"></a>증분 방식으로 빌드하려면
+### <a name="to-build-incrementally"></a>증분 방식으로 빌드하려면
 
 1. 프로젝트 파일에서 다음 특성을 여는 Build 대상에 추가합니다.
 
@@ -398,10 +391,9 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
      MSBuild는 애플리케이션이 마지막으로 빌드된 이후로 변경된 소스 파일이 없으므로 Build 대상을 건너뜁니다.
 
-## <a name="example"></a>예제
+## <a name="c-example"></a>C# 예제
 
-### <a name="description"></a>설명
- 다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 애플리케이션을 컴파일하고 출력 파일 이름이 포함된 메시지를 기록하는 프로젝트 파일을 보여 줍니다.
+다음 예제에서는 C# 애플리케이션을 컴파일하고 출력 파일 이름이 포함된 메시지를 기록하는 프로젝트 파일을 보여 줍니다.
 
 ### <a name="code"></a>코드
 
@@ -436,10 +428,9 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="visual-basic-example"></a>Visual Basic 예제
 
-### <a name="description"></a>설명
- 다음 예제에서는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 애플리케이션을 컴파일하고 출력 파일 이름이 포함된 메시지를 기록하는 프로젝트 파일을 보여 줍니다.
+다음 예제에서는 Visual Basic 애플리케이션을 컴파일하고 출력 파일 이름이 포함된 메시지를 기록하는 프로젝트 파일을 보여 줍니다.
 
 ### <a name="code"></a>코드
 
@@ -478,5 +469,6 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
  Visual Studio는 이 연습에 표시된 작업의 많은 부분을 자동으로 수행할 수 있습니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들고, 편집하고, 빌드하고, 테스트하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
+
 - [MSBuild 개요](../msbuild/msbuild.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

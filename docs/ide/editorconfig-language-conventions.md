@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588631"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542661"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **규칙 이름** | csharp_prefer_braces |
 | **규칙 ID** | IDE0011 |
 | **해당 언어** | C# |
-| **값** | `true` - 코드 한 줄에서도 중괄호를 선호합니다.<br /><br />`false` - 허용되는 경우 중괄호를 선호하지 않습니다. |
+| **값** | `true` - 코드 한 줄에서도 중괄호를 선호합니다.<br /><br />`false` - 허용되는 경우 중괄호를 선호하지 않습니다.<br /><br />`when_multiline` -여러 줄에 중괄호를 사용합니다. |
 | **Visual Studio 기본값** | `true:silent` |
 
 코드 예제:

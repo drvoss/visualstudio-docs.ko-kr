@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916935"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027269"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Dockerfile의 줄은 Microsoft Container Registry(mcr.microsoft.com)의 Nano 서버 이미지로 시작하며 포트 80과 443을 공개하는 중간 이미지 `base`를 만든 다음, 작업 디렉터리를 `/app`으로 설정합니다.
+Dockerfile의 줄은 Microsoft Container Registry(mcr.microsoft.com)의 Debian 이미지로 시작하며 포트 80과 443을 공개하는 중간 이미지 `base`를 만든 다음, 작업 디렉터리를 `/app`으로 설정합니다.
 
 다음 스테이지는 `build`이며 다음과 같이 표시됩니다.
 
@@ -76,7 +76,7 @@ docker build -f Dockerfile ..
 
 Visual Studio에서 만든 .NET Framework 프로젝트용(및 Visual Studio 2017 업데이트 4 이전의 Visual Studio 버전에서 만든 .NET Core 프로젝트용) Dockerfile은 다단계 Dockerfile이 아닙니다.  해당 Dockerfile의 단계에서는 코드를 컴파일하지 않습니다.  대신, Visual Studio에서 .NET Framework Dockerfile을 빌드할 때 먼저 MSBuild를 사용하여 프로젝트를 컴파일합니다.  작업이 성공하면 Visual Studio에서 Dockerfile을 빌드합니다. 이 프로세스에서는 MSBuild의 빌드 출력을 결과 Docker 이미지에 복사하기만 합니다.  코드를 컴파일하는 단계가 Dockerfile에 포함되지 않기 때문에, 명령줄에서 `docker build`를 사용하여 .NET Framework Dockerfile을 빌드할 수 없습니다. 이러한 프로젝트를 빌드하려면 MSBuild를 사용해야 합니다.
 
-단일 Docker 컨테이너 프로젝트용 이미지를 빌드하려는 경우, `/t:ContainerBuild` 명령 옵션과 함께 MSBuild를 사용할 수 있습니다. 예:
+단일 Docker 컨테이너 프로젝트용 이미지를 빌드하려는 경우, `/t:ContainerBuild` 명령 옵션과 함께 MSBuild를 사용할 수 있습니다. 예를 들어:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release

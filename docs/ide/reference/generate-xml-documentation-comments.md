@@ -1,18 +1,18 @@
 ---
 title: XML 문서 주석 삽입
-ms.date: 01/26/2018
+ms.date: 01/22/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad29957cc31247c16ca38038ad4880ea75a85182
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595581"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892140"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>방법: 문서 생성에 대한 XML 주석 삽입
 
@@ -30,7 +30,7 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
 
 1. 문서화할 요소(예: 메서드) 위에 텍스트 커서를 놓습니다.
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - C#에서 `///` 또는 Visual Basic에서 `'''`를 입력
 
@@ -44,9 +44,13 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
 
    ![XML 주석 템플릿 - Visual Basic](media/doc-preview-vb.png)
 
-1. 각 XML 요소에 대한 설명을 입력하여 코드 요소를 완전히 문서화합니다.
+3. 각 XML 요소에 대한 설명을 입력하여 코드 요소를 완전히 문서화합니다.
 
    ![완료된 주석](media/doc-result-cs.png)
+
+요소를 마우스로 가리킬 때 요약 정보로 렌더링되는 XML 주석에 스타일을 사용할 수 있습니다. 이러한 스타일에는 기울임꼴, 굵게, 글머리 기호 및 클릭 가능한 링크 등이 있습니다.
+
+   ![완료된 주석](media/doc-styles-cs.png) 
 
 > [!NOTE]
 > C#에서 `///` 또는 Visual Basic에서 `'''`를 입력한 후 XML 문서 주석을 설정/해제하는 [옵션](../../ide/reference/options-text-editor-csharp-advanced.md)이 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음, **텍스트 편집기** > **C#** 또는 **기본** > **고급**으로 이동합니다. **편집기 도움말** 섹션에서 **XML 문서 주석 생성** 옵션을 찾습니다.

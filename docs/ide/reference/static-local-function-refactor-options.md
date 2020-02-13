@@ -1,6 +1,6 @@
 ---
-title: 정적 로컬 함수 리팩터링
-ms.date: 09/28/2019
+title: 정적 로컬 함수 리팩터링 옵션
+ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
 ms.author: midumont
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: adbf84b9ae7566cd5e58a7c757ce09a37252b754
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74782320"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144832"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>정적 로컬 함수 리팩터링 및 빠른 작업
 
@@ -66,6 +66,6 @@ ms.locfileid: "74782320"
 
 3. **Pass variable explicitly in local static function**(변수를 로컬 static 함수로 명시적으로 전달)을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

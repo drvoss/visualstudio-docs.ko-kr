@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400873"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542596"
 ---
 # <a name="container-tools-launch-settings"></a>컨테이너 도구 시작 설정
 
@@ -53,7 +53,7 @@ commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인�
 |설정 이름|버전|예제|설명|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|“launchBrowser”: true|프로젝트를 시작한 후에 브라우저를 시작할지 여부를 나타냅니다.|
-|launchUrl|Visual Studio 2017|“launchUrl”: “\<scheme>://\<serviceHost>:\<servicePort>”|이 URL은 브라우저를 시작할 때 사용됩니다.  이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.<br>   \<scheme> - SSL 사용 여부에 따라 “http” 또는 “https”로 바뀝니다.<br>   \<serviceHost> - 일반적으로 “localhost”로 바뀝니다. 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.<br>   \<servicePort> - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.  하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 SSL 사용 여부에 따라 “443” 또는 “80”으로 바뀝니다.|
+|launchUrl|Visual Studio 2017|“launchUrl”: “{Scheme}://{ServiceHost}:{ServicePort}”|이 URL은 브라우저를 시작할 때 사용됩니다.  이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.<br>   {Scheme} - SSL 사용 여부에 따라 “http” 또는 “https”로 바뀝니다.<br>   {ServiceHost} - 일반적으로 “localhost”로 바뀝니다. 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.<br>   {ServicePort} - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.  하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 SSL 사용 여부에 따라 “443” 또는 “80”으로 바뀝니다.|
 
 ::: moniker-end
 
@@ -69,11 +69,11 @@ commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인�
 | httpPort             | “httpPort”: 24051                                     | 호스트의 이 포트는 컨테이너를 시작할 때 컨테이너의 포트 80에 매핑됩니다.                                |
 |                      |                                                       | 값을 지정하지 않으면 iisSettings 값에서 가져옵니다.                                                          |
 | launchBrowser        | “launchBrowser”: true                                 | 프로젝트를 시작한 후에 브라우저를 시작할지 여부를 나타냅니다.                                       |
-| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | 이 URL은 브라우저를 시작할 때 사용됩니다. 이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.                          |
-|                      |                                                       | - <scheme> - SSL 사용 여부에 따라 "http" 또는 "https"로 바뀝니다.                                   |
-|                      |                                                       | - <serviceHost> - 일반적으로 "localhost"로 바뀝니다.                                                                    |
+| launchUrl            | “launchUrl”: “{Scheme}://{ServiceHost}:{ServicePort}” | 이 URL은 브라우저를 시작할 때 사용됩니다. 이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.                          |
+|                      |                                                       | - {Scheme} - SSL 사용 여부에 따라 “http” 또는 “https”로 바뀝니다.                                   |
+|                      |                                                       | - {ServiceHost} - 일반적으로 “localhost”로 바뀝니다.                                                                    |
 |                      |                                                       | 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.           |
-|                      |                                                       | - <servicePort> - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.                   |
+|                      |                                                       | - {ServicePort} - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.                   |
 |                      |                                                       | 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는         |
 |                      |                                                       | SSL 사용 여부에 따라 "443" 또는 "80"으로 바뀝니다.                                                                                       |
 | sslPort              | “sslPort”: 44381                                      | 호스트의 이 포트는 컨테이너를 시작할 때 컨테이너의 포트 443에 매핑됩니다.                               |

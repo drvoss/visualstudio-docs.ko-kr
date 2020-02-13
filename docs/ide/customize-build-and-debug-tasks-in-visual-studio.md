@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567439"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542687"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>“폴더 열기” 개발에 대한 빌드 및 디버그 작업 사용자 지정
 
@@ -224,6 +224,8 @@ bin:
 |`${fileExtname}`| 선택한 파일의 확장명(예: *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>launch.vs.json을 사용하여 디버깅 구성
+
+디버깅을 위해 CMake 프로젝트를 구성하려면 [CMake 디버깅 세션 구성](/cpp/build/configure-cmake-debugging-sessions)을 참조하세요.
 
 1. 디버깅을 위한 코드베이스를 구성하려면 **솔루션 탐색기**에서, 실행 파일의 마우스 오른쪽 단추 메뉴나 상황에 맞는 메뉴에서 **디버그 및 시작 설정** 메뉴 항목을 선택합니다.
 

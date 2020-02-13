@@ -6,14 +6,14 @@ helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77c501f6c7915c7eff1ebd8a4f9308c89bd46e8d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643750"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091706"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성
 
@@ -58,7 +58,7 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 
 이제 테스트 설정에 구성된 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 웹 애플리케이션에 대한 ASP.NET 프로파일링 데이터를 수집할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
 - [방법: 분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

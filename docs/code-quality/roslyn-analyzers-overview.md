@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587279"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144767"
 ---
 # <a name="overview-of-source-code-analyzers"></a>소스 코드 분석기 개요
 
@@ -25,10 +25,10 @@ ms.locfileid: "75587279"
 
 - 일부 분석기는 Visual Studio에 기본 제공됩니다. 이러한 분석기에 대한 진단 ID 또는 코드는 IDExxxx 형식(예: IDE0067)입니다. 이러한 기본 제공 분석기 대부분은 [코드 스타일](../ide/code-styles-and-code-cleanup.md)을 검사하고, [텍스트 편집기 옵션 페이지](../ide/code-styles-and-code-cleanup.md) 또는 [EditorConfig 파일](../ide/editorconfig-code-style-settings-reference.md)의 환경 설정에서 구성할 수 있습니다. 몇 가지 기본 제공 분석기는 코드 품질을 확인합니다.
 
-- 추가로 분석기를 NuGet 패키지 또는 Visual Studio 확장으로 설치할 수 있습니다. 예:
+- 추가로 분석기를 NuGet 패키지 또는 Visual Studio 확장으로 설치할 수 있습니다. 예를 들어:
 
   - [FxCop 분석기](../code-quality/install-fxcop-analyzers.md), Microsoft의 권장 코드 품질 분석기
-  - [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) 및 [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)와 같은 타사 분석기
+  - [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) 및 [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)와 같은 타사 분석기
 
 분석기에서 규칙 위반을 발견하면 코드 편집기(위반 코드 아래에 *오류 표시선*이 표시됨) 및 오류 목록 창에 규칙 위반이 보고됩니다.
 

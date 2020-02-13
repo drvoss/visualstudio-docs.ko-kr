@@ -145,7 +145,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 2. [R Services 설치 관리자](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md)를 실행하고 메시지가 표시되면 다시 부팅합니다. 설치 관리자에서 다음을 수행합니다.
 
-    - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\\* 에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
+    - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* 에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
     - `RHostBrokerService` 및 `RUserProfileService`를 설치하고 자동으로 시작되도록 구성합니다.
     - `seclogon` 서비스가 자동으로 시작되도록 구성합니다.
     - *Microsoft.R.Host.exe* 및 *Microsoft.R.Host.Broker.exe*를 기본 포트 5444의 방화벽 인바운드 규칙에 추가합니다.

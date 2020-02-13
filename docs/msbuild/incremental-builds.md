@@ -10,16 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573822"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091823"
 ---
 # <a name="incremental-builds"></a>증분 빌드
 
 증분 빌드는 해당 입력 파일과 관련하여 최신 상태인 출력 파일이 있는 대상이 실행되지 않도록 최적화된 빌드입니다. 대상 요소는 대상이 입력으로 예상하는 항목을 나타내는 `Inputs` 특성 및 출력으로 생성하는 항목을 나타내는 `Outputs` 특성을 모두 가질 수 있습니다. MSBuild는 이러한 특성의 값 사이에서 1-1 매핑을 찾으려고 시도합니다. 1-1 매핑이 존재하는 경우 MSBuild는 해당 출력 항목의 타임스탬프와 모든 입력 항목의 타임스탬프를 비교합니다. 1-1 매핑이 없는 출력 파일은 모든 입력 파일과 비교됩니다. 출력 파일이 해당 입력 파일보다 최신이거나 두 파일의 타임스탬프가 같은 경우 항목이 최신 상태인 것으로 간주됩니다.
+
+> [!NOTE]
+> MSBuild가 입력 파일을 평가할 때 현재 실행 목록의 콘텐츠만 고려됩니다. 마지막 빌드에서 목록을 변경하더라도 대상이 자동으로 만료되지는 않습니다.
 
 모든 출력 항목이 최신 상태인 경우 MSBuild는 대상을 건너뜁니다. 이 대상의 *증분 빌드*는 빌드 속도를 크게 향상 시킬 수 있습니다. 일부 파일만 최신 상태인 경우 MSBuild는 대상을 실행하지만 최신 항목을 건너뛰므로 모든 항목을 최신 상태로 합니다. 이 프로세스는 *부분 증분 빌드*로 알려져 있습니다.
 

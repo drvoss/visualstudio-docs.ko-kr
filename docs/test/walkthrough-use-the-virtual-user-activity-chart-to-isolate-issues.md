@@ -7,14 +7,14 @@ helpviewer_keywords:
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebd779ed2c78f48c75d29297fba862ffda142e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659630"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091849"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>연습: 가상 사용자 작업 차트를 사용하여 문제 격리
 
@@ -24,7 +24,7 @@ ms.locfileid: "72659630"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - Visual Studio Enterprise
 
@@ -103,7 +103,7 @@ ms.locfileid: "72659630"
 
      **정보 범례** 및 **필터 결과** 창의 다양한 설정을 사용하여 부하 테스트의 오류와 성능 문제를 쉽게 격리할 수 있습니다. 이러한 설정과 **특정 기간 확대** 도구를 사용하여 가상 사용자 데이터가 **가상 사용자 동작 차트**에 어떻게 나타나는지 확인합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [세부 정보 뷰에서 가상 사용자 동작 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)

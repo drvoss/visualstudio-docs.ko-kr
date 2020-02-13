@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596192"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027624"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
@@ -83,6 +83,7 @@ ms.locfileid: "75596192"
 | OptionExplicit | `true`로 설정하면 소스 코드에서 변수를 명시적으로 선언해야 하는 부울 값입니다. 이 속성은 `/optionexplicit` 컴파일러 스위치와 동일합니다. |
 | OptionInfer | `true`로 설정하면 변수의 형식 유추를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optioninfer` 컴파일러 스위치와 동일합니다. |
 | OptionStrict | `true`로 설정하면 빌드 작업에서 엄격한 형식 의미를 적용하여 암시적 형식 변환을 제한하게 하는 부울 값입니다. 이 속성은 *vbc.exe* 컴파일러의 `/optionstrict` 스위치와 동일합니다. |
+| OutDir | 프로젝트 또는 솔루션의 최종 출력 위치를 나타냅니다. 솔루션을 빌드하는 경우 OutDir를 사용하여 한 위치에서 여러 프로젝트 출력을 수집할 수 있습니다. 또한 OutDir는 참조를 확인하는 데 사용되는 AssemblySearchPaths에 포함됩니다. 예를 들어 *bin\Debug*입니다. |
 | OutputPath | 프로젝트 디렉터리에 상대적인 출력 디렉터리 경로(예: *bin\Debug*)를 지정합니다. |
 | OutputType | 출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   Library. 코드 라이브러리를 만듭니다. 기본값입니다.<br />-   Exe. 콘솔 애플리케이션을 만듭니다.<br />-   Module. 모듈을 만듭니다.<br />-   Winexe. Windows 기반 프로그램을 만듭니다.<br /><br /> 이 속성은 *vbc.exe* 컴파일러의 `/target` 스위치와 동일합니다. |
 | OverwriteReadOnlyFiles | 빌드에서 읽기 전용 파일을 덮어쓸지 아니면 오류를 트리거할지 여부를 나타내는 부울 값입니다. |

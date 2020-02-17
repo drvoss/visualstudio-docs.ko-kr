@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
-  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
+  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
+  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/17/2020
-  ms.locfileid: "76256478"
+  ms.lasthandoff: 02/15/2020
+  ms.locfileid: "77265562"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -31,7 +31,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: 시작
+  title: 시작하기
   items:
   - title: Visual Studio를 사용하는 방법 알아보기
     links:
@@ -130,13 +130,13 @@ additionalContent:
     - title: 빌드
       summary: 소스 코드를 컴파일하고 빌드합니다.
       url: ../ide/compiling-and-building-in-visual-studio.md
-    - title: Debug
+    - title: 디버그
       summary: 코드에서 버그를 조사하고 수정합니다.
       url: ../debugger/index.yml
     - title: 테스트
       summary: 프로젝트에서 테스트를 실행합니다.
       url: ../test/improve-code-quality.md
-    - title: '배포:'
+    - title: 배포
       summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
       url: ../deployment/index.yml
     - title: 버전 제어
@@ -160,7 +160,7 @@ additionalContent:
     - title: Docker 컨테이너를 사용하여 개발
       summary: Docker 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
       url: ../containers/index.yml
-  - title: 작업
+  - title: 워크로드
     items:
     - title: 웹 및 클라우드
       links:
@@ -173,7 +173,7 @@ additionalContent:
       - text: Node.js
         url: /visualstudio/javascript
       - text: 데이터 스토리지 및 처리
-        url: ../data-tools/index.md
+        url: ../data-tools/index.yml
       - text: 데이터 과학
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Office/SharePoint 개발
